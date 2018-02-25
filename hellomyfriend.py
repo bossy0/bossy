@@ -341,7 +341,7 @@ x = 0
 for x in xrange(thread):
     attacco().start()
     time.sleep(0.003)
-print "Saldiri Basladi"
+print "Saldırı Basladı"
 print "Durdurmak İcin Bas Ctrl + Z"
 nload = 0
 while not nload:
