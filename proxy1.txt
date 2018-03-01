@@ -1423,42 +1423,7 @@
 94.75.219.25:3128
 97.73.14.182:87
 97.73.176.22:87
-
-HTTP 01-03-18 | Fast Proxy Server List
- Autore discussioneSpiderBOT  Data d'inizioOggi alle 05:52
-Ciao Ospite! 
-
-Stiamo cercando nuovo Staff se pensi di essere la persona giusta, trovi tutti i requisiti richiesti qui: Bandi di Moderazione 2018
-
-Ehi Ospite! 
-Abbiamo aggiunto due nuovi gruppi ufficiali alla nostra rete Telegram! entra subito cliccando su questi link: 
-Logo League of Legends Inforge | League of Legends Chat - Trova nuovi amici con cui giocare e scambiare consigli! 
-Logo Metin2 Inforge | Metin2 Chat - Discuti dei Server Privati online e in arrivo!
-Forum
-TECH
-Sicurezza Informatica
-Anonimato & Deep Web
-Liste Proxy
-SpiderBOT
-SpiderBOT
-Utente Premium
-14,076
-10
-Inforge.net
-Oggi alle 05:52
-#1
-Codice:
-[COLOR=#ffffff][SIZE=3][B]Fast Proxy Server List containing verified L1/L2/L3 HTTP Proxies (Timeout 3 sec)[/B][/SIZE][/COLOR]
-
-
-
-
-
-
-
-[SIZE=14px][B][COLOR=#ffffff]Check Report (IP:Port):[/COLOR]
-
-[COLOR=#ffffff]1.10.153.103:8080
+1.10.153.103:8080
 1.175.138.92:3128
 1.194.161.197:808
 101.128.74.227:8080
