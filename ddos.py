@@ -164,7 +164,7 @@ def choicedownproxy():
 		proxylist()
 
 def choicedownsocks():
-	choice4 = input("Do You want to download a new list of socks? Answer 'y' to do it: ")
+	choice4 = input("Do You Want To Download A New List Of Socks : ")
 	if choice4 == "y":
 		choicemirror2()
 	else:
@@ -172,7 +172,7 @@ def choicedownsocks():
 
 def choicemirror1():
 	global urlproxy
-	choice5 = input ("Download from: free-proxy-list.net='0'(best) or inforge.net='1' ")
+	choice5 = input ("Download From: Free-Proxy-List.Net='0' : ")
 	if choice5 == "0":
 		urlproxy = "http://free-proxy-list.net/"
 		proxyget1()
@@ -214,7 +214,7 @@ def proxyget1(): # lo dice il nome, questa funzione scarica i proxies
 		out_file.write("")
 		out_file.write(proxies)
 		out_file.close()
-		print ("Proxies downloaded successfully.")
+		print ("Proxies Downloaded Successfully :)")
 	except: # se succede qualche casino
 		print ("\nERROR!\n")
 	proxylist() # se va tutto liscio allora prosegue eseguendo la funzione proxylist()
@@ -251,7 +251,7 @@ def inforgeget(): # anche questa funzione scarica proxy pero' da inforge.net
 
 def proxylist():
 	global proxies
-	out_file = str(input("Enter the proxylist filename/path (proxy.txt): "))
+	out_file = str(input("Enter The Proxylist Filename/Path ( proxy.txt ) : "))
 	if out_file == "":
 		out_file = "proxy.txt"
 	proxies = open(out_file).readlines()
@@ -260,23 +260,23 @@ def proxylist():
 def numthreads():
 	global threads
 	try:
-		threads = int(input("Insert number of threads (800): "))
+		threads = int(input("Insert Number Of Threads ( 1000 ) : "))
 	except ValueError:
-		threads = 800
-		print ("800 threads selected.\n")
+		threads = 1000
+		print ("1000 Threads Selected.\n")
 	multiplication()
 
 def multiplication():
 	global multiple
 	try:
-		multiple = int(input("Insert a number of multiplication for the attack [(1-5=normal)(50=powerful)(100 or more=bomb)]: "))
+		multiple = int(input("Insert A Number Of Multiplication For The Attack [ ( 1 - 5 = Normal ) (50 = Powerfull ) ( 100 Or More = Bomb ) ] : "))
 	except ValueError:
 		print("You mistyped, try again.\n")
 		multiplication()
 	begin()
 
 def begin():
-	choice6 = input("Press 'Enter' to start attack: ")
+	choice6 = input("Press ' Enter ' To Start Attack : ")
 	if choice6 == "":
 		loop()
 	elif choice6 == "Enter": #lool
