@@ -250,54 +250,8 @@ useragents=["Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
       "Sogou web spider/4.0(+http://www.sogou.com/docs/help/webmasters.htm#07)"
       "Mozilla/5.0 (Windows NT 6.1; rv:6.0) Gecko/20110814 Firefox/6.0"
       "Feedfetcher-Google; (+http://www.google.com/feedfetcher.html;"
-      "Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.6; en-US; rv:1.9.2) Gecko/20100115 Firefox/3.6 (FlipboardProxy/1.1; , " ]
+      "Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.6; en-US; rv:1.9.2) Gecko/20100115 Firefox/3.6 (FlipboardProxy/1.1; " ]
 
-reFerers = [
-        "http://host-tracker.com/check_page/?furl="
-        "http://jigsaw.w3.org/css-validator/validator?uri="
-        "http://www.google.com/translate?u="
-        "http://anonymouse.org/cgi-bin/anon-www.cgi/"
-        "http://www.onlinewebcheck.com/?url="
-        "http://feedvalidator.org/check.cgi?url="
-        "http://www.online-translator.com/url/translation.aspx?direction=er&sourceURL="
-        "http://www.translate.ru/url/translation.aspx?direction=er&sourceURL="
-        "http://validator.w3.org/feed/check.cgi?url="
-        "http://www.pagescoring.com/website-speed-test/?url="
-        "http://check-host.net/check-http?host="
-        "http://checksite.us/?url="
-        "http://jobs.bloomberg.com/search?q="
-        "http://www.bing.com/search?q="
-        "https://www.yandex.com/yandsearch?text="
-        "http://www.google.com/?q="
-        "https://add.my.yahoo.com/rss?url="
-        "http://www.bestbuytheater.com/events/search?q="
-        "http://www.shodanhq.com/search?q="
-        "https://play.google.com/store/search?q="
-        "http://coccoc.com/search#query="
-        "http://www.search.com/search?q="
-        "https://add.my.yahoo.com/rss?url="
-        "https://images2-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&url="
-        "https://www.facebook.com/l.php?u=",
-        "https://www.facebook.com/l.php?u=",
-        "https://drive.google.com/viewerng/viewer?url=",
-        "http://www.google.com/translate?u=",
-        "http://downforeveryoneorjustme.com/",
-        "http://www.slickvpn.com/go-dark/browse.php?u=",
-        "https://www.megaproxy.com/go/_mp_framed?",
-        "http://scanurl.net/?u=",
-        "http://www.isup.me/",
-        "http://www.currentlydown.com/",
-        "http://check-host.net/check-ping?host=",
-        "http://check-host.net/check-tcp?host=",
-        "http://check-host.net/check-dns?host=",
-        "http://check-host.net/ip-info?host=",
-        "https://safeweb.norton.com/report/show?url=",
-        "http://www.webproxy.net/view?q=",
-        "http://www.online-translator.com/url/translation.aspx?direction=er&sourceURL=",
-        "https://anonysurfer.com/a2/index.php?q=",
-        "http://analiz.web.tr/en/www/",
-        "https://plus.google.com/share?url="]
- 
 def randomIp():
 
 def starturl(): # in questa funzione setto l'url per renderlo usabile per il futuro settaggio delle richieste HTTP.
