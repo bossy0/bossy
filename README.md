@@ -1,2 +1,1 @@
-# bossy
-bossy
+sudo apt-get update && sudo apt-get install git && sudo pip3 install pysocks bs4 scapy-python3 && sudo apt-get install ipset python3 python3-pip && pip3 install bs4 && wget http://ftp.us.debian.org/debian/pool/main/u/unzip/unzip_6.0-16+deb8u3_amd64.deb && sudo dpkg -i unzip_6.0-16+deb8u3_amd64.deb
