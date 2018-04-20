@@ -26,8 +26,7 @@ if sys.platform.startswith("linux"): # se si è sotto linux
 elif sys.platform.startswith("freebsd"): # o sotto freebsd
 	from scapy.all import * # importa scapy
 else: # altrimenti
-
-os.system("clear")
+	
 os.system("figlet DDos Attack")
 print
 print "Author   : HelloMyFriend"
