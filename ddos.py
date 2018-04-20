@@ -277,8 +277,7 @@ reFerers = [
 
        
 
-   
-     
+      
 ip = raw_input("IP Target : ")
 port = input("Port : ")
 in_file = open(raw_input("Proxy.txt : ")
