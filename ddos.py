@@ -26,9 +26,9 @@ if sys.platform.startswith("linux"): # se si è sotto linux
 elif sys.platform.startswith("freebsd"): # o sotto freebsd
 	from scapy.all import * # importa scapy
 else: # altrimenti
-	
-print('''
+	print ("TCP/UDP FLOOD ARE NOT SUPPORTED UNDER THIS SYSTEM. YOU MUST USE HTTP FLOOD.") # printa questo
 
+print('''
 
         +-+-+-+-+-+ 
         |C|o|d|e|d| 
