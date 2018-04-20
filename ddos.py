@@ -16,6 +16,17 @@ day = now.day
 month = now.month
 year = now.year
 
+from bs4 import BeautifulSoup
+
+import logging
+logging.getLogger("scapy.runtime").setLevel(logging.ERROR) # per evitare di visualizzare l'errore d'avvio di scapy
+
+if sys.platform.startswith("linux"): # se si è sotto linux
+	from scapy.all import * # importa scapy
+elif sys.platform.startswith("freebsd"): # o sotto freebsd
+	from scapy.all import * # importa scapy
+else: # altrimenti
+
 ##############
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 bytes = random._urandom(1490)
