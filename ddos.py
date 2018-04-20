@@ -66,7 +66,7 @@ def starturl(): # in questa funzione setto l'url per renderlo usabile per il fut
 	global url2
 	global urlport
 
-	url = input("\nInsert URL/IP: ").strip()
+	url = input("\nTARGET URL/IP: ").strip()
 
 	if url == "":
 		print ("Please enter the url.")
@@ -97,7 +97,7 @@ def starturl(): # in questa funzione setto l'url per renderlo usabile per il fut
 
 def floodmode():
 	global choice1
-	choice1 = input("Do you want to perform HTTP flood '0'(best), TCP flood '1' or UDP flood '2' ? ")
+	choice1 = input("Do You Want To Perform HTTP Flood '0' : ")
 	if choice1 == "0":
 		proxymode()
 	elif choice1 == "1":
@@ -139,7 +139,7 @@ def floodport():
 
 def proxymode():
 	global choice2
-	choice2 = input("Do you want proxy/socks mode? Answer 'y' to enable it: ")
+	choice2 = input("Do You Want Proxy/Socks Mode Answer 'y' : ")
 	if choice2 == "y":
 		choiceproxysocks()
 	else:
@@ -147,7 +147,7 @@ def proxymode():
 
 def choiceproxysocks():
 	global choice3
-	choice3 = input("Type '0' to enable proxymode or type '1' to enable socksmode: ")
+	choice3 = input("Type '0' : ")
 	if choice3 == "0":
 		choicedownproxy()
 	elif choice3 == "1":
@@ -157,14 +157,14 @@ def choiceproxysocks():
 		choiceproxysocks()
 
 def choicedownproxy():
-	choice4 = input("Do you want to download a new list of proxy? Answer 'y' to do it: ")
+	choice4 = input("Do You Want To Download A New List Of Proxy 'y' : ")
 	if choice4 == "y":
 		choicemirror1()
 	else:
 		proxylist()
 
 def choicedownsocks():
-	choice4 = input("Do you want to download a new list of socks? Answer 'y' to do it: ")
+	choice4 = input("Do You want to download a new list of socks? Answer 'y' to do it: ")
 	if choice4 == "y":
 		choicemirror2()
 	else:
