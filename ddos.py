@@ -274,7 +274,7 @@ reFerers = [
         "http://analiz.web.tr/en/www/",
         "https://plus.google.com/share?url="]
 
-url = raw_input("URL Target http://www.example.com ) : ")
+url = raw_input("URL Target : ")
 ip = raw_input("IP Target : ")
 port = input("Port : ")
 host_url = url.replace("http://", "").replace("https://", "").split('/')[0]
