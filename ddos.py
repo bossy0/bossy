@@ -274,11 +274,10 @@ reFerers = [
         "http://analiz.web.tr/en/www/",
         "https://plus.google.com/share?url="]
 
-url = raw_input("Target Example ( http://www.example.com ) : ")
-host_url = url.replace("http://", "").replace("https://", "").split('/')[0]
-
+url = raw_input("URL Target http://www.example.com ) : ")
 ip = raw_input("IP Target : ")
 port = input("Port : ")
+host_url = url.replace("http://", "").replace("https://", "").split('/')[0]
 
 os.system("clear")
 os.system("figlet Attac Starting")
