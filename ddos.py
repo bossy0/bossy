@@ -43,6 +43,8 @@ time.sleep(3)
 sent = 0
 while True:
      sock.sendto(bytes, (ip,port))
+     sock.sendto(bytes, (ip,port))
+     sent = sent + 1
      sent = sent + 1
      port = port + 1
      port = port + 1
