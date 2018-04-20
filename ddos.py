@@ -333,7 +333,7 @@ in_file.close()
  
 listaproxy = proxyf.split('\n')
 #So luong
-	
+thread = input("Power : ")	
 get_host = "GET " + url + " HTTP/1.1\r\nHost: " + host_url + "\r\n"
 accept = "Accept-Encoding: gzip, deflate\r\n"
 connection = "Connection: Keep-Alive, Persist\r\nProxy-Connection: keep-alive\r\n"
