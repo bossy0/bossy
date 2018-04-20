@@ -275,9 +275,9 @@ reFerers = [
         "https://plus.google.com/share?url="]
 
 url = raw_input("URL Target : ")
+host_url = url.replace("http://", "").replace("https://", "").split('/')[0]
 ip = raw_input("IP Target : ")
 port = input("Port : ")
-host_url = url.replace("http://", "").replace("https://", "").split('/')[0]
 
 os.system("clear")
 os.system("figlet Attac Starting")
