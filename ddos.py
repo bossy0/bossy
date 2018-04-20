@@ -28,6 +28,13 @@ ip = raw_input("IP Target : ")
 port = input("Port       : ")
 port = input("Port       : ")
 
+#Proxy
+in_file = open(raw_input("File Proxy ( proxy.txt ) : "),"r")
+proxyf = in_file.read()
+in_file.close()
+ 
+listaproxy = proxyf.split('\n')
+
 os.system("clear")
 os.system("figlet Attac Starting")
 print "[                    ] 0% "
