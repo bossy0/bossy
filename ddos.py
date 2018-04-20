@@ -330,8 +330,6 @@ port = input("Port : ")
 in_file = open(raw_input("Proxy.txt : ")
 proxyf = in_file.read()
 in_file.close()
- 
-listaproxy = proxyf.split('\n')
 
 os.system("clear")
 os.system("figlet Attac Starting")
