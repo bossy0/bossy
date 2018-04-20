@@ -27,10 +27,18 @@ elif sys.platform.startswith("freebsd"): # o sotto freebsd
 	from scapy.all import * # importa scapy
 else: # altrimenti
 	
-print
-print "github   : https://github.com/bossy0"
-print "Facebook : https://www.facebook.com/Bossy.078"
-print
+print('''
+
+
+        +-+-+-+-+-+ 
+        |C|o|d|e|d| 
+        +-+-+-+-+-+ 
+ +-+-+-+-+-+-+-+-+-+-+-+-+-+
+ |H|e|l|l|o|M|y|F|r|i|e|n|d|
+ +-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+	''')
+ 
 
 
 useragents=["Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36",
