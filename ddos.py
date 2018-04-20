@@ -27,7 +27,6 @@ elif sys.platform.startswith("freebsd"): # o sotto freebsd
 	from scapy.all import * # importa scapy
 else: # altrimenti
 	
-os.system("figlet DDos Attack")
 print
 print "github   : https://github.com/bossy0"
 print "Facebook : https://www.facebook.com/Bossy.078"
