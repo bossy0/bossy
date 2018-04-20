@@ -274,15 +274,8 @@ reFerers = [
         "http://analiz.web.tr/en/www/",
         "https://plus.google.com/share?url="]
 
-
-       
-
-      
 ip = raw_input("IP Target : ")
 port = input("Port : ")
-in_file = open(raw_input("Proxy.txt : ")
-proxyf = in_file.read()
-in_file.close()
 
 os.system("clear")
 os.system("figlet Attac Starting")
