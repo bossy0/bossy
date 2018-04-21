@@ -341,11 +341,9 @@ in_file.close()
 
 while True:
 port = input("Port ( 80 ) : ")
-port = input("Port ( 53 ) : ")
-port = port + 1
-port = port + 2	
-port = 1
-port = 2
+if port == 65534:
+       port = 1
+
 
 listaproxy = proxyf.split('\n')
 #So luong
