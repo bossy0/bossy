@@ -79,6 +79,7 @@ print "Facebook : https://www.facebook.com/muhamad.jabar222"
 print
 ip = raw_input("IP Target : ")
 port = input("Port       : ")
+
 in_file = open(raw_input("File Proxy ( proxy.txt ) : "),"r")
 proxyf = in_file.read()
 in_file.close()
