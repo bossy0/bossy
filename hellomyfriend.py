@@ -338,8 +338,7 @@ in_file = open(raw_input("File Proxy ( proxy.txt ) : "),"r")
 proxyf = in_file.read()
 in_file.close()
 
-port=input("Port ( 80 ) : ')#Port we direct to attack   
-port=input("Port ( 53 ) : ')#Port we direct to attack
+port=input("Port ( 80 ) : ')#Port we direct to attack
 
 
 	   
