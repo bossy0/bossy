@@ -77,7 +77,7 @@ def starturl(): # in questa funzione setto l'url per renderlo usabile per il fut
 		else:
 			url = "http://" + url
 	except:
-		print("You mistyped, try again.")
+		print("You Mistyped , Try Again.")
 		starturl()
 
 	try:
@@ -161,7 +161,7 @@ def choicedownproxy():
 		proxylist()
 
 def choicedownsocks():
-	choice4 = input("Do you want to download a new list of socks? Answer 'y' to do it: ")
+	choice4 = input("Do You Want To Download A New List Of Socks ? Answer 'y' To Do İt : ")
 	if choice4 == "y":
 		choicemirror2()
 	else:
@@ -176,19 +176,19 @@ def choicemirror1():
 	elif choice5 == "1":
 		inforgeget()
 	else:
-		print("You mistyped, try again.")
+		print("You Mistyped , Try Again.")
 		choicemirror1()
 
 def choicemirror2():
 	global urlproxy
-	choice5 = input ("Download from: socks-proxy.net='0'(best) or inforge.net='1' ")
+	choice5 = input ("Download From : Socks-Proxy.Net ='0'( Best ) Or İnforge.Net = ' 1 ' : ")
 	if choice5 == "0":
 		urlproxy = "https://www.socks-proxy.net/"
 		proxyget1()
 	elif choice5 == "1":
 		inforgeget()
 	else:
-		print("You mistyped, try again.")
+		print("You Mistyped , Try Again.")
 		choicemirror2()
 
 def proxyget1(): # lo dice il nome, questa funzione scarica i proxies
@@ -211,7 +211,7 @@ def proxyget1(): # lo dice il nome, questa funzione scarica i proxies
 		out_file.write("")
 		out_file.write(proxies)
 		out_file.close()
-		print ("Proxies downloaded successfully.")
+		print ("Proxies Downloaded Successfully :) ")
 	except: # se succede qualche casino
 		print ("\nERROR!\n")
 	proxylist() # se va tutto liscio allora prosegue eseguendo la funzione proxylist()
@@ -226,7 +226,7 @@ def inforgeget(): # anche questa funzione scarica proxy pero' da inforge.net
 			pass
 		url = "https://www.inforge.net/xi/forums/liste-proxy.1118/"
 		soup = BeautifulSoup(urllib.request.urlopen(url)) # per strasformare in "zuppa" la source del sito
-		print ("\nDownloading from inforge.net in progress...")
+		print ("\nDownloading From İnforge.Net İn Progress...")
 		base = "https://www.inforge.net/xi/"                       # questi comandi servono per trovare i link nella sezione
 		for tag in soup.find_all("a", {"class":"PreviewTooltip"}): # liste-proxy del forum
 			links = tag.get("href")                                #
