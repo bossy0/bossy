@@ -345,6 +345,9 @@ port = port + 2
 if port == 65534:
 if port == 65534:
 	
+port = 1
+port = 2
+
 listaproxy = proxyf.split('\n')
 #So luong
 thread = input("Power ( 1000 ) : ") 
