@@ -136,7 +136,7 @@ def floodport():
 
 def proxymode():
 	global choice2
-	choice2 = input("Do you want proxy/socks mode? Answer 'y' to enable it: ")
+	choice2 = input("Do You Want Proxy / Socks Mode ? Answer ' y ' To Enable İt : ")
 	if choice2 == "y":
 		choiceproxysocks()
 	else:
@@ -144,7 +144,7 @@ def proxymode():
 
 def choiceproxysocks():
 	global choice3
-	choice3 = input("Type '0' to enable proxymode or type '1' to enable socksmode: ")
+	choice3 = input("Type '0' to Enable Proxy Mode Or Type ' 1 ' To Enable Socksmode: ")
 	if choice3 == "0":
 		choicedownproxy()
 	elif choice3 == "1":
