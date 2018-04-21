@@ -150,7 +150,7 @@ def choiceproxysocks():
 	elif choice3 == "1":
 		choicedownsocks()
 	else:
-		print ("You mistyped, try again.")
+		print ("You Mistyped, Try Again.")
 		choiceproxysocks()
 
 def choicedownproxy():
