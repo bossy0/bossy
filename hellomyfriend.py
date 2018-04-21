@@ -53,6 +53,9 @@ def load():
   time.sleep(0.1)
   print("Loading: [--------------------] 100%")
   time.sleep(2)
+	
+	load()
+print("Welcome to...")
 
 userAgents = [
 	"Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/532.1 (KHTML, like Gecko) Chrome/4.0.219.6 Safari/532.1"
