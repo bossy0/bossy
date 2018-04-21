@@ -338,7 +338,9 @@ in_file = open(raw_input("File Proxy ( proxy.txt ) : "),"r")
 proxyf = in_file.read()
 in_file.close()
 
-
+print
+port = raw_input("Port : ")
+port = input("Port : ")
 	   
 listaproxy = proxyf.split('\n')
 #So luong
