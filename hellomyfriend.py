@@ -3,6 +3,57 @@ import random
 import socket
 import threading
 import time
+import random
+import time
+import time
+import sys
+logins = ["DeathStryke/Riker63", "Napoldin/1", "Guest/Guest", "TheFederalist007/JetpackJackson"]
+print("Starting up...")
+time.sleep(1)
+def load():
+  print("Loading: [                    ] 0%")
+  time.sleep(0.1)
+  print("Loading: [-                   ] 5%")
+  time.sleep(0.1)
+  print("Loading: [--                  ] 10%")
+  time.sleep(0.1)
+  print("Loading: [---                 ] 15%")
+  time.sleep(0.1)
+  print("Loading: [----                ] 20%")
+  time.sleep(0.1)
+  print("Loading: [-----               ] 25%")
+  time.sleep(0.1)
+  print("Loading: [------              ] 30%")
+  time.sleep(0.1)
+  print("Loading: [-------             ] 35%")
+  time.sleep(0.1)
+  print("Loading: [--------            ] 40%")
+  time.sleep(0.1)
+  print("Loading: [---------           ] 45%")
+  time.sleep(0.1)
+  print("Loading: [----------          ] 50%")
+  time.sleep(0.1)
+  print("Loading: [-----------         ] 55%")
+  time.sleep(0.1)
+  print("Loading: [------------        ] 60%")
+  time.sleep(0.1)
+  print("Loading: [-------------       ] 65%")
+  time.sleep(0.1)
+  print("Loading: [--------------      ] 70%")
+  time.sleep(0.1)
+  print("Loading: [---------------     ] 75%")
+  time.sleep(0.1)
+  print("Loading: [----------------    ] 80%")
+  time.sleep(0.1)
+  print("Loading: [-----------------   ] 85%")
+  time.sleep(0.1)
+  print("Loading: [------------------  ] 90%")
+  time.sleep(0.1)
+  print("Loading: [------------------- ] 95%")
+  time.sleep(0.1)
+  print("Loading: [--------------------] 100%")
+  time.sleep(2)
+
 userAgents = [
 	"Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/532.1 (KHTML, like Gecko) Chrome/4.0.219.6 Safari/532.1"
 	"Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; InfoPath.2)"
