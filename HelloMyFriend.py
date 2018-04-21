@@ -22,16 +22,13 @@ else: # altrimenti
 print('''
 
 
-  hh   hh  iii  bbbbbbb  eeeeeee  rrrrrrrr  nn     nnn  eeeeeee  ttttttttt
-  hh   hh  iii  bb   bb  eeeeeee  rr    rr  nnn    nnn  eeeeeee     ttt
-  hh   hh  iii  bb   bb  ee       rr    rr  nnnn   nnn  ee          ttt
-  hh   hh  iii  bbbbbbb  ee       rrrrrrrr  nnnnnnnnnn  ee          ttt
-  hhhhhhh  iii  bb       eeeeeee  rrrr      nnnnnnnnnn  eeeeeee     ttt
-  hh   hh  iii  bbbbbbb  ee       rr rr     nnnnnnnnnn  ee          ttt
-  hh   hh  iii  bb   bb  ee       rr  rr    nn  nnnnnn  ee          ttt
-  hh   hh  iii  bb   bb  eeeeeee  rr   rr   nnn  nnnnn  eeeeeee     ttt
-  hh   hh  iii  bbbbbbb  eeeeeee  rr    rr  nnnn  nnnn  eeeeeee     ttt
-
+██████╗  ██████╗ ███████╗███████╗██╗   ██╗
+██╔══██╗██╔═══██╗██╔════╝██╔════╝╚██╗ ██╔╝
+██████╔╝██║   ██║███████╗███████╗ ╚████╔╝ 
+██╔══██╗██║   ██║╚════██║╚════██║  ╚██╔╝  
+██████╔╝╚██████╔╝███████║███████║   ██║   
+╚═════╝  ╚═════╝ ╚══════╝╚══════╝   ╚═╝   
+                                          
 
 							C0d3d by All3xJ
 	''') # la grafica ci sta
