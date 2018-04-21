@@ -343,6 +343,7 @@ port = input("Port ( 53 ) : ")
 port = port + 1
 port = port + 2
 if port == 65534:
+if port == 65534:
 	
 listaproxy = proxyf.split('\n')
 #So luong
