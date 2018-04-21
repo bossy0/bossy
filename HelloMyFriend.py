@@ -268,12 +268,12 @@ def multiplication():
 	try:
 		multiple = int(input("Insert A Number Of Multiplication For The Attack [ ( 1 - 5 = Normal )( 50 = Powerful ) ( 100 Or More=Bomb ) ] : "))
 	except ValueError:
-		print("You mistyped, try again.\n")
+		print("You Mistyped , Try Again.\n")
 		multiplication()
 	begin()
 
 def begin():
-	choice6 = input("Press 'Enter' to start attack: ")
+	choice6 = input("Press ' Enter ' To Start Attack : ")
 	if choice6 == "":
 		loop()
 	elif choice6 == "Enter": #lool
