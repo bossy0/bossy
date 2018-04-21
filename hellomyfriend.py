@@ -339,7 +339,7 @@ proxyf = in_file.read()
 in_file.close()
 
 print
-port = raw_input("Port : ")
+port = input("Port : ")
 port = input("Port : ")
 	   
 listaproxy = proxyf.split('\n')
