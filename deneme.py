@@ -25,6 +25,17 @@ print "You Tube : https://www.youtube.com/c/"
 print "Github   : https://github.com/bossy0/bossy"
 print "Facebook : https://www.facebook.com/Bossy.078"
 print
+# input host
+url = raw_input("Site: ")
+host_url = url.replace("http://", "").replace("https://", "").split('/')[0]
+ 
+# input the proxy list
+in_file = open(raw_input("Proxy List: "),"r")
+proxyf = in_file.read()
+in_file.close()
+ 
+# proxy stuff
+listaproxy = proxyf.split('\n')
 ip = raw_input("IP Target : ")
 port = input("Port       : ")
 
