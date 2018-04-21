@@ -266,7 +266,7 @@ def numthreads():
 def multiplication():
 	global multiple
 	try:
-		multiple = int(input("Insert A Number Of Multiplication For The Attack [ ( 1 - 5 = Normal )( 50 = Powerful ) ( 100 100ore=b100)]: "))
+		multiple = int(input("Insert A Number Of Multiplication For The Attack [ ( 1 - 5 = Normal )( 50 = Powerful ) ( 100 Or More=Bomb ) ] : "))
 	except ValueError:
 		print("You mistyped, try again.\n")
 		multiplication()
