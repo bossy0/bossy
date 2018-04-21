@@ -343,10 +343,15 @@ while True:
 	sock.sendto(bytes, (port,port))
 port = input("Port ( 80 ) : ")
 port = input("Port ( 53 ) : ")
+print 
 port = port + 1
+print
 port = port + 2
-if port == 65534:	
+print
+if port == 65534:
+	
 port = 1
+print
 port = 2
 
 listaproxy = proxyf.split('\n')
