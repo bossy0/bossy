@@ -54,9 +54,8 @@ def load():
   print("Loading: [--------------------] 100%")
   time.sleep(2)
 	
-	load()
-print("Welcome to...")
-
+	
+	
 userAgents = [
 	"Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/532.1 (KHTML, like Gecko) Chrome/4.0.219.6 Safari/532.1"
 	"Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; InfoPath.2)"
