@@ -109,28 +109,28 @@ def floodmode():
 	elif choice1 == "2":
 		try:
 			if os.getuid() != 0: # se il programma NON e' stato eseguito come root:
-				print("You need to run this program as root to use TCP/UDP flooding.") # printa questo
+				print("You Need To Run This Program As Root To Use TCP / UDP Flooding .") # printa questo
 				exit(0) # e esce
 			else: # altrimenti
 				floodport() # continua
 		except:
 			pass
 	else:
-		print ("You mistyped, try again.")
+		print ("You Mistyped , Try Again .")
 		floodmode()
 
 def floodport():
 	global port
 	try:
-		port = int(input("Enter the port you want to flood: "))
+		port = int(input("Enter The Port You Want To Flood : "))
 		portlist = range(65535) # range di tutte le porte informatiche
 		if port in portlist: # se la porta selezionata rientra nel range
 			pass # continua
 		else: # altrimenti
-			print ("You mistyped, try again.")
+			print ("You Mistyped , Try Again .")
 			floodport() # riparte la funzione e ti fa riscrivere
 	except ValueError: # se da' errore di valore
-		print ("You mistyped, try again.") # printa questo e
+		print ("You Mistyped , Try Again .") # printa questo e
 		floodport() # riparte la funzione e ti fa riscrivere
 	proxymode()
 
