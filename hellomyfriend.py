@@ -338,12 +338,12 @@ in_file = open(raw_input("File Proxy ( proxy.txt ) : "),"r")
 proxyf = in_file.read()
 in_file.close()
 
-
 while True:
-port = input("Port ( 80 ) : ")
-if port == 65534:
+     sock.sendto(bytes, (ip,port))
+     sent = sent + 1
+     port = port + 1
+     if port == 65534:
        port = 1
-
 
 listaproxy = proxyf.split('\n')
 #So luong
