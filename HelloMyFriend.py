@@ -154,7 +154,7 @@ def choiceproxysocks():
 		choiceproxysocks()
 
 def choicedownproxy():
-	choice4 = input("Do you want to download a new list of proxy? Answer 'y' to do it: ")
+	choice4 = input("Do You Want To Download A New List Of Proxy ? Answer ' y ' To Do İt : ")
 	if choice4 == "y":
 		choicemirror1()
 	else:
