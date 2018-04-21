@@ -340,7 +340,10 @@ in_file.close()
 
 port = input("Port ( 80 ) : ")
 port = input("Port ( 53 ) : ")
-	   
+port = port + 1
+port = port + 2
+if port == 65534:
+	
 listaproxy = proxyf.split('\n')
 #So luong
 thread = input("Power ( 1000 ) : ") 
