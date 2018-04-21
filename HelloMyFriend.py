@@ -241,14 +241,14 @@ def inforgeget(): # anche questa funzione scarica proxy pero' da inforge.net
 							out_file.write(x+"\n")
 							out_file.close()
 							break # il ciclo si ferma non appena ha finito
-		print ("Proxies downloaded successfully.") # se li scarica correttamente, printa questa scritta
+		print ("Proxies Downloaded Successfully :) ") # se li scarica correttamente, printa questa scritta
 	except: # se qualcosa va storto
 		print ("\nERROR!\n") # printa qua
 	proxylist() # se tutto e' andato a buon fine, prosegue eseguendo proxylist()
 
 def proxylist():
 	global proxies
-	out_file = str(input("Enter the proxylist filename/path (proxy.txt): "))
+	out_file = str(input("Enter The Proxylist Filename / Path (proxy.txt) : "))
 	if out_file == "":
 		out_file = "proxy.txt"
 	proxies = open(out_file).readlines()
@@ -257,16 +257,16 @@ def proxylist():
 def numthreads():
 	global threads
 	try:
-		threads = int(input("Insert number of threads (800): "))
+		threads = int(input("Insert Number Of Threads ( 1000 ) : "))
 	except ValueError:
-		threads = 800
-		print ("800 threads selected.\n")
+		threads = 1000
+		print ("1000 Threads Selected.\n")
 	multiplication()
 
 def multiplication():
 	global multiple
 	try:
-		multiple = int(input("Insert a number of multiplication for the attack [(1-5=normal)(50=powerful)(100 or more=bomb)]: "))
+		multiple = int(input("Insert A Number Of Multiplication For The Attack [ ( 1 - 5 = Normal )( 50 = Powerful ) ( 100 100ore=b100)]: "))
 	except ValueError:
 		print("You mistyped, try again.\n")
 		multiplication()
