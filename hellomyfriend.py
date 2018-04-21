@@ -341,7 +341,7 @@ in_file.close()
 port = input("Port ( 80 ) : ")
 
 while True:
-     sock.sendto(bytes, (port))
+     sock.sendto(bytes, (ip,port))
      sent = sent + 1
      port = port + 1
      if port == 65534:
