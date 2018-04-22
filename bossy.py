@@ -349,6 +349,17 @@ else:
                 usage()
                 sys.exit()
         else:
+                print "[                    ] 0% "
+                time.sleep(5)
+                print "[=====               ] 25%"
+                time.sleep(5)
+                print "[==========          ] 50%"
+                time.sleep(5)
+                print "[===============     ] 75%"
+                time.sleep(5)
+                print "[====================] 100%"
+                time.sleep(3)
+                sent = 0
                 print "Program Started"
                 print "Good Luck ;)"
                 if len(sys.argv)== 3:
