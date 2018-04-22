@@ -270,7 +270,7 @@ def buildblock(size):
 def usage():
         print 'Sample'
         print ''
-        print 'python bossy.py http://www.exemplo.com/'
+        print 'python bossy.py http://www.example.com/'
         print ''
         print "\a"
 print \
@@ -335,10 +335,10 @@ class MonitorThread(threading.Thread):
                 previous=request_counter
                 while flag==0:
                         if (previous+100<request_counter) & (previous<>request_counter):
-                                print "%d Shots sends Senting" % (request_counter)
+                                print "%d Sent Package " % (request_counter)
                                 previous=request_counter
                 if flag==2:
-                        print "\n -skorsky Hits are secced"
+                        print "\n -BOSSY Hits are secced"
 
 #execute
 if len(sys.argv) < 2:
@@ -349,7 +349,7 @@ else:
                 usage()
                 sys.exit()
         else:
-                print "SKORSKY"
+                print "BOSSY"
                 if len(sys.argv)== 3:
                         if sys.argv[2]=="safe":
                                 set_safe()
