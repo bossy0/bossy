@@ -4,25 +4,6 @@ import sys
 import threading
 import random
 import re
-import locale
-baslangic = time.time()
-locale.setlocale(locale.LC_ALL,"turkish")
-zamanlar = time.gmtime()
-print(time.time())
-print(time.gmtime(time.time()))
-print(time.localtime())
-print(time.asctime())
-print(time.strftime("%c"))
-print(time.strftime("%a"))
-print(time.strftime("%B"))
-print(time.strftime("%X"))
-tarih = "20 6 2003 21:21:54"
-ob = time.strptime(tarih,"%d %m %Y %X")
-for i in ob:
-    time.sleep(1)
-    print(i)
-print("Study Time Of The Program : %s" %(time.time() - baslangic)) //
-print ""
 
 #global params
 url=''
