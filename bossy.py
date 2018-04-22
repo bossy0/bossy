@@ -349,7 +349,7 @@ else:
                 usage()
                 sys.exit()
         else:
-                print "[                    ] 0% "
+                print "[                    ] 0%"
                 time.sleep(5)
                 print "[=====               ] 25%"
                 time.sleep(5)
@@ -362,6 +362,7 @@ else:
                 sent = 0
                 print "Program Started"
                 print "Good Luck ;)"
+                print "To Stop The Program CTRL + Z"
                 if len(sys.argv)== 3:
                         if sys.argv[2]=="safe":
                                 set_safe()
