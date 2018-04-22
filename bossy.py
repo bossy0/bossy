@@ -268,10 +268,10 @@ def buildblock(size):
         return(out_str)
 
 def usage():
-        print '---------------------------------------------------'
-        print 'to attack:'
-        print '#Windows: albayrak.py http://www.exemplo.com/'
-        print '#Linux: python bybozkurt.py http://www.exemplo.com/'
+        print ''
+        print 'Sample:'
+        print '#python bossy.py http://www.exemplo.com/'
+        print ''
         print "\a"
 print \
 """
@@ -282,7 +282,7 @@ print \
  |____/ \___/|____/____/ |_|   
                                
 """
-print '---------------------------------------------------'
+print ''
 
 
 #http request
