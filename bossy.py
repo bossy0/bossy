@@ -4,6 +4,16 @@ import sys
 import threading
 import random
 import re
+import datetime;
+gun 	  = datetime.datetime.now().strftime("%d");
+ay 	  = datetime.datetime.now().strftime("%m");
+yil 	  = datetime.datetime.now().strftime("%Y");
+saat 	  = datetime.datetime.now().strftime("%H");
+dakika	  = datetime.datetime.now().strftime("%M"); 
+tarihsaat = datetime.datetime.now().strftime("%d-%m-%Y %H:%M");
+ 
+print ("Tarih : " ,gun+"-"+ay+"-"+yil);
+print ("Tarih Saat :" ,tarihsaat);
 
 #global params
 url=''
