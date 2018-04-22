@@ -268,10 +268,7 @@ def buildblock(size):
         return(out_str)
 
 def usage():
-	
- print('''
-
-
+print('''
 ██████╗  ██████╗ ███████╗███████╗██╗   ██╗
 ██╔══██╗██╔═══██╗██╔════╝██╔════╝╚██╗ ██╔╝
 ██████╔╝██║   ██║███████╗███████╗ ╚████╔╝ 
@@ -281,7 +278,8 @@ def usage():
                                           
 							
 	''')
-  print " python bossy.py http://www.expample.com/
+
+print " python bossy.py http://www.expample.com/ "
 
 
 #http request
