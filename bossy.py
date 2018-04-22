@@ -307,7 +307,7 @@ def httpcall(url):
         except urllib2.HTTPError, e:
                         #print e.code
                         set_flag(1)
-                        print 'Bots Is Connect packets upload'
+                        print 'Sent Package ;)'
                         code=500
         except urllib2.URLError, e:
                         #print e.reason
