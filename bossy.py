@@ -21,7 +21,8 @@ ob = time.strptime(tarih,"%d %m %Y %X")
 for i in ob:
     time.sleep(1)
     print(i)
-print("Programın Çalışma Süresi: %s" %(time.time() - baslangic)) //
+print("Study Time Of The Program : %s" %(time.time() - baslangic)) //
+print ""
 
 #global params
 url=''
