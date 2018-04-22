@@ -335,10 +335,10 @@ class MonitorThread(threading.Thread):
                 previous=request_counter
                 while flag==0:
                         if (previous+100<request_counter) & (previous<>request_counter):
-                                print "%d Sent Package " % (request_counter)
+                                print "%d Sent Package ;) " % (request_counter)
                                 previous=request_counter
                 if flag==2:
-                        print "\n -BOSSY Hits are secced"
+                        print "\n -BOSSY Hits Are Secced"
 
 #execute
 if len(sys.argv) < 2:
@@ -349,7 +349,8 @@ else:
                 usage()
                 sys.exit()
         else:
-                print "BOSSY"
+                print "Program Started"
+                print "Good Luck ;)"
                 if len(sys.argv)== 3:
                         if sys.argv[2]=="safe":
                                 set_safe()
