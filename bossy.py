@@ -4,8 +4,7 @@ import sys
 import threading
 import random
 import re
-import time
-print time.strftime("%d/%m/%Y")
+print time.ctime()
 time.sleep(2)
 
 #global params
