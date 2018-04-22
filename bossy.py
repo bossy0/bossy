@@ -268,9 +268,9 @@ def buildblock(size):
         return(out_str)
 
 def usage():
+        print 'Sample'
         print ''
-        print 'Sample:'
-        print '#python bossy.py http://www.exemplo.com/'
+        print 'python bossy.py http://www.exemplo.com/'
         print ''
         print "\a"
 print \
