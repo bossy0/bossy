@@ -360,10 +360,10 @@ else:
                 print "[====================] 100%"
                 time.sleep(3)
                 sent = 0
-		print "BOSSY"
+		print ""
 		print "Program Started :)"
 		print "To Stop The Program CTRL + Z :)"
-		print "Good Luck"
+		print "Good Luck :)"
 		if len(sys.argv)== 3:
 			if sys.argv[2]=="safe":
 				set_safe()
