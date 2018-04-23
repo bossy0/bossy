@@ -23,8 +23,8 @@ print"\n\r"
 
 print """ What Do You Want To Do ?
 
-1. Text Bomb
-2. Email Bomb
+1 . Text Bomb
+2 . Email Bomb
 
 """
 option = input()
