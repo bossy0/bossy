@@ -14,18 +14,6 @@ request_counter=0
 flag=0
 safe=0
 
-print "[                    ] 0% "
-time.sleep(5)
-print "[=====               ] 25%"
-time.sleep(5)
-print "[==========          ] 50%"
-time.sleep(5)
-print "[===============     ] 75%"
-time.sleep(5)
-print "[====================] 100%"
-time.sleep(3)
-sent = 0
-
 def inc_counter():
 	global request_counter
 	request_counter+=1
@@ -361,6 +349,17 @@ else:
 		usage()
 		sys.exit()
 	else:
+		print "[                    ] 0% "
+                time.sleep(5)
+                print "[=====               ] 25%"
+                time.sleep(5)
+                print "[==========          ] 50%"
+                time.sleep(5)
+                print "[===============     ] 75%"
+                time.sleep(5)
+                print "[====================] 100%"
+                time.sleep(3)
+                sent = 0
 		print "BOSSY"
 		print "Program Started :)"
 		print "To Stop The Program CTRL + Z :)"
