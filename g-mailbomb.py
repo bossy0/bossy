@@ -72,4 +72,4 @@ if option == 2:
 
     while 1:
         obj.sendmail(username, v_email, email_message)
-        print "Bombing... Press Ctrl + Z To Stop"
+        print "Bombing... To Stop The Program CTRL + Z"
