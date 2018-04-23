@@ -325,7 +325,7 @@ url = raw_input("Target Sites http://www.examples.com/ : ")
 host_url = url.replace("http://", "").replace("https://", "").split('/')[0]
  
 #Proxy
-in_file = open(raw_input("Add Proxy "proxy.txt" : "),"r")
+in_file = open(raw_input("Add Proxy proxy.txt : "),"r")
 proxyf = in_file.read()
 in_file.close()
  
