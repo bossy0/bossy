@@ -22,7 +22,7 @@ option = input()
 print("\n\r")
 if option == 1:
     carrier_attack = 0
-    print """ What is their carrier?
+    print """ What İs Their Carrier ?
         1. Alltel
         2. AT&T
         3. Rogers
