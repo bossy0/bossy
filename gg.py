@@ -9,7 +9,7 @@ user = raw_input('My Email : ')
 passwd = getpass.getpass('My Password : ')
 
 
-to = raw_input('\nVictim's Mail : ')
+v_mail = raw_input('Victim's Mail : ')
 #subject = raw_input('Subject: ') 
 body = raw_input('Victim's Message: ')
 total = input('How Many Messages : ')
