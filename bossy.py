@@ -1,4 +1,4 @@
-$ cat skorsky.py
+
 import urllib2
 import sys
 import threading
