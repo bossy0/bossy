@@ -55,8 +55,8 @@ if option == 1:
     if carrier == 9:
         carrier_attack = "@sms.orange.pl"
 
-    v_phone = raw_input("Victim's Phone Number: ") + str(carrier_attack)
-    message = raw_input("Message: ")
+    v_phone = raw_input("Victim's Phone Number : ") + str(carrier_attack)
+    message = raw_input("The Message You Want To Send : ")
     phone_message = ("From: %s\r\nTo: %s \r\n\r\n %s"
        % (username, "" .join(v_phone), "" .join(message)))
 
@@ -65,8 +65,8 @@ if option == 1:
         print "Bombing... Press Ctrl + Z To Stop"
 
 if option == 2:
-    v_email = raw_input("Victim's Email: ")
-    message = raw_input("Message: ")
+    v_email = raw_input("Victim's Email : ")
+    message = raw_input("The Message You Want To Send : ")
     email_message = (" \r\n\r\n From: %s\r\n To: %s\r\n\r\n  %s"
        % (username, "" .join(v_email), "" .join(message)))
 
