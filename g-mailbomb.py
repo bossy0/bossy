@@ -67,7 +67,7 @@ if option == 1:
 	print "Message Sent ! Sending Another Press Ctrl + Z To Stop ."
 
 if option == 2:
-    v_email = raw_input("Email : ")
+    v_email = raw_input("Victim's Email : ")
     message = raw_input("Message : ")
     email_message = (" \r\n\r\n From: %s\r\n To: %s\r\n\r\n  %s"
        % (username, "" .join(v_email), "" .join(message)))
