@@ -4,12 +4,16 @@ import getpass
 import sys
 import time
 
+os.system("clear")
+os.system("figlet G-MAILBOMB")
+
 username = raw_input("My Gmail Username : ")
 password = getpass.getpass("My Gmail Password : ")
 
 obj = s.SMTP("smtp.gmail.com:587")
 obj.starttls()
 obj.login(username, password)
+
 print"\n\r"
 
 print """ What Do You Want To Do ?
