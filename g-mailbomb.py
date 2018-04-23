@@ -64,7 +64,7 @@ if option == 1:
 
     while 1:
         obj.sendmail(username, v_phone, phone_message)
-	print "Message sent! Sending Another.. Press Ctrl + Z to stop."
+	print "Message Sent ! Sending Another Press Ctrl + Z To Stop ."
 
 if option == 2:
     v_email = raw_input("Email: ")
@@ -74,4 +74,4 @@ if option == 2:
 
     while 1:
         obj.sendmail(username, v_email, email_message)
-	print "Message sent! Sending another.. Press Ctrl + C to stop."
+	print "Message Sent ! Sending Another Press Ctrl + C to stop."
