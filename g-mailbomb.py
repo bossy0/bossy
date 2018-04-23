@@ -8,7 +8,7 @@ os.system("clear")
 os.system("figlet G-MAILBOMB")
 
 username = raw_input("My Gmail Username : ")
-password = getpass.getpass("My Gmail Password : ")
+password = raw_input("My Gmail Password : ")
 
 obj = s.SMTP("smtp.gmail.com:587")
 obj.starttls()
