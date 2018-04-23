@@ -5,6 +5,32 @@ import threading
 import random
 import re
 
+#if responce time is more than 3s, it's really a bad one. there is no need to dos .
+socket.setdefaulttimeout(1)
+#global params
+url=''
+host=''
+headers_useragents=[]#87
+headers_referers=[]#159
+keyword_top=[]#24
+request_counter=100000
+flag=0
+safe=0
+F = open('proxy.txt')
+ips = F.read().split('\n')
+F.close()
+def inc_counter():
+	global request_counter
+	request_counter+=1
+
+def set_flag(val):
+	global flag
+	flag=val
+	
+def set_safe():
+	global safe
+	safe=1
+
 #global params
 url=''
 host=''
