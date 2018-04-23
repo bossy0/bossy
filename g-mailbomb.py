@@ -9,8 +9,8 @@ import getpass
 os.system("clear")
 os.system("figlet G-MAILBOMB")
 
-username = raw_input("Gmail Username ( user@gmail.com ) : ")
-password = getpass.getpass(prompt='Gmail Password : ')
+username = raw_input("My Gmail Username ( user@gmail.com ) : ")
+password = getpass.getpass(prompt='My Gmail Password : ')
 
 obj = s.SMTP("smtp.gmail.com:587")
 obj.starttls()
