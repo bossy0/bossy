@@ -563,6 +563,35 @@ def referer_list():
         headers_referers.append('www.bing.com/?q=')
         headers_referers.append('http://' + host + '/')
         return(headers_referers)
+				  
+# keyword 12
+def keyword_list():
+	global keyword_top
+	keyword_top.append('sex')
+	keyword_top.append('Robin Williams')
+	keyword_top.append('World Cup')
+	keyword_top.append('ca si le roi')
+	keyword_top.append('Ebola?')
+	keyword_top.append('Malaysia Airlines Flight 370')
+	keyword_top.append('ALS Ice Bucket Challenge')
+	keyword_top.append('Flappy Bird')
+	keyword_top.append('Conchita Wurst')
+	keyword_top.append('ISIS')
+	keyword_top.append('Frozen')
+	keyword_top.append('014 Sochi Winter Olympics')
+	keyword_top.append('iPhone')
+	keyword_top.append('Samsung Galaxy S5')
+	keyword_top.append('Nexus 6')
+	keyword_top.append('Moto G')
+	keyword_top.append('Samsung Note 4')
+	keyword_top.append('LG G3')
+	keyword_top.append('Xbox One')
+	keyword_top.append('Apple Watch')
+	keyword_top.append('Nokia X')
+	keyword_top.append('Ipad Air')
+	keyword_top.append('facebook')
+	keyword_top.append('anonymous')
+	return(keyword_top)
 
 #builds random ascii string
 def buildblock(size):
