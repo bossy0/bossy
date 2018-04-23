@@ -4,15 +4,6 @@ import getpass
 import sys
 import time
 
-print("""
-print '   ____       __  __    _    ___ _     ____   ___  __  __ ____ ' 
-print '  / ___|     |  \/  |  / \  |_ _| |   | __ ) / _ \|  \/  | __ ) '
-print ' | |  _ _____| |\/| | / _ \  | || |   |  _ \| | | | |\/| |  _ \ '
-print ' | |_| |_____| |  | |/ ___ \ | || |___| |_) | |_| | |  | | |_) |'
-print ' \____|     |_|  |_/_/   \_\___|_____|____/ \___/|_|  |_|____/ '
-print '                                                               '
-print""")
-
 username = raw_input("My Gmail Username : ")
 password = getpass.getpass("My Gmail Password : ")
 
