@@ -362,6 +362,9 @@ else:
 		sys.exit()
 	else:
 		print "BOSSY"
+		print "Program Started :)"
+		print "To Stop The Program CTRL + Z :)"
+		print "Good Luck"
 		if len(sys.argv)== 3:
 			if sys.argv[2]=="safe":
 				set_safe()
