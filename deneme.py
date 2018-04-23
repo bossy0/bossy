@@ -1,4 +1,4 @@
-iimport time
+import time
 import urllib2
 import sys
 import threading
