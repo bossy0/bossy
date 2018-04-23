@@ -1,3 +1,4 @@
+$ cat skorsky.py
 import urllib2
 import sys
 import threading
@@ -21,7 +22,7 @@ def set_flag(val):
 def set_safe():
         global safe
         safe=1
-
+        
 # generates a user agent array
 def useragent_list():
         global headers_useragents
