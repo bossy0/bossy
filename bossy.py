@@ -31,15 +31,6 @@ def set_safe():
 	global safe
 	safe=1
 
-#global params
-url=''
-host=''
-headers_useragents=[]
-headers_referers=[]
-request_counter=0
-flag=0
-safe=0
-
 def inc_counter():
         global request_counter
         request_counter+=1
