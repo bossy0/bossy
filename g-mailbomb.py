@@ -9,15 +9,15 @@ import getpass
 os.system("clear")
 os.system("figlet G-MAILBOMB")
 
-username = raw_input("Gmail Username (user@gmail.com): ")
-password = getpass.getpass(prompt='Gmail Password: ')
+username = raw_input("Gmail Username ( user@gmail.com ) : ")
+password = getpass.getpass(prompt='Gmail Password : ')
 
 obj = s.SMTP("smtp.gmail.com:587")
 obj.starttls()
 obj.login(username, password)
 print"\n\r"
 
-print """ What kind of bomb would you like to send?
+print """ What Kind Of Bomb Would You Like To Send ?
 1. SMS
 2. Email
 """
