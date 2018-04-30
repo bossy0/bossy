@@ -66,6 +66,17 @@ def dos2():
 		w.task_done()
 
 
+print \
+"""                                                                                                                                          
+  ____   ___  ____ ______   __
+ | __ ) / _ \/ ___/ ___\ \ / /
+ |  _ \| | | \___ \___ \\ V / 
+ | |_) | |_| |___) |__) || |  
+ |____/ \___/|____/____/ |_|  
+                                 
+"""
+print ''
+
 def usage():
 	print (''' \033[92m	Hammer Dos Script v.1 http://www.canyalcin.com/
 	It is the end user's responsibility to obey all applicable laws.
