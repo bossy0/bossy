@@ -1,7 +1,11 @@
-
+import sys 
+import Image
+import ImageFont
+import ImageDraw
 from pyfiglet 
 import Figlet
 import figlet 
+
 
 ShowText = 'AkrepBey'
 
