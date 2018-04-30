@@ -5,6 +5,7 @@
 # by Bossy
 # only for legal purpose
 
+figlet -ctf slant "BOSSY DoSV1.0"
 
 from queue import Queue
 from optparse import OptionParser
@@ -72,8 +73,7 @@ def dos2():
 		item=w.get()
 		bot_hammering(random.choice(bots)+"http://"+host)
 		w.task_done()
-
-		figlet "BossyV1.0"
+		
 
 def usage():
 	print (''' \033[92m	Bossy Dos Script v.1 https://www.aspartim.org/
