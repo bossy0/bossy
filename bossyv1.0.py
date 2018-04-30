@@ -5,7 +5,6 @@
 # by Bossy
 # only for legal purpose
 
-figlet -ctf slant "BossyDoSV1"
 
 from queue import Queue
 from optparse import OptionParser
