@@ -1,8 +1,7 @@
 import sys 
 import Image
 import ImageFont
-import ImageDraw
-from pyfiglet 
+import ImageDraw 
 import Figlet
 import figlet 
 
