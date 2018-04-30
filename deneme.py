@@ -11,7 +11,6 @@ for rownum in range(size[1]):
 #scan the bitmap:
 # print ' ' for black pixel and 
 # print '$' for white one
-# print '€' for white one
     line = []
     for colnum in range(size[0]):
         if image.getpixel((colnum, rownum)): line.append(' '),
