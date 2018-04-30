@@ -1,7 +1,7 @@
 import sys 
-import Image
-import ImageFont
-import ImageDraw 
+import image
+import imageFont
+import imageDraw 
 import Figlet
 import figlet 
 
