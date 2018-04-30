@@ -76,9 +76,13 @@ def dos2():
 
 def usage():
 	print (''' \033[92m	Bossy Dos Script v.1 https://www.aspartim.org/
-	It is the end user's responsibility to obey all applicable laws.
-	It is just for server testing script. Your ip is visible. \n
-	usage : python3 bossyv1.0.py [-s] [-p] [-t]
+            ____   ___  ____ ______   __
+           | __ ) / _ \/ ___/ ___\ \ / /
+           |  _ \| | | \___ \___ \\ V / 
+           | |_) | |_| |___) |__) || |  
+           |____/ \___/|____/____/ |_|  
+                                \n
+	usage : python bossyv1.0.py [-s] [-p] [-t]
 	-h : help
 	-s : server ip
 	-p : port default 80
