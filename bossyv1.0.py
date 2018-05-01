@@ -14,8 +14,7 @@ import time
 import time
 import sys
 
-print (''' \033[92m  
-print("Loading, please wait...")
+print (''' \033[92m Loading , Please Wait . . .
 time.sleep(1)
 def load():
   print("Loading: [                    ] 0%")
@@ -62,10 +61,9 @@ def load():
   time.sleep(2)
 
 load()
-print("Starting...")   \033[0m''')
+print Starting . . .   \033[0m''')
 time.sleep(1)
 sent = 0
-sys.exit ()
 
 
 def user_agent():
