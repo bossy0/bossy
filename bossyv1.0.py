@@ -63,7 +63,6 @@ def load():
 load()
 print Starting . . .   \033[0m''')
 time.sleep(1)
-sent = 0
 
 
 def user_agent():
