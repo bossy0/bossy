@@ -82,11 +82,11 @@ def usage():
            | |_) | |_| |___) |__) || |  
            |____/ \___/|____/____/ |_|  
                                 \n
-	usage : python bossyv1.0.py [-s] [-p] [-t]
+	usage : python bossyv1.0.py [-u] [-p] [-v]
 	-h : help
-	-s : server ip
+	-u : server ip
 	-p : port default 80
-	-t : turbo default 3500 \033[0m''')
+	-v : turbo default 3500 \033[0m''')
 	sys.exit()
 
 
@@ -97,9 +97,9 @@ def get_parameters():
 	global item
 	optp = OptionParser(add_help_option=False,epilog="Hammers")
 	optp.add_option("-q","--quiet", help="set logging to ERROR",action="store_const", dest="loglevel",const=logging.ERROR, default=logging.INFO)
-	optp.add_option("-s","--server", dest="host",help="attack to server ip -s ip")
+	optp.add_option("-u","--server", dest="host",help="attack to server ip -u ip")
 	optp.add_option("-p","--port",type="int",dest="port",help="-p 80 default 80")
-	optp.add_option("-t","--turbo",type="int",dest="turbo",help="default 135 -t 135")
+	optp.add_option("-v","--turbo",type="int",dest="turbo",help="default 200 -v 200")
 	optp.add_option("-h","--help",dest="help",action='store_true',help="help you")
 	opts, args = optp.parse_args()
 	logging.basicConfig(level=opts.loglevel,format='%(levelname)-8s %(message)s')
@@ -114,7 +114,7 @@ def get_parameters():
 	else:
 		port = opts.port
 	if opts.turbo is None:
-		thr = 135
+		thr = 200
 	else:
 		thr = opts.turbo
 
