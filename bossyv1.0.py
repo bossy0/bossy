@@ -14,7 +14,6 @@ import time
 import time
 import sys
 
-def usage():
 print (''' \033[92m  
 print("Loading, please wait...")
 time.sleep(1)
