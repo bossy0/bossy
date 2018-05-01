@@ -62,9 +62,9 @@ def load():
 
 load()
 print("Starting . . .")
+print (" ")
 time.sleep(1)
 sent = 0
-print " "
 
 
 def user_agent():
