@@ -9,18 +9,60 @@
 from queue import Queue
 from optparse import OptionParser
 import time,sys,socket,threading,logging,urllib.request,random
-import time 
+import random
+import time
+import time
+import sys
+logins = ["AsparTim"]
+print("Loading, please wait...")
+time.sleep(1)
+def load():
+  print("Loading: [                    ] 0%")
+  time.sleep(0.1)
+  print("Loading: [.                   ] 5%")
+  time.sleep(0.1)
+  print("Loading: [..                  ] 10%")
+  time.sleep(0.1)
+  print("Loading: [...                 ] 15%")
+  time.sleep(0.1)
+  print("Loading: [....                ] 20%")
+  time.sleep(0.1)
+  print("Loading: [.....               ] 25%")
+  time.sleep(0.1)
+  print("Loading: [......              ] 30%")
+  time.sleep(0.1)
+  print("Loading: [.......             ] 35%")
+  time.sleep(0.1)
+  print("Loading: [........            ] 40%")
+  time.sleep(0.1)
+  print("Loading: [.........           ] 45%")
+  time.sleep(0.1)
+  print("Loading: [..........          ] 50%")
+  time.sleep(0.1)
+  print("Loading: [...........         ] 55%")
+  time.sleep(0.1)
+  print("Loading: [............        ] 60%")
+  time.sleep(0.1)
+  print("Loading: [.............       ] 65%")
+  time.sleep(0.1)
+  print("Loading: [..............      ] 70%")
+  time.sleep(0.1)
+  print("Loading: [...............     ] 75%")
+  time.sleep(0.1)
+  print("Loading: [................    ] 80%")
+  time.sleep(0.1)
+  print("Loading: [.................   ] 85%")
+  time.sleep(0.1)
+  print("Loading: [..................  ] 90%")
+  time.sleep(0.1)
+  print("Loading: [................... ] 95%")
+  time.sleep(0.1)
+  print("Loading: [....................] 100%")
+  time.sleep(2)
 
-print "[ ] 0% " 
-time.sleep(5) 
-print "[===== ] 25%" 
-time.sleep(5) 
-print "[========== ] 50%" 
-time.sleep(5) 
-print "[=============== ] 75%" 
-time.sleep(5) 
-print "[====================] 100%" 
-time.sleep(3) 
+load()
+print("Starting...")
+time.sleep(1)
 sent = 0
 
 def user_agent():
