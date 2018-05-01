@@ -15,7 +15,7 @@ import time
 import sys
 logins = ["AsparTim"]
 print (" ")
-print("Loading , Please Wait . . .")
+print (''' \033[91m Loading , Please Wait . . . \033[0m''')
 print (" ")
 time.sleep(8)
 def load():
