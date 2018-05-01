@@ -15,7 +15,8 @@ import time
 import sys
 logins = ["AsparTim"]
 print("Loading , Please Wait . . .")
-time.sleep(1)
+print (" ")
+time.sleep(8)
 def load():
   print("Loading: [                    ] 0%")
   time.sleep(1)
@@ -61,9 +62,10 @@ def load():
   time.sleep(2)
 
 load()
+print (" ")
 print("Starting . . .")
 print (" ")
-time.sleep(1)
+time.sleep(8)
 sent = 0
 
 
