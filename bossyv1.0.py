@@ -19,7 +19,7 @@ print (''' \033[91m Loading , Please Wait . . . \033[0m''')
 print (" ")
 time.sleep(8)
 def load():
-  print("Loading: [                    ] 0%")
+  print (''' \033[92m Loading: [                    ] 0% \033[0m''')
   time.sleep(1)
   print("Loading: [.                   ] 5%")
   time.sleep(1)
