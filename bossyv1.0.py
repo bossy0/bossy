@@ -9,6 +9,19 @@
 from queue import Queue
 from optparse import OptionParser
 import time,sys,socket,threading,logging,urllib.request,random
+import time 
+
+print "[ ] 0% " 
+time.sleep(5) 
+print "[===== ] 25%" 
+time.sleep(5) 
+print "[========== ] 50%" 
+time.sleep(5) 
+print "[=============== ] 75%" 
+time.sleep(5) 
+print "[====================] 100%" 
+time.sleep(3) 
+sent = 0
 
 def user_agent():
 	global uagent
