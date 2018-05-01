@@ -13,7 +13,8 @@ import random
 import time
 import time
 import sys
-logins = ["AsparTim"]
+
+def usage():
 print (''' \033[92m  
 print("Loading, please wait...")
 time.sleep(1)
@@ -62,10 +63,11 @@ def load():
   time.sleep(2)
 
 load()
-print("Starting...")   
-\033[0m''')
+print("Starting...")   \033[0m''')
 time.sleep(1)
 sent = 0
+sys.exit ()
+
 
 def user_agent():
 	global uagent
