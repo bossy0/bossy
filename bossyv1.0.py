@@ -13,52 +13,58 @@ import random
 import time
 import time
 import sys
-
-print (''' \033[92m Loading , Please Wait . . .
-  Loading: [                    ] 0%
+logins = ["AsparTim"]
+print("Loading, please wait...")
+time.sleep(1)
+def load():
+  print("Loading: [                    ] 0%")
   time.sleep(0.1)
-  Loading: [.                   ] 5%
+  print("Loading: [.                   ] 5%")
   time.sleep(0.1)
-  Loading: [..                  ] 10%
+  print("Loading: [..                  ] 10%")
   time.sleep(0.1)
-  Loading: [...                 ] 15%
+  print("Loading: [...                 ] 15%")
   time.sleep(0.1)
-  Loading: [....                ] 20%
+  print("Loading: [....                ] 20%")
   time.sleep(0.1)
-  Loading: [.....               ] 25%
+  print("Loading: [.....               ] 25%")
   time.sleep(0.1)
-  Loading: [......              ] 30%
-  time.sleep(0.2)
-  Loading: [.......             ] 35%
-  time.sleep(0.2)
-  Loading: [........            ] 40%
-  time.sleep(0.2)
-  Loading: [.........           ] 45%
-  time.sleep(0.2)
-  Loading: [..........          ] 50%
-  time.sleep(0.3)
-  Loading: [...........         ] 55%
-  time.sleep(0.3)
-  Loading: [............        ] 60%
-  time.sleep(0.3)
-  Loading: [.............       ] 65%
-  time.sleep(0.3)
-  Loading: [..............      ] 70%
-  time.sleep(0.3)
-  Loading: [...............     ] 75%
-  time.sleep(0.4)
-  Loading: [................    ] 80%
-  time.sleep(0.4)
-  Loading: [.................   ] 85%
-  time.sleep(0.4)
-  Loading: [..................  ] 90%
-  time.sleep(0.4)
-  Loading: [................... ] 95%
-  time.sleep(0.5)
-  Loading: [....................] 100%
+  print("Loading: [......              ] 30%")
+  time.sleep(0.1)
+  print("Loading: [.......             ] 35%")
+  time.sleep(0.1)
+  print("Loading: [........            ] 40%")
+  time.sleep(0.1)
+  print("Loading: [.........           ] 45%")
+  time.sleep(0.1)
+  print("Loading: [..........          ] 50%")
+  time.sleep(0.1)
+  print("Loading: [...........         ] 55%")
+  time.sleep(0.1)
+  print("Loading: [............        ] 60%")
+  time.sleep(0.1)
+  print("Loading: [.............       ] 65%")
+  time.sleep(0.1)
+  print("Loading: [..............      ] 70%")
+  time.sleep(0.1)
+  print("Loading: [...............     ] 75%")
+  time.sleep(0.1)
+  print("Loading: [................    ] 80%")
+  time.sleep(0.1)
+  print("Loading: [.................   ] 85%")
+  time.sleep(0.1)
+  print("Loading: [..................  ] 90%")
+  time.sleep(0.1)
+  print("Loading: [................... ] 95%")
+  time.sleep(0.1)
+  print("Loading: [....................] 100%")
   time.sleep(2)
 
-print Starting . . .   \033[0m''')
+load()
+print("Starting...")
+time.sleep(1)
+sent = 0
+print
 
 
 def user_agent():
