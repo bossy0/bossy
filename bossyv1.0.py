@@ -15,47 +15,47 @@ import time
 import sys
 
 print (''' \033[92m Loading , Please Wait . . .
-  Loading: [                    ] 0%")
+  Loading: [                    ] 0%
   time.sleep(0.1)
-  Loading: [.                   ] 5%")
+  Loading: [.                   ] 5%
   time.sleep(0.1)
-  Loading: [..                  ] 10%")
+  Loading: [..                  ] 10%
   time.sleep(0.1)
-  Loading: [...                 ] 15%")
+  Loading: [...                 ] 15%
   time.sleep(0.1)
-  Loading: [....                ] 20%")
+  Loading: [....                ] 20%
   time.sleep(0.1)
-  Loading: [.....               ] 25%")
+  Loading: [.....               ] 25%
   time.sleep(0.1)
-  Loading: [......              ] 30%")
+  Loading: [......              ] 30%
   time.sleep(0.2)
-  Loading: [.......             ] 35%")
+  Loading: [.......             ] 35%
   time.sleep(0.2)
-  Loading: [........            ] 40%")
+  Loading: [........            ] 40%
   time.sleep(0.2)
-  Loading: [.........           ] 45%")
+  Loading: [.........           ] 45%
   time.sleep(0.2)
-  Loading: [..........          ] 50%")
+  Loading: [..........          ] 50%
   time.sleep(0.3)
-  Loading: [...........         ] 55%")
+  Loading: [...........         ] 55%
   time.sleep(0.3)
-  Loading: [............        ] 60%")
+  Loading: [............        ] 60%
   time.sleep(0.3)
-  Loading: [.............       ] 65%")
+  Loading: [.............       ] 65%
   time.sleep(0.3)
-  Loading: [..............      ] 70%")
+  Loading: [..............      ] 70%
   time.sleep(0.3)
-  Loading: [...............     ] 75%")
+  Loading: [...............     ] 75%
   time.sleep(0.4)
-  Loading: [................    ] 80%")
+  Loading: [................    ] 80%
   time.sleep(0.4)
-  Loading: [.................   ] 85%")
+  Loading: [.................   ] 85%
   time.sleep(0.4)
-  Loading: [..................  ] 90%")
+  Loading: [..................  ] 90%
   time.sleep(0.4)
-  Loading: [................... ] 95%")
+  Loading: [................... ] 95%
   time.sleep(0.5)
-  Loading: [....................] 100%")
+  Loading: [....................] 100%
   time.sleep(2)
 
 print Starting . . .   \033[0m''')
