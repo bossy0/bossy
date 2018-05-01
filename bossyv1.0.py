@@ -141,7 +141,7 @@ def usage():
 	-h : help
 	-u : server ip
 	-p : port default 80
-	-v : turbo default 3500 \033[0m''')
+	-v : turbo default 200 \033[0m''')
 	sys.exit()
 
 
