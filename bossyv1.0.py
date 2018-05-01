@@ -135,7 +135,7 @@ def dos2():
 		
 
 def usage():
-	print (''' \033[92m	Bossy Dos Script v.1 https://www.aspartim.org/
+	print (''' \033[91m	Bossy Dos Script v.1 https://www.aspartim.org/
             ____   ___  ____ ______   __
            | __ ) / _ \/ ___/ ___\ \ / /
            |  _ \| | | \___ \___ \\ V / 
