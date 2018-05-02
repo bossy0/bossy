@@ -1,4 +1,4 @@
-#! /usr/bin/python
+
 from logging import getLogger, ERROR # Import Logging Things
 getLogger("scapy.runtime").setLevel(ERROR) # Get Rid if IPv6 Warning
 from scapy.all import * # The One and Only Scapy
