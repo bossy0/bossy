@@ -14,8 +14,8 @@ try:
 		if int(min_port) >= 0 and int(max_port) >= 0 and int(max_port) >= int(min_port): # Test for valid range of ports
 			pass
 		else: # If range didn't raise error, but didn't meet criteria
-			print "\n[*] Invalid Range of Ports"
-			print "[*] Exiting..."
+			print "\n[!] Invalid Range of Ports"
+			print "[!] Exiting..."
 			sys.exit(1)
 	except Exception: # If input range raises an error
 		print "\n[!] Invalid Range of Ports"
