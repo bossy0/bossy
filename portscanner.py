@@ -1,84 +1,75 @@
- # Shreyas Damle
-# Reference: http://null-byte.wonderhowto.com/how-to/build-stealth-port-scanner-with-scapy-and-python-0164779/ 
-#!/usr/bin/env python
-import sys
-import logging
+#! /usr/bin/python
+from logging import getLogger, ERROR # Import Logging Things
+getLogger("scapy.runtime").setLevel(ERROR) # Get Rid if IPv6 Warning
+from scapy.all import * # The One and Only Scapy
+import sys 
+from datetime import datetime # Other stuff
 from time import strftime
-from scapy.all import *
 
-def main ():
-    try: 
-        print "TCP port scanner usnig python and scapy"
-        target_ip = raw_input ("[-]Enter IP address of the target: ")
-        min_port = raw_input ("[-]Enter the min port number: ")
-        max_port = raw_input ("[-]Enter the max port number: ")
-        
-        try:
-            if int(min_port)>= 0 and int (max_port) >= 0 and int(max_port) <= 65535 and int (max_port)> int (min_port):
-                pass
-            else:
-                print "[!]Please eneter the valid range of the ports"
-                print "Program is clsoing..."
-                sys.exit [1]
-        except Exception:
-            print "Please enter the valid range of ports"
-            print "Program is closing..."
-            sys.exit [1]
-    except KeyboardInterrupt:
-        print "Program is closing due to user interruption"
-        sys.exit [1]
-        
-        
-    ports = range (int(min_port), int(max_port))
-    SYNACK = 0x12
-    RSTACK = 0x14
-    DSTUNR = 0x0D
-    
-    def is_target_up(ip):
-        conf.verb = 0 #To disable verbose
-        ping = sr1 (IP(dst=ip)/ICMP())
-        if ping == None:
-             print "Couldn't resolve the target ip "
-             print "Program is closing"
-             return False
-             sys.exit [1]
-        else:
-             print "Target is up. Scan started...."
-             return True
-             
-    def scan_target(port):
-        conf.verb = 0 
-        source_port = RandShort() #Get a random source port
-        p = sr1(IP(dst=target_ip)/TCP(sport=source_port, dport=port, flags="S"),inter=0.5, retry=10, timeout=1)
-        p_flags = p.getlayer(TCP).flags 
-        if p_flags == SYNACK:
-            return 1
-        elif p_flags == RSTACK:
-            return 2
-        else:
-            return 3
-        rst_p = IP(dst=target_ip)/TCP(sport=source_port, dport=port, flags="R")
-        send (rst_p)
-             
+try:
+	target = raw_input("[*] Enter Target IP Address: ") # Get Target Address
+	min_port = raw_input("[*] Enter Minumum Port Number: ") # Get Min. Port Num.
+	max_port = raw_input("[*] Enter Maximum Port Number: ") # Get Max. Port Num.
+	try:
+		if int(min_port) >= 0 and int(max_port) >= 0 and int(max_port) >= int(min_port): # Test for valid range of ports
+			pass
+		else: # If range didn't raise error, but didn't meet criteria
+			print "\n[!] Invalid Range of Ports"
+			print "[!] Exiting..."
+			sys.exit(1)
+	except Exception: # If input range raises an error
+		print "\n[!] Invalid Range of Ports"
+		print "[!] Exiting..."
+		sys.exit(1)		
+except KeyboardInterrupt: # In case the user wants to quit
+	print "\n[*] User Requested Shutdown..."
+	print "[*] Exiting..."
+	sys.exit(1)
 
-    
-    is_target_up(target_ip)
-    print "Scanning started at " + strftime ("%H:%M:%S") + "\n"
-    
-    for port in ports:
-        state = scan_target(port)
-        if state == 1:
-            print "Port " + str(port) + ": Open"
-        elif state == 2:
-            print "Port " + str(port) + ": Close"
-        elif state == 3:
-            print "Port " + str(port) + ": Filtered"
-        else: 
-            print "Target is down"
-            
-    print "[-]Scanning is complete!!!"
-    
-            
-if __name__ == '__main__':
-    main ()        
+ports = range(int(min_port), int(max_port)+1) # Build range from given port numbers
+start_clock = datetime.now() # Start clock for scan time
+SYNACK = 0x12 # Set flag values for later reference
+RSTACK = 0x14
+
+def checkhost(ip): # Function to check if target is up
+	conf.verb = 0 # Hide output
+	try:
+		ping = sr1(IP(dst = ip)/ICMP()) # Ping the target
+		print "\n[*] Target is Up, Beginning Scan..."
+	except Exception: # If ping fails
+		print "\n[!] Couldn't Resolve Target"
+		print "[!] Exiting..."
+		sys.exit(1)
+
+def scanport(port): # Function to scan a given port
+	try:
+		srcport = RandShort() # Generate Port Number
+		conf.verb = 0 # Hide output
+		SYNACKpkt = sr1(IP(dst = target)/TCP(sport = srcport, dport = port, flags = "S")) # Send SYN and recieve RST-ACK or SYN-ACK
+		pktflags = SYNACKpkt.getlayer(TCP).flags # Extract flags of recived packet
+		if pktflags == SYNACK: # Cross reference Flags
+			return True # If open, return true
+		else:
+			return False # If closed, return false
+		RSTpkt = IP(dst = target)/TCP(sport = srcport, dport = port, flags = "R") # Construct RST packet
+		send(RSTpkt) # Send RST packet
+	except KeyboardInterrupt: # In case the user needs to quit
+		RSTpkt = IP(dst = target)/TCP(sport = srcport, dport = port, flags = "R") # Built RST packet
+		send(RSTpkt) # Send RST packet to whatever port is currently being scanned
+		print "\n[*] User Requested Shutdown..."
+		print "[*] Exiting..."
+		sys.exit(1)
+
+checkhost(target) # Run checkhost() function from earlier
+print "[*] Scanning Started at " + strftime("%H:%M:%S") + "!\n" # Confirm scan start
+
+for port in ports: # Iterate through range of ports
+	status = scanport(port) # Feed each port into scanning function
+	if status == True: # Test result 
+		print "Port " + str(port) + ": Open" # Print status
+
+stop_clock = datetime.now() # Stop clock for scan time
+total_time = stop_clock - start_clock # Calculate scan time
+print "\n[*] Scanning Finished!" # Confirm scan stop
+print "[*] Total Scan Duration: " + str(total_time) # Print scan time
         
