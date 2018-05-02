@@ -16,6 +16,18 @@ import socks
 import re
 import urllib.request
 import os
+
+from bs4 import BeautifulSoup
+
+import logging
+logging.getLogger("scapy.runtime").setLevel(logging.ERROR) # per evitare di visualizzare l'errore d'avvio di scapy
+
+if sys.platform.startswith("linux"): # se si è sotto linux
+	from scapy.all import * # importa scapy
+elif sys.platform.startswith("freebsd"): # o sotto freebsd
+	from scapy.all import * # importa scapy
+else: # altrimenti
+	
 logins = ["AsparTim"]
 print (" ")
 print (''' \033[91m Loading , Please Wait . . . \033[0m''')
