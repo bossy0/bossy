@@ -625,9 +625,7 @@ class requestdefault(threading.Thread): # la classe del multithreading
 					s.close()
 			except: # se qualcosa va storto
 				s.close() # chiude socket e ricomincia
-
-starturl() # questo fa startare la prima funzione del programma, che a sua volta ne starta un altra, poi un altra, fino ad arrivare all'attacco.
-
+				
 
 def my_bots():
 	global bots
