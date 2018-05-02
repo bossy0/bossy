@@ -11,8 +11,11 @@ from optparse import OptionParser
 import time,sys,socket,threading,logging,urllib.request,random
 import random
 import time
-import time
 import sys
+import socks
+import re
+import urllib.request
+import os
 logins = ["AsparTim"]
 print (" ")
 print (''' \033[91m Loading , Please Wait . . . \033[0m''')
