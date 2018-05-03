@@ -1,4 +1,7 @@
 Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,image/jpeg,image/gif;q=0.2,*/*;q=0.1
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
 Accept-Language: en-us,en;q=0.5
 Accept-Language: it-IT,it;q=0.8,en-US;q=0.5,en;q=0
 Accept-Encoding: gzip,deflate
@@ -6,9 +9,27 @@ Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
 Keep-Alive: 115
 Connection: keep-alive
 GET / HTTP/1.1
+GET /page/routing-in-recess-screencast HTTP/1.1
 Host: www.mydomain.com
+Host: RecessFramework.org
 User-Agent: Mozilla/4.0
 X-Forwarded-For: 1.1.1.1, 1.1.1.2, 1.1.1.3
+Host: requestb.in
+Accept-Language: zh-cn
+Connection: close
+Accept-Encoding: gzip, deflate
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 7_0_4 like Mac OS X) AppleWebKit/537.51.1 (KHTML, like Gecko) Mobile/11B554a MicroMessenger/5.0.3
+X-Getzip: supported
+Host: requestb.in
+Accept-Language: zh-CN, en-US
+Connection: close
+Cache-Control: no-cache
+X-Requested-With: com.tencent.mm
+Accept-Encoding: gzip,deflate
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Charset: utf-8, iso-8859-1, utf-16, *;q=0.7
+User-Agent: Mozilla/5.0 (Linux; U; Android 4.1.1; zh-cn; X909 Build/JRO03L) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 MicroMessenger/5.0.3.354
 https://check-host.net/check-http?host=
 http://validator.w3.org/feed/check.cgi?url=
 http://www.google.com/ig/adde?moduleurl=
