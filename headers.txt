@@ -1,9 +1,14 @@
 Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
 Accept-Language: en-us,en;q=0.5
+Accept-Language: it-IT,it;q=0.8,en-US;q=0.5,en;q=0
 Accept-Encoding: gzip,deflate
 Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
 Keep-Alive: 115
 Connection: keep-alive
+GET / HTTP/1.1
+Host: www.mydomain.com
+User-Agent: Mozilla/4.0
+X-Forwarded-For: 1.1.1.1, 1.1.1.2, 1.1.1.3
 https://check-host.net/check-http?host=
 http://validator.w3.org/feed/check.cgi?url=
 http://www.google.com/ig/adde?moduleurl=
