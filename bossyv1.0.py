@@ -15,7 +15,7 @@ import sys
 
 	
 print (" ")
-print (''' \033[91m[*] Loading , Please Wait . . . \033[0m''')
+print (''' \033[91m  [*] Loading , Please Wait . . . \033[0m''')
 print (" ")
 time.sleep(5)
 def load():
@@ -40,7 +40,7 @@ def load():
 
 load()
 print (" ")
-print (''' \033[91m[*] Starting . . . \033[0m''')
+print (''' \033[91m  [*] Starting . . . \033[0m''')
 print (" ")
 time.sleep(5)
 sent = 0
