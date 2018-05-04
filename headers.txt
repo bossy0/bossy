@@ -2,10 +2,16 @@ Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
 Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,image/jpeg,image/gif;q=0.2,*/*;q=0.1
 Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
 Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accep: text/html, application/xml;q=0.9, application/xhtml+xml, image/png, image/webp, image/jpeg, image/gif, image/x-xbitmap, */*;q=0.1
 Accept-Language: en-us,en;q=0.5
 Accept-Language: it-IT,it;q=0.8,en-US;q=0.5,en;q=0
+Accept-Language: utf-8, iso-8859-1;q=0.5, *;q=0.1
+Accept-Language: de
+Accept-Language: de-CH
 Accept-Encoding: gzip,deflate
 Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Accept-Charset: iso-8859-1
+Accept-Charset: utf-8, iso-8859-1;q=0.5
 Keep-Alive: 115
 Connection: keep-alive
 GET / HTTP/1.1
