@@ -6,7 +6,8 @@ import ssl
 import sys
 import time
 
-print (''' \033[1;48mparser = argparse.ArgumentParser(description="BossyV2.0 Low Bandwidth Stress Test Tool For Websites")
+print (''' \033[1;48m
+parser = argparse.ArgumentParser(description="BossyV2.0 Low Bandwidth Stress Test Tool For Websites")
 parser.add_argument('host', nargs="?", help="Host To Perform Stress Test On")
 parser.add_argument('-p', '--port', default=80, help="Port Of Webserver Usually 80", type=int)
 parser.add_argument('-s', '--sockets', default=150, help="Number Of Sockets To Use İn The Test", type=int)
