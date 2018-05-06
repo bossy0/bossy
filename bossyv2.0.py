@@ -69,7 +69,7 @@ print("	-h : help ")
 print("	-s : socket number ")
 print("	-p : port default 80 ")
 print("	--proxy-host :  ")
-print("       --proxy-port : \033[0m ") 
+print("	--proxy-port :   \033[0m ") 
 
 
 if len(sys.argv) <= 1:
