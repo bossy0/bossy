@@ -54,6 +54,8 @@ sent = 0
 
 
 print(" \033[91mBossy Dos Script V.2 https://www.aspartim.org/  ")
+print (" ")
+print (" ")
 print("   ____  _____ ____   ____  ____  ______  ____  ___ ___  ")
 print("  /    |/ ___/|    \ /    ||    \|      ||    ||   |   | ")
 print(" |  o  (   \_ |  o  )  o  ||  D  )      | |  | | _   _ | ")
