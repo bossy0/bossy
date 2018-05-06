@@ -10,7 +10,7 @@ import time
 parser = argparse.ArgumentParser(description="Bossyv2 Low Bandwidth Stress Test Tool For Websites")
 parser.add_argument('host', nargs="?", help="Host To Perform Stress Test On")
 parser.add_argument('-p', '--port', default=80, help="Port Of Webserver Usually 80", type=int)
-parser.add_argument('-s', '--sockets', default=150, help="Number Of Sockets To Use İn The Test", type=int)
+parser.add_argument('-s', '--sockets', default=250, help="Number Of Sockets To Use İn The Test", type=int)
 parser.add_argument('-v', '--verbose', dest="verbose", action="store_true", help="Increases Logging")
 parser.add_argument('-ua', '--randuseragents', dest="randuseragent", action="store_true", help="Randomizes User-Agents With Each Request")
 parser.add_argument('-x', '--useproxy', dest="useproxy", action="store_true", help="Use A SOCKS5 Proxy For Connecting")
@@ -52,7 +52,7 @@ print (" ")
 time.sleep(5)
 sent = 0
 
-def usage():
+
 	print (''' \033[91mBossy Dos Script v.2 https://www.aspartim.org/
   ____  _____ ____   ____  ____  ______  ____  ___ ___ 
  /    |/ ___/|    \ /    ||    \|      ||    ||   |   |
