@@ -74,9 +74,9 @@ if args.useproxy:
         logging.error("Socks Proxy Library Not Available!")
 
 if args.verbose:
-    logging.basicConfig(format="\033[94m[%(asctime)s] %(message)s\033", datefmt="%d-%m-%Y %H:%M:%S", level=logging.DEBUG)
+    logging.basicConfig(format="\033[9wm[%(asctime)s] %(message)s\033", datefmt="%d-%m-%Y %H:%M:%S", level=logging.DEBUG)
 else:
-    logging.basicConfig(format="\033[94m[%(asctime)s] %(message)s\033", datefmt="%d-%m-%Y %H:%M:%S", level=logging.INFO)
+    logging.basicConfig(format="\033[92m[%(asctime)s] %(message)s\033", datefmt="%d-%m-%Y %H:%M:%S", level=logging.INFO)
 
 list_of_sockets = []
 user_agents = [
@@ -219,7 +219,7 @@ def main():
         list_of_sockets.append(s)
 
     while True:
-        logging.info("\033[96m [*] Packet Sent ✓ AsparTim : %s \033[0m", len(list_of_sockets))
+        logging.info("\033[94m [*] Packet Sent ✓ AsparTim : %s \033[0m", len(list_of_sockets))
         for s in list(list_of_sockets):
             try:
                 s.send("X-a: {}\r\n".format(random.randint(1, 5000)).encode("utf-8"))
