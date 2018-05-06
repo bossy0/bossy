@@ -8,6 +8,20 @@ import time
 
 
 parser = argparse.ArgumentParser(description="Bossyv2 Low Bandwidth Stress Test Tool For Websites")
+parser.add_argument('host', nargs="?", help="Host To Perform Stress Test On")
+parser.add_argument('-p', '--port', default=80, help="Port Of Webserver Usually 80", type=int)
+parser.add_argument('-s', '--sockets', default=250, help="Number Of Sockets To Use İn The Test", type=int)
+parser.add_argument('-v', '--verbose', dest="verbose", action="store_true", help="Increases Logging")
+parser.add_argument('-ua', '--randuseragents', dest="randuseragent", action="store_true", help="Randomizes User-Agents With Each Request")
+parser.add_argument('-x', '--useproxy', dest="useproxy", action="store_true", help="Use A SOCKS5 Proxy For Connecting")
+parser.add_argument('--proxy-host', default="127.0.0.1", help="SOCKS5 Proxy Host")
+parser.add_argument('--proxy-port', default="8080", help="SOCKS5 Proxy Host", type=int)
+parser.add_argument("--https", dest="https", action="store_true", help="Use HTTPS For The Requests")
+parser.set_defaults(verbose=False)
+parser.set_defaults(randuseragent=False)
+parser.set_defaults(useproxy=False)
+parser.set_defaults(https=False)
+args = parser.parse_args()
 
 print (" ")
 print (''' \033[91m [*] Loading , Please Wait . . . \033[0m''')
