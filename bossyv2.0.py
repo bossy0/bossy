@@ -53,7 +53,7 @@ time.sleep(5)
 sent = 0
 
 
-print(" \033[91mBossy Dos Script v.2 https://www.aspartim.org/  ")
+print(" \033[91mBossy Dos Script V.2 https://www.aspartim.org/  ")
 print("   ____  _____ ____   ____  ____  ______  ____  ___ ___  ")
 print("  /    |/ ___/|    \ /    ||    \|      ||    ||   |   | ")
 print(" |  o  (   \_ |  o  )  o  ||  D  )      | |  | | _   _ | ")
@@ -62,14 +62,7 @@ print(" |  _  |/  \ ||  |  |  _  ||    \  |  |   |  | |   |   | ")
 print(" |  |  |\    ||  |  |  |  ||  .  \ |  |   |  | |   |   | ")
 print(" |__|__| \___||__|  |__|__||__|\_| |__|  |____||___|___| ")
 print("                                                         ")
-print("                                 \n ")
-print("	usage : python bossyv2.0.py [-s] [-p] [-v] [--proxy-host] [--proxy-port] ")
-print (" ")
-print("	-h : help ")
-print("	-s : socket number ")
-print("	-p : port default 80 ")
-print("	--proxy-host :  ")
-print("	--proxy-port :   \033[0m ") 
+print("                                 \n \033[0m ") 
 
 
 if len(sys.argv) <= 1:
