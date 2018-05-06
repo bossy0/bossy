@@ -7,7 +7,7 @@ import sys
 import time
 
 
-\033[1;48m parser = argparse.ArgumentParser(description="BossyV2.0 Low Bandwidth Stress Test Tool For Websites")
+parser = argparse.ArgumentParser(description="BossyV2.0 Low Bandwidth Stress Test Tool For Websites")
 parser.add_argument('host', nargs="?", help="Host To Perform Stress Test On")
 parser.add_argument('-p', '--port', default=80, help="Port Of Webserver Usually 80", type=int)
 parser.add_argument('-s', '--sockets', default=150, help="Number Of Sockets To Use İn The Test", type=int)
@@ -21,7 +21,7 @@ parser.set_defaults(verbose=False)
 parser.set_defaults(randuseragent=False)
 parser.set_defaults(useproxy=False)
 parser.set_defaults(https=False)
-args = parser.parse_args() \033[0m
+args = parser.parse_args()
 
 print (" ")
 print (''' \033[91m [*] Loading , Please Wait . . . \033[0m''')
