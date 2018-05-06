@@ -64,11 +64,12 @@ print(" |__|__| \___||__|  |__|__||__|\_| |__|  |____||___|___| ")
 print("                                                         ")
 print("                                 \n ")
 print("	usage : python bossyv2.0.py [-s] [-p] [-v] [--proxy-host] [--proxy-port] ")
+print (" ")
 print("	-h : help ")
 print("	-s : socket number ")
 print("	-p : port default 80 ")
 print("	--proxy-host :  ")
-print(" --proxy-port : \033[0m ") 
+print("       --proxy-port : \033[0m ") 
 
 
 if len(sys.argv) <= 1:
