@@ -53,7 +53,7 @@ time.sleep(5)
 sent = 0
 
 
-	print (''' \033[91mBossy Dos Script v.2 https://www.aspartim.org/
+print(" \033[91mBossy Dos Script v.2 https://www.aspartim.org/
   ____  _____ ____   ____  ____  ______  ____  ___ ___ 
  /    |/ ___/|    \ /    ||    \|      ||    ||   |   |
 |  o  (   \_ |  o  )  o  ||  D  )      | |  | | _   _ |
@@ -68,7 +68,7 @@ sent = 0
 	-s : socket number
 	-p : port default 80
 	--proxy-host :  
-        --proxy-port : \033[0m''')
+        --proxy-port : \033[0m ") 
 
 
 if len(sys.argv) <= 1:
