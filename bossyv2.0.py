@@ -52,6 +52,25 @@ print (" ")
 time.sleep(5)
 sent = 0
 
+def usage():
+	print (''' \033[91mBossy Dos Script v.2 https://www.aspartim.org/
+  ____  _____ ____   ____  ____  ______  ____  ___ ___ 
+ /    |/ ___/|    \ /    ||    \|      ||    ||   |   |
+|  o  (   \_ |  o  )  o  ||  D  )      | |  | | _   _ |
+|     |\__  ||   _/|     ||    /|_|  |_| |  | |  \_/  |
+|  _  |/  \ ||  |  |  _  ||    \  |  |   |  | |   |   |
+|  |  |\    ||  |  |  |  ||  .  \ |  |   |  | |   |   |
+|__|__| \___||__|  |__|__||__|\_| |__|  |____||___|___|
+                                                       
+                                \n
+	usage : python bossyv2.0.py [-s] [-p] [-v] [--proxy-host] [--proxy-port]
+	-h : help
+	-s : socket number
+	-p : port default 80
+	--proxy-host :  
+  --proxy-port : \033[0m''')
+	sys.exit()
+
 if len(sys.argv) <= 1:
     parser.print_help()
     sys.exit(1)
