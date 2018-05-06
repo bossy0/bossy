@@ -74,7 +74,7 @@ if args.useproxy:
         logging.error("Socks Proxy Library Not Available!")
 
 if args.verbose:
-    logging.basicConfig(format="\033[9wm[%(asctime)s] %(message)s\033", datefmt="%d-%m-%Y %H:%M:%S", level=logging.DEBUG)
+    logging.basicConfig(format="\033[92m[%(asctime)s] %(message)s\033", datefmt="%d-%m-%Y %H:%M:%S", level=logging.DEBUG)
 else:
     logging.basicConfig(format="\033[92m[%(asctime)s] %(message)s\033", datefmt="%d-%m-%Y %H:%M:%S", level=logging.INFO)
 
@@ -209,10 +209,10 @@ def main():
     socket_count = args.sockets
     logging.info("\033[94m [*] Attacking %s With %s Sockets \033[0m", ip, socket_count)
 
-    logging.info("\033[94m [*] Creating Sockets . . . \033[0m")
+    logging.info("\033[91m [*] Creating Sockets ✓ \033[0m")
     for _ in range(socket_count):
         try:
-            logging.debug("\033[94m [*] Creating Socket nr %s \033[0m", _)
+            logging.debug("\033[91m [*] Creating Socket ✓ %s \033[0m", _)
             s = init_socket(ip)
         except socket.error:
             break
@@ -227,7 +227,7 @@ def main():
                 list_of_sockets.remove(s)
 
         for _ in range(socket_count - len(list_of_sockets)):
-            logging.debug("[*]Recreating Socket . . .")
+            logging.debug("\033[94m [*] Recreating Socket ✓ \033[0m")
             try:
                 s = init_socket(ip)
                 if s:
