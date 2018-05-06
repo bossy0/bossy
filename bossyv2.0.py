@@ -224,10 +224,10 @@ def main():
     socket_count = args.sockets
     logging.info("\033[94m [*] Attacking %s With %s Sockets \033[0m", ip, socket_count)
 
-    logging.info("\033[91m [*] Creating Sockets ✓ \033[0m")
+    logging.info("\033[94m [*] Creating Sockets ✓ \033[0m")
     for _ in range(socket_count):
         try:
-            logging.debug("\033[91m [*] Creating Socket ✓ %s \033[0m", _)
+            logging.debug("\033[94m [*] Creating Socket ✓ %s \033[0m", _)
             s = init_socket(ip)
         except socket.error:
             break
