@@ -53,22 +53,22 @@ time.sleep(5)
 sent = 0
 
 
-print(" \033[91mBossy Dos Script v.2 https://www.aspartim.org/
-  ____  _____ ____   ____  ____  ______  ____  ___ ___ 
- /    |/ ___/|    \ /    ||    \|      ||    ||   |   |
-|  o  (   \_ |  o  )  o  ||  D  )      | |  | | _   _ |
-|     |\__  ||   _/|     ||    /|_|  |_| |  | |  \_/  |
-|  _  |/  \ ||  |  |  _  ||    \  |  |   |  | |   |   |
-|  |  |\    ||  |  |  |  ||  .  \ |  |   |  | |   |   |
-|__|__| \___||__|  |__|__||__|\_| |__|  |____||___|___|
-                                                       
-                                \n
-	usage : python bossyv2.0.py [-s] [-p] [-v] [--proxy-host] [--proxy-port]
-	-h : help
-	-s : socket number
-	-p : port default 80
-	--proxy-host :  
-        --proxy-port : \033[0m ") 
+print(" \033[91mBossy Dos Script v.2 https://www.aspartim.org/  ")
+print("   ____  _____ ____   ____  ____  ______  ____  ___ ___  ")
+print("  /    |/ ___/|    \ /    ||    \|      ||    ||   |   | ")
+print(" |  o  (   \_ |  o  )  o  ||  D  )      | |  | | _   _ | ")
+print(" |     |\__  ||   _/|     ||    /|_|  |_| |  | |  \_/  | ")
+print(" |  _  |/  \ ||  |  |  _  ||    \  |  |   |  | |   |   | ")
+print(" |  |  |\    ||  |  |  |  ||  .  \ |  |   |  | |   |   | ")
+print(" |__|__| \___||__|  |__|__||__|\_| |__|  |____||___|___| ")
+print("                                                         ")
+print("                                 \n ")
+print("	usage : python bossyv2.0.py [-s] [-p] [-v] [--proxy-host] [--proxy-port] ")
+print("	-h : help ")
+print("	-s : socket number ")
+print("	-p : port default 80 ")
+print("	--proxy-host :  ")
+print(" --proxy-port : \033[0m ") 
 
 
 if len(sys.argv) <= 1:
