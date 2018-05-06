@@ -68,8 +68,8 @@ def usage():
 	-s : socket number
 	-p : port default 80
 	--proxy-host :  
-  --proxy-port : \033[0m''')
-	sys.exit()
+        --proxy-port : \033[0m''')
+
 
 if len(sys.argv) <= 1:
     parser.print_help()
