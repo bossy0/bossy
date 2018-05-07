@@ -199,12 +199,7 @@ headers.close()
 q = Queue()
 w = Queue()
 
-#Proxy
-in_file = open(raw_input("File proxy(proxy.txt): "),"r")
-proxyf = in_file.read()
-in_file.close()
- 
-listaproxy = proxyf.split('\n')
+
 
 if __name__ == '__main__':
 	if len(sys.argv) < 2:
