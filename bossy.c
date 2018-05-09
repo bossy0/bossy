@@ -39,7 +39,7 @@ int make_socket(char *host, char *port) {
 	}
 	if(servinfo)
 		freeaddrinfo(servinfo);
-	fprintf(stderr, "\033[92m [*] Connected ✓ %s : %s\n \033[0m ", host, port);
+	fprintf(stderr, "\033[92m[*] Connected ✓ %s : %s\n \033[0m", host, port);
 	return sock;
 }
 
@@ -66,9 +66,9 @@ void attack(char *host, char *port, int id) {
 				sockets[x] = make_socket(host, port);
 			} else
 //				fprintf(stderr, "Socket[%i->%i] -> %i\n", x, sockets[x], r);
-			fprintf(stderr, " \033[92m [!] %i : Voly Sent\n \033[0m ", id);
+			fprintf(stderr, "\033[92m[!] %i : Voly Sent\n \033[0m", id);
 		}
-		fprintf(stderr, " \033[92m [!] %i : Voly Sent\n \033[0m ", id);
+		fprintf(stderr, "\033[92m[!] %i : Voly Sent\n \033[0m", id);
 		usleep(300000);
 	}
 }
