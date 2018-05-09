@@ -34,12 +34,12 @@ int make_socket(char *host, char *port) {
 	if(p == NULL) {
 		if(servinfo)
 			freeaddrinfo(servinfo);
-		fprintf(stderr, "No connection could be made\n");
+		fprintf(stderr, "[!] Please Enter Site Address\n");
 		exit(0);
 	}
 	if(servinfo)
 		freeaddrinfo(servinfo);
-	fprintf(stderr, "[Connected -> %s:%s]\n", host, port);
+	fprintf(stderr, "[*] Connected ✓ %s:%s\n", host, port);
 	return sock;
 }
 
