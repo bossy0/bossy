@@ -500,14 +500,20 @@ class Striker(Process):
 ####
 
 def usage():
-    print
-    print '-----------------------------------------------------------------------------------------------------------'
-    print
-    print GOLDENEYE_BANNER
-    print 
-    print ' USAGE: ./goldeneye.py <url> [OPTIONS]'
-    print
-    print ' OPTIONS:'
+    print (" ")
+    print (" ")
+    print ' Bossy Dos Script v.1 https://www.aspartim.org/ '
+    print '   ____  _____ ____   ____  ____  ______  ____  ___ ___  '
+    print '  /    |/ ___/|    \ /    ||    \|      ||    ||   |   | '
+    print ' |  o  (   \_ |  o  )  o  ||  D  )      | |  | | _   _ | '
+    print ' |     |\__  ||   _/|     ||    /|_|  |_| |  | |  \_/  | '
+    print ' |  _  |/  \ ||  |  |  _  ||    \  |  |   |  | |   |   | '
+    print ' |  |  |\    ||  |  |  |  ||  .  \ |  |   |  | |   |   | '
+    print ' |__|__| \___||__|  |__|__||__|\_| |__|  |____||___|___| '
+    print (" ") 
+    print ' USAGE : ./bossyv2.0.py <url> [OPTIONS]'
+    print (" ")
+    print ' OPTIONS : '
     print '\t Flag\t\t\tDescription\t\t\t\t\t\tDefault'
     print '\t -u, --useragents\tFile with user-agents to use\t\t\t\t(default: randomly generated)'
     print '\t -w, --workers\t\tNumber of concurrent workers\t\t\t\t(default: {0})'.format(DEFAULT_WORKERS)
@@ -516,8 +522,8 @@ def usage():
     print '\t -n, --nosslcheck\tDo not verify SSL Certificate\t\t\t\t(default: True)'
     print '\t -d, --debug\t\tEnable Debug Mode [more verbose output]\t\t\t(default: False)'
     print '\t -h, --help\t\tShows this help'
-    print
-    print '-----------------------------------------------------------------------------------------------------------'
+    print (" ")
+    print (" ")
 
     
 def error(msg):
