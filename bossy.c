@@ -34,7 +34,7 @@ int make_socket(char *host, char *port) {
 	if(p == NULL) {
 		if(servinfo)
 			freeaddrinfo(servinfo);
-		fprintf(stderr, "\033[92m [!] Please Enter Site Address\n \033[0m");
+		fprintf(stderr, "\033[92m[!] Please Enter Site Address \033[0m");
 		exit(0);
 	}
 	if(servinfo)
