@@ -32,7 +32,7 @@ def scan(ports):
         byte = str.encode("Server:\r\n")
         sock.send(byte)
         banner = sock.recv(1024)
-        print "Port {}: 	 Open".format(ports)
+        print "[*] Port {} : 	Open".format(ports)
 
 # function to be mapped over
 def scanParallel(ports, threads=4):
