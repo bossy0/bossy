@@ -25,10 +25,13 @@ t1 = datetime.now()
 
 # We also put in some error handling for catching errors
 
-for port in ports: # Iterate through range of ports
-        status = scanport(port) # Feed each port into scanning function
-        if status == True: # Test result
-                print "[*] Port " + str(port) + ": Open"
+def scan(ports):
+        result = sock.connect_ex((remoteServerIP, ports))
+    if result == 0:
+        byte = str.encode("Server:\r\n")
+        sock.send(byte)
+        banner = sock.recv(1024)
+        print "Port {}: 	 Open"
 
 # function to be mapped over
 def scanParallel(ports, threads=4):
