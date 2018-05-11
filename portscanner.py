@@ -11,7 +11,7 @@ from time import strftime
 # Ask for input
 remoteServer    = raw_input("[*] Enter Target IP Adress : ")
 remoteServerIP  = socket.gethostbyname(remoteServer)
-print "[*] Scanning Started at " + strftime("%H:%M:%S")
+print "[*] Scanning Started at " + strftime("%H:%M:%S") "
 
 # Print a nice banner with information on which host we are about to scan
 print "-" * 56
