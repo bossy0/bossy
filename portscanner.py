@@ -8,7 +8,7 @@ from datetime import datetime
 # subprocess.call('cls', shell=True)
 
 # Ask for input
-remoteServer    = raw_input("Enter a remote host to scan: ")
+remoteServer    = raw_input("[*] Enter Target IP Adress : ")
 remoteServerIP  = socket.gethostbyname(remoteServer)
 
 # Print a nice banner with information on which host we are about to scan
