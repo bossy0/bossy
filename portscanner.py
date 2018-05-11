@@ -13,9 +13,9 @@ remoteServerIP  = socket.gethostbyname(remoteServer)
 
 
 # Print a nice banner with information on which host we are about to scan
-print "-" * 60
+print "-" * 56
 print "[*] Please Wait, Scanning Remote Host", remoteServerIP
-print "-" * 60
+print "-" * 56
 
 # Check what time the scan started
 t1 = datetime.now()
