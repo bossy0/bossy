@@ -29,7 +29,11 @@ def scan(ports):
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     result = sock.connect_ex((remoteServerIP, ports))
     if result == 0:
-    print "[*] Port {} : 	Open".format(ports)
+        byte = str.encode("Server:\r\n")
+        sock.send(byte)
+        banner = sock.recv(1024)
+    print "[*] Port {} : 	Open".format(ports), " - ", banner
+    sock.close()
 
 # function to be mapped over
 def scanParallel(ports, threads=4):
