@@ -31,7 +31,7 @@ def scan(ports):
         byte = str.encode("Server:\r\n")
         sock.send(byte)
         banner = sock.recv(1024)
-        print "\033[92m",time.ctime(time.time()),"\033[0m [*] Port {} : 	Open".format(ports), " - ", banner
+        print "[*] Port {} : 	Open".format(ports), " - ", banner
     sock.close()
 
 # function to be mapped over
