@@ -16,7 +16,7 @@ remoteServerIP  = socket.gethostbyname(remoteServer)
 print "-" * 56
 print "[*] Please Wait, Scanning Remote Host", remoteServerIP
 print "-" * 56
-print "[*] Scanning Started at " + strftime("%H:%M:%S") + "!"
+print "[*] Scanning Started At " + strftime("%H:%M:%S") + "!"
 
 # Check what time the scan started
 t1 = datetime.now()
