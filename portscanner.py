@@ -31,11 +31,11 @@ def scan(ports):
     if result == 0:
         byte = str.encode("Server:\r\n")
         sock.send(byte)
-        banner = sock.recv(2500)
+        banner = sock.recv(1024)
         print "[*] Port {} : Open".format(ports)
 
 # function to be mapped over
-def scanParallel(ports, threads=2500):
+def scanParallel(ports, threads=4):
     pool = ThreadPool(threads)
     results = pool.map(scan, ports)
     pool.close()
@@ -44,7 +44,7 @@ def scanParallel(ports, threads=2500):
 
 if __name__ == "__main__":
     ports =(21,22,23,53,80,443,3306,8080)
-    results = scanParallel(ports, 2500)
+    results = scanParallel(ports, 4)
 
 # Checking the time again
 t2 = datetime.now()
