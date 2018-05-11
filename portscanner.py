@@ -11,7 +11,6 @@ from time import strftime
 # Ask for input
 remoteServer    = raw_input("[*] Enter Target IP Adress : ")
 remoteServerIP  = socket.gethostbyname(remoteServer)
-print "[*] Scanning Started at " + strftime("%H:%M:%S") "
 
 # Print a nice banner with information on which host we are about to scan
 print "-" * 56
@@ -32,7 +31,7 @@ def scan(ports):
         byte = str.encode("Server:\r\n")
         sock.send(byte)
         banner = sock.recv(1024)
-        print "[*] Port {} : 	Open".format(ports), " - ", banner
+        print "\033[92m",time.ctime(time.time()),"\033[0m [*] Port {} : 	Open".format(ports), " - ", banner
     sock.close()
 
 # function to be mapped over
