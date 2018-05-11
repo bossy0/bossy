@@ -53,4 +53,5 @@ t2 = datetime.now()
 total =  t2 - t1
 
 # Printing the information to screen
+print "[*] Scanning Finsihed At " + strftime("%H:%M:%S") + " "
 print '[*] Scanning Completed In : ', total
