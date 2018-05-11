@@ -151,7 +151,7 @@ def get_parameters():
 		usage()
 	if opts.port is None:
 		port = 80
-		port = 443
+		
 	else:
 		port = opts.port
 	if opts.turbo is None:
