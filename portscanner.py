@@ -11,9 +11,10 @@ from datetime import datetime
 remoteServer    = raw_input("[*] Enter Target IP Adress : ")
 remoteServerIP  = socket.gethostbyname(remoteServer)
 
+
 # Print a nice banner with information on which host we are about to scan
 print "-" * 60
-print "[*] Please Wait Scanning Remote Host", remoteServerIP
+print "Please wait, scanning remote host", remoteServerIP
 print "-" * 60
 
 # Check what time the scan started
@@ -30,7 +31,7 @@ def scan(ports):
         byte = str.encode("Server:\r\n")
         sock.send(byte)
         banner = sock.recv(1024)
-        print "[*] Port {} : 	Open".format(ports), " - ", banner
+        print "Port {}: 	 Open".format(ports), " - ", banner
     sock.close()
 
 # function to be mapped over
@@ -52,4 +53,4 @@ t2 = datetime.now()
 total =  t2 - t1
 
 # Printing the information to screen
-print '[*] Scanning Completed İn : ', total
+print 'Scanning Completed in: ', total
