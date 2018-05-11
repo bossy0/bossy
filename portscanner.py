@@ -18,13 +18,6 @@ print "[*] Please Wait Scanning Remote Host", remoteServerIP
 print "-" * 56
 print "[*] Scanning Started At " + strftime("%H:%M:%S") + "!"
 
-# Check what time the scan started
-t1 = datetime.now()
-
-# Using the range function to specify ports (here it will scans all ports between 1 and 1024)
-
-# We also put in some error handling for catching errors
-
 def scan(ports):
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     result = sock.connect_ex((remoteServerIP, ports))
@@ -46,12 +39,5 @@ if __name__ == "__main__":
     ports =(21,22,23,53,80,443,3306,8080)
     results = scanParallel(ports, 4)
 
-# Checking the time again
-t2 = datetime.now()
-
-# Calculates the difference of time, to see how long it took to run the script
-total =  t2 - t1
-
 # Printing the information to screen
 print "[*] Scanning Finished At " + strftime("%H:%M:%S") + "!"
-print '[*] Scanning Completed In : ', total
