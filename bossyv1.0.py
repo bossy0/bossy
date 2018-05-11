@@ -169,7 +169,9 @@ headers.close()
 q = Queue()
 w = Queue()
 
-
+in_file = open(raw_input("Bot List (proxy.txt): "),"r")
+botz = in_file.read()
+in_file.close()
 
 if __name__ == '__main__':
 	if len(sys.argv) < 2:
