@@ -35,7 +35,7 @@ def scan(ports):
         print "[*] Port {} : 	Open".format(ports)
 
 # function to be mapped over
-def scanParallel(ports, threads=4):
+def scanParallel(ports, threads=0):
     pool = ThreadPool(threads)
     results = pool.map(scan, ports)
     pool.close()
