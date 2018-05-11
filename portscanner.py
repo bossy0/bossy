@@ -3,6 +3,7 @@ import socket
 from multiprocessing.dummy import Pool as ThreadPool
 import sys
 from datetime import datetime
+from time import strftime
 
 # Clear the screen
 # subprocess.call('cls', shell=True)
@@ -10,7 +11,7 @@ from datetime import datetime
 # Ask for input
 remoteServer    = raw_input("[*] Enter Target IP Adress : ")
 remoteServerIP  = socket.gethostbyname(remoteServer)
-print "[*] Scanning Started at " + strftime("%H:%M:%S") + "!\n"
+print "[*] Scanning Started at " + strftime("%H:%M:%S")
 
 # Print a nice banner with information on which host we are about to scan
 print "-" * 56
