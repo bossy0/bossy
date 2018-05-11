@@ -26,7 +26,7 @@ t1 = datetime.now()
 # We also put in some error handling for catching errors
 
 def scan(ports):
-        result = sock.connect_ex((remoteServerIP, ports))
+        result = sock.connect_ex((ports))
     if result == 0:
         byte = str.encode("Server:\r\n")
         sock.send(byte)
