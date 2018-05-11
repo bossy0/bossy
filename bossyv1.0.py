@@ -162,7 +162,7 @@ def get_parameters():
 # reading headers
 global data
 dosya = open("proxy.txt","r")
-print dosya.read()
+dosya.read()
 dosya.close()
 headers = open("headers.txt", "r")
 data = headers.read()
