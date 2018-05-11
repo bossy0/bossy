@@ -43,7 +43,7 @@ def scanParallel(ports, threads=4):
     return results
 
 if __name__ == "__main__":
-    ports =(20,21,22,23,53,69,80,88,110,123,135,137,138,139,143,161,389,443,445,464,512,513,631,860,1080,1433,1434,3124,3128,3306,3389,5800,5900,8080,10000)
+    ports =(21 ( FTP ),22 ( SSH ),23 ( TELNET ),25 ( SMTP ),53 ( DNS ),80 ( HTTP ),443 ( SSL ),1433 ( MSSQL ),3306 ( MySQL ),8080 ( HTTP-PROXY ),8443 ( HTTPS-ALT ))
     results = scanParallel(ports, 4)
 
 # Checking the time again
