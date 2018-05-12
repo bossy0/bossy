@@ -13,9 +13,9 @@ remoteServer    = raw_input("\033[94m > [*] Enter Target IP Adress : \033[0m")
 remoteServerIP  = socket.gethostbyname(remoteServer)
 
 # Print a nice banner with information on which host we are about to scan
-print "\033[91m ======================================================= \033[0m" 
+print "\033[91m = \033[0m" * 60
 print "\033[91m > [*] Please Wait Scanning Remote Host \033[0m", remoteServerIP
-print "\033[91m ======================================================= \033[0m" 
+print "\033[91m = \033[0m" * 60
 print "\033[93m > [*] Scanning Started At \033[0m" + strftime("\033[93m %H:%M:%S \033[0m") + "\033[93m ! \033[0m"
 
 t1 = datetime.now()
@@ -46,4 +46,4 @@ if __name__ == "__main__":
     
 # Printing the information to screen
 print "\033[93m > [*] Scanning Finished At \033[0m" + strftime("\033[93m %H:%M:%S \033[0m") + "\033[93m . . . \033[0m"
-print '\033[93m > [*] Scanning Completed In : \033[0m', total
+print '\033[93m > [*] Scanning Completed In : \033[0m'
