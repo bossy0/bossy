@@ -18,6 +18,8 @@ print "[*] Please Wait Scanning Remote Host", remoteServerIP
 print "-" * 56
 print "[*] Scanning Started At " + strftime("%H:%M:%S") + "!"
 
+t1 = datetime.now()
+
 def scan(ports):
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     result = sock.connect_ex((remoteServerIP, ports))
@@ -38,7 +40,10 @@ def scanParallel(ports, threads=8):
 if __name__ == "__main__":
     ports =(21,22,23,53,80,443,3306,8080)
     results = scanParallel(ports, 8)
-
+    
+    t2 = datetime.now()
+    total =  t2 - t1
+    
 # Printing the information to screen
 print "[*] Scanning Finished At " + strftime("%H:%M:%S") + ". . ."
-print "[*] Total Scan Duration : " + str(total_time)
+print 'Scanning Completed in: ', total
