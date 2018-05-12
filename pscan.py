@@ -47,7 +47,7 @@ def usage():
 
         EXAMPLE :
 	
-          python2 pscan.py -t www.targetsite.com -v
+         python2 pscan.py -t www.targetsite.com -v
     """
     sys.exit()
 
