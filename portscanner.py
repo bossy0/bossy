@@ -28,7 +28,7 @@ def scan(ports):
         print "[*] Port {} : Open".format(ports)
 
 # function to be mapped over
-def scanParallel(ports, threads=4):
+def scanParallel(ports, threads=8):
     pool = ThreadPool(threads)
     results = pool.map(scan, ports)
     pool.close()
@@ -37,7 +37,7 @@ def scanParallel(ports, threads=4):
 
 if __name__ == "__main__":
     ports =(21,22,23,53,80,443,3306,8080)
-    results = scanParallel(ports, 4)
+    results = scanParallel(ports, 8)
 
 # Printing the information to screen
 print "[*] Scanning Finished At " + strftime("%H:%M:%S") + "!"
