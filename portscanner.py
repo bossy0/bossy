@@ -9,14 +9,14 @@ from time import strftime
 # subprocess.call('cls', shell=True)
 
 # Ask for input
-remoteServer    = raw_input("[*] Enter Target IP Adress : ")
+remoteServer    = raw_input("\033[94m > [*] Enter Target IP Adress : \033[0m")
 remoteServerIP  = socket.gethostbyname(remoteServer)
 
 # Print a nice banner with information on which host we are about to scan
-print "-" * 56
-print "[*] Please Wait Scanning Remote Host", remoteServerIP
-print "-" * 56
-print "[*] Scanning Started At " + strftime("%H:%M:%S") + " ! "
+print "\033[91m- \033[0m" * 56
+print "\033[91m > [*] Please Wait Scanning Remote Host \033[0m", remoteServerIP
+print "\033[91m- \033[0m" * 56
+print "\033[93m > [*] Scanning Started At \033[0m" + strftime("%H:%M:%S") + " ! "
 
 t1 = datetime.now()
 
@@ -27,7 +27,7 @@ def scan(ports):
         byte = str.encode("Server:\r\n")
         sock.send(byte)
         banner = sock.recv(1024)
-        print "\033[92m [*] Port {} : Open \033[0m".format(ports)
+        print "\033[92m > [*] Port {} : Open \033[0m".format(ports)
 
 # function to be mapped over
 def scanParallel(ports, threads=8):
@@ -45,5 +45,5 @@ if __name__ == "__main__":
     total =  t2 - t1
     
 # Printing the information to screen
-print "[*] Scanning Finished At " + strftime("%H:%M:%S") + " . . ."
-print '[*] Scanning Completed In : ', total
+print "\033[93m > [*] Scanning Finished At \033[0m" + strftime("%H:%M:%S") + " . . ."
+print '\033[93m > [*] Scanning Completed In : \033[0m', total
