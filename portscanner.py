@@ -30,7 +30,7 @@ def scan(ports):
         print "\033[92m > [*] Port {} : Open \033[0m".format(ports)
 
 # function to be mapped over
-def scanParallel(ports, threads=8):
+def scanParallel(ports, threads=21):
     pool = ThreadPool(threads)
     results = pool.map(scan, ports)
     pool.close()
@@ -38,8 +38,8 @@ def scanParallel(ports, threads=8):
     return results
 
 if __name__ == "__main__":
-    ports =(21,22,23,53,80,443,3306,8080)
-    results = scanParallel(ports, 8)
+    ports =(21,22,23,25,53,80,110,115,135,139,143,194,443,445,465,587,993,995,1433,25565,3306,3389,5432,5900,6112,8080,8443)
+    results = scanParallel(ports, 21)
     
     t2 = datetime.now()
     total =  t2 - t1
