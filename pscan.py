@@ -34,17 +34,18 @@ def usage():
     |   _/  \__  T/  /  |     ||  |  |
     |  |    /  \ /   \_ |  _  ||  |  |
     |  |    \    \     ||  |  ||  |  |
-    l__j     \___j\____jl__j__jl__j__j
-                                      
+    l__j     \___j\____jl__j__jl__j__j                                  
     """
     print bcolors.ENDC
     print """
-        USAGE:
+        USAGE :
+	print(" ")
          -t  --target   - Target Web Server "www.example.com"
          -v  --verbose  - Enable Verbose Mode
          -h  --help     - Show This Menu
 
-        EXAMPLE:
+        EXAMPLE :
+	print(" ")
           python2 pscan.py -t www.targetsite.com -v
     """
     sys.exit()
