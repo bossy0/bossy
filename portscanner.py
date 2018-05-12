@@ -16,7 +16,7 @@ remoteServerIP  = socket.gethostbyname(remoteServer)
 print "-" * 56
 print "[*] Please Wait Scanning Remote Host", remoteServerIP
 print "-" * 56
-print "[*] Scanning Started At " + strftime("%H:%M:%S") + "!"
+print "[*] Scanning Started At " + strftime("%H:%M:%S") + " ! "
 
 t1 = datetime.now()
 
@@ -45,5 +45,5 @@ if __name__ == "__main__":
     total =  t2 - t1
     
 # Printing the information to screen
-print "[*] Scanning Finished At " + strftime("%H:%M:%S") + ". . ."
-print 'Scanning Completed in: ', total
+print "[*] Scanning Finished At " + strftime("%H:%M:%S") + " . . ."
+print '[*] Scanning Completed In : ', total
