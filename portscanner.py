@@ -45,5 +45,5 @@ if __name__ == "__main__":
     total =  t2 - t1
     
 # Printing the information to screen
-print "\033[93m > [*] Scanning Finished At \033[0m" + strftime("\033[93m %H:%M:%S \033[0m") + "\033[93m . . . \033[0m"
-print '\033[93m > [*] Scanning Completed \033[0m'
+print "\033[93m > [!] Scanning Finished At \033[0m" + strftime("\033[93m %H:%M:%S \033[0m") + "\033[93m . . . \033[0m"
+print '\033[93m > [!] Scanning Completed \033[0m'
