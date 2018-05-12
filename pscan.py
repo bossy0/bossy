@@ -60,7 +60,7 @@ def final_result():
         print bcolors.RED + bcolors.BOLD + t() + "[critical] Sorry! PSCAN Could Not Find Any Possible Directories" + bcolors.ENDC
     else:
         print bcolors.GREEN + bcolors.BOLD
-        print t() + "[info] Found " + str(len(result_array)) + " possible directory"
+        print t() + "[info] Found " + str(len(result_array)) + " Possible Directory"
         for count in result_array:
             print count
         print bcolors.ENDC
