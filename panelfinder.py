@@ -23,25 +23,29 @@ def t():
     return "["+ ctime + "]"
 def shutdown():
 	print ""
-	print bcolors.BGRED + bcolors.WHITE + t() + "[info] shutting down CPSCAN" + bcolors.ENDC +"\n\n"
+	print bcolors.BGRED + bcolors.WHITE + t() + "[İnfo] Shutting Down PSCAN" + bcolors.ENDC +"\n\n"
 	sys.exit()
 def usage():
     print bcolors.RED + bcolors.BOLD
     print """
-                  ___  ___ _______ ____
-                 / _ \(_-</ __/ _ `/ _ \
-                / .__/___/\__/\_,_/_//_/
-               /_/ v 1.0 - PanelFinder
+ ____    _____   __   ____  ____  
+|    \  / ___/  /  ] /    ||    \ 
+|  o  )(   \_  /  / |  o  ||  _  |
+|   _/  \__  |/  /  |     ||  |  |
+|  |    /  \ /   \_ |  _  ||  |  |
+|  |    \    \     ||  |  ||  |  |
+|__|     \___|\____||__|__||__|__|
+                                  
     """
     print bcolors.ENDC
     print """
         USAGE:
-         -t  --target   - Target web server "example.com"
-         -v  --verbose  - Enable verbose mode
-         -h  --help     - show this menu
+         -t  --target   - Target Web Server "www.example.com"
+         -v  --verbose  - Enable Verbose Mode
+         -h  --help     - Show This Menu
 
         EXAMPLE:
-          python2 pscan.py -t targetsite.com -v
+          python2 pscan.py -t www.targetsite.com -v
     """
     sys.exit()
 
@@ -55,9 +59,9 @@ def check(host, path):
 
 
 def final_result():
-    print t() + "[info] scan complete"
+    print t() + "[İnfo] Scan Complete"
     if len(result_array)==0:
-        print bcolors.RED + bcolors.BOLD + t() + "[critical] sorry! CPSCAN could not find any possible directories" + bcolors.ENDC
+        print bcolors.RED + bcolors.BOLD + t() + "[Critical] Sorry ! PSCAN Could Not Find Any Possible Directories" + bcolors.ENDC
     else:
         print bcolors.GREEN + bcolors.BOLD
         print t() + "[info] Found " + str(len(result_array)) + " possible directory"
@@ -67,7 +71,7 @@ def final_result():
     shutdown()
 
 def sigint_handler(signum, frame):
-    print '\n user interrupt ! shutting down'
+    print '\n User İnterrupt ! Shutting Down'
     shutdown()
 
 signal.signal(signal.SIGINT, sigint_handler)
@@ -92,37 +96,41 @@ if 'host' not in locals():
 
 print bcolors.RED + bcolors.BOLD
 print """
-                  ___  ___ _______ ____
-                 / _ \(_-</ __/ _ `/ _ \
-                / .__/___/\__/\_,_/_//_/
-               /_/ v 1.0 - PanelFinder
+ ____    _____   __   ____  ____  
+|    \  / ___/  /  ] /    ||    \ 
+|  o  )(   \_  /  / |  o  ||  _  |
+|   _/  \__  |/  /  |     ||  |  |
+|  |    /  \ /   \_ |  _  ||  |  |
+|  |    \    \     ||  |  ||  |  |
+|__|     \___|\____||__|__||__|__|
+                                  
 """
 print bcolors.ENDC
 
-print t() + "[info] Checking connection to target server"
+print t() + "[info] Checking Connection To Target Server"
 
 
 ccode = check(host,"/")
 
 if (ccode < 400):
-	print bcolors.BOLD + t() + "[info] Target server is up and running" + bcolors.ENDC
+	print bcolors.BOLD + t() + "[İnfo] Target Server İs Up And Running" + bcolors.ENDC
 else:
-	print bcolors.RED + bcolors.BOLD + t() + "[warning] Target server seems to be down. check your internet connection or proxy settings. see misspelled words if any " + bcolors.ENDC
+	print bcolors.RED + bcolors.BOLD + t() + "[Warning] Target Server Seems To Be Down Check Your İnternet Connection Or Proxy Settings. see misspelled words if any " + bcolors.ENDC
 	shutdown()
 
-print t() + "[info] Initiating scan loading directory list"
+print t() + "[İnfo] İnitiating Scan Loading Directory List"
 
 f = open( "panelist.txt", "r" )
 directory = []
 for line in f:
     directory.append(line)
 
-print t() + "[info] Ruinning directory scan to the target server."
+print t() + "[info] Ruinning Directory Scan To The Target Server ."
 maxlen=len(directory)
 if (v==0):
-    print t() + "[info] "+ str(maxlen) + " Directories loaded This may take a while pls wait.. use option -v for verbose mode"
+    print t() + "[İnfo] "+ str(maxlen) + " Directories Loaded This May Take A While Pls Wait Use Option [-v] For Verbose Mode"
 else:
-    print t() + "[info] "+ str(maxlen) + " Directories loaded This may take a while pls wait.."
+    print t() + "[İnfo] "+ str(maxlen) + " Directories Loaded This May Take A While Pls Wait . . ."
 i=0
 result_array = []
 for i in range (maxlen):
@@ -131,15 +139,15 @@ for i in range (maxlen):
     code=str(rcode)
 
     if (v==True and rcode >= 400):
-        print t() + "[response]" + bcolors.YELLOW + "["+code+"]" + bcolors.ENDC +" =>  "+ host + c_dir
+        print t() + "[Response]" + bcolors.YELLOW + "["+code+"]" + bcolors.ENDC +" =>  "+ host + c_dir
 
     if (rcode <400 ):
-        print bcolors.GREEN + bcolors.BOLD + t() + "[response]" + "["+code+"]" +" =>  "+ host + c_dir + bcolors.ENDC
+        print bcolors.GREEN + bcolors.BOLD + t() + "[Response]" + "["+code+"]" +" =>  "+ host + c_dir + bcolors.ENDC
         num=0
-        result="[response]" + "["+code+"]" +" =>  "+ host + c_dir
+        result="[Response]" + "["+code+"]" +" =>  "+ host + c_dir
         result_array.insert(num,result)
         num = num+1
-        reply = str(raw_input(bcolors.BOLD +' Do you want to continue scan for more possible results? (y/n): ')).lower().strip()
+        reply = str(raw_input(bcolors.BOLD +' Do You Want To Continue Scan For More Possible Results ? ( Y / N ) : ')).lower().strip()
         print bcolors.ENDC
         if (reply == 'n'):
             final_result()
