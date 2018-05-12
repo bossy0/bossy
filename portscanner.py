@@ -40,4 +40,5 @@ if __name__ == "__main__":
     results = scanParallel(ports, 8)
 
 # Printing the information to screen
-print "[*] Scanning Finished At " + strftime("%H:%M:%S") + "!"
+print "[*] Scanning Finished At " + strftime("%H:%M:%S") + ". . ."
+print "[*] Total Scan Duration : " + str(total_time)
