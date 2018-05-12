@@ -27,15 +27,12 @@ def shutdown():
 	sys.exit()
 def usage():
     print bcolors.RED + bcolors.BOLD
-    print (''' \033[91mBossy Dos Script v.1 https://www.aspartim.org/ ''')
-    print ('''  ____    _____   __   ____  ____   ''')
-    print (''' |    \  / ___/  /  ] /    ||    \  ''')
-    print (''' |  o  )(   \_  /  / |  o  ||  _  | ''')
-    print (''' |   _/  \__  |/  /  |     ||  |  | ''')
-    print (''' |  |    /  \ /   \_ |  _  ||  |  | ''')
-    print (''' |  |    \    \     ||  |  ||  |  | ''')
-    print (''' |__|     \___|\____||__|__||__|__| ''')
-    
+    print """
+              _______  ___ _______ ____
+             / __/ _ \(_-</ __/ _ `/ _ \.
+             \__/ .__/___/\__/\_,_/_//_/
+               /_/ v 1.0 - PSCAN
+    """
     print bcolors.ENDC
     print """
         USAGE:
@@ -94,15 +91,12 @@ if 'host' not in locals():
     usage()
 
 print bcolors.RED + bcolors.BOLD
-    print ('''  ____    _____   __   ____  ____   ''')
-    print (''' |    \  / ___/  /  ] /    ||    \  ''')
-    print (''' |  o  )(   \_  /  / |  o  ||  _  | ''')
-    print (''' |   _/  \__  |/  /  |     ||  |  | ''')
-    print (''' |  |    /  \ /   \_ |  _  ||  |  | ''')
-    print (''' |  |    \    \     ||  |  ||  |  | ''')
-    print (''' |__|     \___|\____||__|__||__|__| ''')
-                                 
-
+print """
+              _______  ___ _______ ____
+             / __/ _ \(_-</ __/ _ `/ _ \.
+             \__/ .__/___/\__/\_,_/_//_/
+               /_/ v 1.0 - PSCAN
+"""
 print bcolors.ENDC
 
 print t() + "[info] Checking Connection To Target Server"
