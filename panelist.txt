@@ -26,7 +26,6 @@
 /configuration/
 /configure/
 /websvn/
-/admin/
 /admin/account.php
 /admin/account.htmladmin/index.php
 /admin/index.html
@@ -393,3 +392,5 @@
 /adminhome.aspx
 /administrator_login.asp
 /administrator_login.aspx
+/Robots.txt
+/sitemap.xml
