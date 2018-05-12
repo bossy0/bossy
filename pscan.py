@@ -141,8 +141,7 @@ for i in range (maxlen):
     code=str(rcode)
 
     if (v==True and rcode >= 400):
-        print t() + "[response]" + bcolors.YE
-	LLOW + "["+code+"]" + bcolors.ENDC +" =>  "+ host + c_dir
+        print t() + "[response]" + bcolors.YELLOW + "["+code+"]" + bcolors.ENDC +" =>  "+ host + c_dir
 
     if (rcode <400 ):
         print bcolors.GREEN + bcolors.BOLD + t() + "[response]" + "["+code+"]" +" =>  "+ host + c_dir + bcolors.ENDC
@@ -150,7 +149,7 @@ for i in range (maxlen):
         result="[response]" + "["+code+"]" +" =>  "+ host + c_dir
         result_array.insert(num,result)
         num = num+1
-        reply = str(raw_input(bcolors.BOLD +' Do You Want To Continue Scan For More Possible Results ? (Y/N) : ')).lower().strip()
+        reply = str(raw_input(bcolors.BOLD +' Do You Want To Continue Scan For More Possible Results ? (Y / N) : ')).lower().strip()
         print bcolors.ENDC
         if (reply == 'n'):
             final_result()
