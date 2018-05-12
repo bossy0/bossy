@@ -97,7 +97,7 @@ if 'host' not in locals():
     usage()
 
 print bcolors.RED + bcolors.BOLD
-print """
+print ('''
  ____    _____   __   ____  ____  
 |    \  / ___/  /  ] /    ||    \ 
 |  o  )(   \_  /  / |  o  ||  _  |
@@ -105,8 +105,9 @@ print """
 |  |    /  \ /   \_ |  _  ||  |  |
 |  |    \    \     ||  |  ||  |  |
 |__|     \___|\____||__|__||__|__|
-                                  
-"""
+''')
+                                 
+
 print bcolors.ENDC
 
 print t() + "[info] Checking Connection To Target Server"
