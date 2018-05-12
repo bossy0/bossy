@@ -9,7 +9,7 @@ from time import strftime
 # subprocess.call('cls', shell=True)
 
 # Ask for input
-remoteServer    = raw_input("\033[94m > [*] Enter Target IP Adress : \033[0m")
+remoteServer    = raw_input("\033[1;36m > [*] Enter Target IP Adress : \033[1;m")
 remoteServerIP  = socket.gethostbyname(remoteServer)
 
 # Print a nice banner with information on which host we are about to scan
