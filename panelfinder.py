@@ -112,7 +112,7 @@ else:
 
 print t() + "[info] Initiating scan loading directory list"
 
-f = open( "dir", "r" )
+f = open( "panelist.txt", "r" )
 directory = []
 for line in f:
     directory.append(line)
