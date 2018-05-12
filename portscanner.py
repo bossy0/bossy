@@ -39,7 +39,7 @@ def scanParallel(ports, threads=-1):
 
 if __name__ == "__main__":
     ports =(21,22,23,25,53,80,110,115,135,139,143,194,443,445,465,587,993,995,1433,25565,3306,3389,5432,5900,6112,8080,8443)
-    results = scanParallel(ports, 4)
+    results = scanParallel(ports, -1)
     
     t2 = datetime.now()
     total =  t2 - t1
