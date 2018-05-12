@@ -27,15 +27,15 @@ def shutdown():
 	sys.exit()
 def usage():
     print bcolors.RED + bcolors.BOLD
-    print (''' \033[91mBossy Dos Script v.1 https://www.aspartim.org/
- ____    _____   __   ____  ____  
-|    \  / ___/  /  ] /    ||    \ 
-|  o  )(   \_  /  / |  o  ||  _  |
-|   _/  \__  |/  /  |     ||  |  |
-|  |    /  \ /   \_ |  _  ||  |  |
-|  |    \    \     ||  |  ||  |  |
-|__|     \___|\____||__|__||__|__|
-    '''
+    print (''' \033[91mBossy Dos Script v.1 https://www.aspartim.org/ ''')
+    print ('''  ____    _____   __   ____  ____   ''')
+    print (''' |    \  / ___/  /  ] /    ||    \  ''')
+    print (''' |  o  )(   \_  /  / |  o  ||  _  | ''')
+    print (''' |   _/  \__  |/  /  |     ||  |  | ''')
+    print (''' |  |    /  \ /   \_ |  _  ||  |  | ''')
+    print (''' |  |    \    \     ||  |  ||  |  | ''')
+    print (''' |__|     \___|\____||__|__||__|__| ''')
+    
     print bcolors.ENDC
     print """
         USAGE:
@@ -94,15 +94,13 @@ if 'host' not in locals():
     usage()
 
 print bcolors.RED + bcolors.BOLD
-print ('''
- ____    _____   __   ____  ____  
-|    \  / ___/  /  ] /    ||    \ 
-|  o  )(   \_  /  / |  o  ||  _  |
-|   _/  \__  |/  /  |     ||  |  |
-|  |    /  \ /   \_ |  _  ||  |  |
-|  |    \    \     ||  |  ||  |  |
-|__|     \___|\____||__|__||__|__|
-''')
+    print ('''  ____    _____   __   ____  ____   ''')
+    print (''' |    \  / ___/  /  ] /    ||    \  ''')
+    print (''' |  o  )(   \_  /  / |  o  ||  _  | ''')
+    print (''' |   _/  \__  |/  /  |     ||  |  | ''')
+    print (''' |  |    /  \ /   \_ |  _  ||  |  | ''')
+    print (''' |  |    \    \     ||  |  ||  |  | ''')
+    print (''' |__|     \___|\____||__|__||__|__| ''')
                                  
 
 print bcolors.ENDC
