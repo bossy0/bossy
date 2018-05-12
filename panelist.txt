@@ -394,3 +394,4 @@
 /administrator_login.aspx
 /Robots.txt
 /sitemap.xml
+/robots.txt
