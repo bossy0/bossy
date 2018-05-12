@@ -385,7 +385,8 @@
 /administartorlogin.aspx
 /login/administrator.aspx
 /adminlogin.asp
-/a/dminlogin.aspx
+/adminlogin.aspx
+/a/adminlogin.aspx
 /admin_login.asp
 /admin_login.aspx
 /adminhome.asp
