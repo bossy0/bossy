@@ -71,7 +71,6 @@ def my_bots():
 	bots=[]
 	bots.append("http://validator.w3.org/check?uri=")
 	bots.append("http://www.facebook.com/sharer/sharer.php?u=")
-	bots.append("https://check-host.net/check-http?host=")
 	bots.append("http://validator.w3.org/feed/check.cgi?url=")
 	bots.append("http://www.google.com/ig/adde?moduleurl=")
 	bots.append("http://www.google.com/?q=")
