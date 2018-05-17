@@ -228,3 +228,9 @@
 /Robots.txt
 /sitemap.xml
 /robots.txt
+:2082
+:2083
+:2086
+:2087
+:2095
+:2096
