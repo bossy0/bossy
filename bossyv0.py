@@ -140,12 +140,15 @@ def main(argv):
 		exit()
 
 global data
-dosya = open("proxy.txt", "r")
-dosya.read()
-dosya.close()
 headers = open("headers.txt", "r")
 data = headers.read()
 headers.close()
+
+# reading headers
+global data
+dosya = open("proxy.txt", "r")
+dosya.read()
+dosya.close()
 
 if __name__ == "__main__":
    main(sys.argv[1:])
