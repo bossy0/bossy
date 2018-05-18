@@ -145,7 +145,6 @@ data = headers.read()
 headers.close()
 
 # reading headers
-global data
 dosya = open("proxy.txt", "r")
 dosya.read()
 dosya.close()
