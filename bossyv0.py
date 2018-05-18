@@ -57,12 +57,12 @@ def initHeaders():
 
 def handleStatusCodes(status_code):
 	global request_counter
-	sys.stdout.write("\r%i Sent Package Number [ ✓ ]" % request_counter)
+	sys.stdout.write("\r%i Sent Package Number [ ✓ ] " % request_counter)
 	sys.stdout.flush()
 	if status_code == 429:
-			printMsg("You have been throttled")
+			printMsg("You Have Been Throttled")
 	if status_code == 500:
-		printedMsg("Status code 500 received")
+		printedMsg("Status Code 500 Received")
 
 def sendGET(url):
 	global request_counter
