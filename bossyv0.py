@@ -60,9 +60,9 @@ def handleStatusCodes(status_code):
 	sys.stdout.write("\r%i Sent Package Number [ ✓ ] " % request_counter)
 	sys.stdout.flush()
 	if status_code == 429:
-			printMsg("You Have Been Throttled")
+			printMsg("You have been throttled")
 	if status_code == 500:
-		printedMsg("Status Code 500 Received")
+		printedMsg("Status code 500 received")
 
 def sendGET(url):
 	global request_counter
