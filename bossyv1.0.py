@@ -45,6 +45,23 @@ print (" ")
 time.sleep(5)
 sent = 0
 
+F = open('proxy.txt')
+ips = F.read().split('\n')
+F.close()
+
+def httpcall(url):
+    useragent_list()
+    referer_list()
+    code=0
+    if url.count("?")>0:
+        param_joiner="&"
+    else:
+        param_joiner="?"
+    #F = open('result.txt')
+    #ips = F.read().split('\n')
+    #F.close()
+    requests = ''
+
 
 def user_agent():
 	global uagent
