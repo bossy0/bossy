@@ -189,6 +189,9 @@ global data
 in_file = open(raw_input("File Proxy ( proxy.txt ) : "),"r")
 proxyf = in_file.read()
 in_file.close()
+
+listaproxy = proxyf.split('\n')
+
 headers = open("headers.txt", "r")
 data = headers.read()
 headers.close()
