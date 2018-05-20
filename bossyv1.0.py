@@ -185,9 +185,10 @@ def get_parameters():
 
 # reading headers
 global data
-dosya = open("proxy.txt","w") 
-dosya.write()
-dosya.close()
+#Proxy
+in_file = open(raw_input("File Proxy ( proxy.txt ) : "),"r")
+proxyf = in_file.read()
+in_file.close()
 headers = open("headers.txt", "r")
 data = headers.read()
 headers.close()
