@@ -231,8 +231,10 @@ class Spammer(threading.Thread):
  
  
 class MainLoop():
-	
-	
+
+if __name__ == '__main__':
+    MainLoop().home()
+
 if __name__ == '__main__':
 	if len(sys.argv) < 2:
 		usage()
