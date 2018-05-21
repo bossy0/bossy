@@ -142,5 +142,5 @@ if __name__ == '__main__':
             break
         else:
             sleep(0.1)
-            sys.stdout.write('Connects : %d, Payloads : %d, Dropped : %d                   \r' % (connected, payloads, dropped))
+            sys.stdout.write(' Connects : %d, Payloads : %d, Dropped : %d                   \r' % (connected, payloads, dropped))
             sys.stdout.flush()
