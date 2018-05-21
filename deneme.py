@@ -1,3 +1,4 @@
+"""
 Usage : ./flood_udp <ip> <port> <second>
 """
 import time
