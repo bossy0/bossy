@@ -18,9 +18,9 @@ example:
   sudo python %s example.com -p 21 -payload 68656c6c6f
   sudo python %s example.com -p 22
 
-Connects - TCP handshakes towards victim
-Payloads - Recevied payloads by victim
-Dropped  - TCP handshakes or payloads rejected by victim (site down)
+Connects - TCP Handshakes Towards Victim
+Payloads - Recevied Payloads By Victim
+Dropped  - TCP Handshakes Or Payloads Rejected By Victim ( Site Down )
  
 ''' % (sys.argv[0], sys.argv[0], sys.argv[0], sys.argv[0], sys.argv[0])
 
