@@ -1,6 +1,10 @@
-from queue import Queue
-from optparse import OptionParser
-import time,sys,socket,threading,logging,urllib.request,random
+import socket
+import random
+import string
+import signal
+import ssl
+import argparse
+import sys
 
 example_text = ''' \nTips: Target page with 1500+ bytes size.
 
