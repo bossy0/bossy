@@ -12,11 +12,11 @@ from os import system, geteuid
 example_text = ''' \nTips: Target page with 1500+ bytes size.
 
 example:
-  python %s example.com/test.php -p 80 -http
-  python %s example.com/hello/ -p 443 -ssl -http
-  python %s example.com -p 80 -http 
-  python %s example.com -p 21 -payload 68656c6c6f
-  python %s example.com -p 22
+  sudo python %s example.com/test.php -p 80 -http
+  sudo python %s example.com/hello/ -p 443 -ssl -http
+  sudo python %s example.com -p 80 -http 
+  sudo python %s example.com -p 21 -payload 68656c6c6f
+  sudo python %s example.com -p 22
 
 Connects - TCP handshakes towards victim
 Payloads - Recevied payloads by victim
@@ -142,5 +142,5 @@ if __name__ == '__main__':
             break
         else:
             sleep(0.1)
-            sys.stdout.write('Connects: %d, Payloads: %d, Dropped: %d                   \r' % (connected, payloads, dropped))
+            sys.stdout.write('Connects : %d, Payloads : %d, Dropped : %d                   \r' % (connected, payloads, dropped))
             sys.stdout.flush()
