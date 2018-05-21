@@ -39,7 +39,7 @@ optional.add_argument('-payload', help='Set payload as hex-string')
 
 
 
-print("\nKittenz launcher.\n")
+print("\nProgram Started .\n")
 args = parser.parse_args()
 connected = 0
 dropped = 0
