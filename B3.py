@@ -5,6 +5,9 @@ import signal
 import ssl
 import argparse
 import sys
+from time import sleep
+from threading import Thread, active_count
+from os import system, geteuid
 
 example_text = ''' \nTips: Target page with 1500+ bytes size.
 
