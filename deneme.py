@@ -10,6 +10,7 @@ class httpDos():
     def __init__(self, host, port=80):
         self.host = host
         self.port = port
+	self.port = port
         self.run(host, port)
     def run(self, host, port):
         while running:
