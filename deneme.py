@@ -102,7 +102,7 @@ if __name__ == '__main__':
 			ip = raw_input("> Enter IP : "); port = input("> Port No : "); size = input("> Size : ")
 			tcpFlood(ip, port, size)
 		elif option == 4: # UDP FLOOD
-			ip = raw_input("> Enter IP : "); port = input("> Port No : "); size = input("Size: ")
+			ip = raw_input("> Enter IP : "); port = input("> Port No : "); size = input("> Size : ")
 			udpFlood(ip, port, size)
 
 	except KeyboardInterrupt:
