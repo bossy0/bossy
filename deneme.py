@@ -94,7 +94,7 @@ if __name__ == '__main__':
 		option = input("> Choose Any Options : ")
 		while type(option) != int: option = input("Choose Any Options : ")
 		if option == 1: #HTTP DOS
-			host = raw_input("> Enter The Host : "); port = input("> Port No : ") port1 = input("> Port No : ")
+			host = raw_input("> Enter The Host : "); port = input("> Port No : "); port1 = input("> Port N0 : ")
 			httpDos(host, port, port1)
 		elif option == 2: # SYN FLOOD
 			ip = raw_input("> Enter IP : "); port = input("> Port No : ")
