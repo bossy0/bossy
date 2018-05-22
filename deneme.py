@@ -11,7 +11,7 @@ class httpDos():
         self.host = host
         self.port = port
 	self.port = port1
-        self.run(host, port)
+        self.run(host, port, port1)
     def run(self, host, port, port1):
         while running:
             ip = socket.gethostbyname(host)
