@@ -93,13 +93,13 @@ if __name__ == '__main__':
 		option = input("> Choose Any Options: ")
 		while type(option) != int: option = input("> Choose Any Options : ")
 		if option == 1: #HTTP DOS
-			host = raw_input("> Enter The Host : "); port = input("Port No: ")
+			host = raw_input("> Enter The Host : "); port = input("> Port No : "); port1 = input("> Port No : ")
 			httpDos(host, port, port1)
 		elif option == 2: # SYN FLOOD
-			ip = raw_input("Enter IP: "); port = input("Port No: ")
+			ip = raw_input("> Enter IP : "); port = input("> Port No : ")
 			synFlood(ip, port)
 		elif option == 3: # TCP FLOOD
-			ip = raw_input("Enter IP: "); port = input("Port No: "); size = input("Size: ")
+			ip = raw_input("> Enter IP : "); port = input("> Port No : "); size = input("Size: ")
 			tcpFlood(ip, port, size)
 		elif option == 4: # UDP FLOOD
 			ip = raw_input("Enter IP: "); port = input("Port No: "); size = input("Size: ")
