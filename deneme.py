@@ -90,7 +90,7 @@ if __name__ == '__main__':
 > [2] SYN Flood
 > [3] TCP Flood
 > [4] UDP Flood"""
-		option = input("Choose Any Options : ")
+		option = input("> Choose Any Options : ")
 		while type(option) != int: option = input("Choose any options: ")
 		if option == 1: #HTTP DOS
 			host = raw_input("Enter the Host: "); port = input("Port No: ")
