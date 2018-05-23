@@ -22,8 +22,8 @@ print "\n";
  
 if ($#ARGV != 3) {
   print "\n\t\t\t***Example is as follows***\n";
-  print "-Ex) perl bossy.pl <ip> <port> <size> <time>\n";
-  print "-Therefore DDoSing the IP '1.1.1.1' for '300' seconds on port '80' using '1000' packets\n\n";
+  print "-Ex : perl bossy.pl <ip> <port> <size> <time>\n";
+  print "-For example 1.1.1.1 80 1000 300\n\n";
   exit(1);
 }
 
