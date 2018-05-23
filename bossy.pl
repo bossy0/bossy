@@ -21,8 +21,8 @@ print "\n";
 
  
 if ($#ARGV != 3) {
-  print "\n\t\t\t***Example is as follows***\n";
-  print "-Ex : perl bossy.pl <ip> <port> <size> <time>\n";
+  print "\n***Example is as follows***\n";
+  print "-Sample : perl bossy.pl <ip> <port> <size> <time>\n";
   print "-For example 1.1.1.1 80 1000 300\n\n";
   exit(1);
 }
