@@ -21,8 +21,8 @@ print "\n";
 
  
 if ($#ARGV != 3) {
-  print "\n\t\t\t***Error command must recieve four arguements***\n";
-  print "-Ex) perl DDoS.pl 1.1.1.1 80 1000 300\n";
+  print "\n\t\t\t***Example is as follows***\n";
+  print "-Ex) perl bossy.pl <ip> <port> <size> <time>\n";
   print "-Therefore DDoSing the IP '1.1.1.1' for '300' seconds on port '80' using '1000' packets\n\n";
   exit(1);
 }
