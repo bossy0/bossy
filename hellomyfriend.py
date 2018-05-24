@@ -363,7 +363,6 @@ class MonitorThread(threading.Thread):
 		previous=request_counter
 		while flag==0:
 			if (previous+100<request_counter) & (previous<>request_counter):
-				print ("\033[92m",time.ctime(time.time()),"\033[0m
 				print "[+] Sent Package %d " % (request_counter)
 				previous=request_counter
 		if flag==2:
