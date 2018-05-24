@@ -3,7 +3,7 @@ import sys
 import threading
 import random
 import re
-
+import time 
 #global params
 url=''
 host=''
@@ -12,6 +12,7 @@ headers_referers=[]
 request_counter=0
 flag=0
 safe=0
+print ("\033[92m",time.ctime(time.time()),"\033[0m
 
 def inc_counter():
 	global request_counter
