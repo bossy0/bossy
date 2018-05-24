@@ -12,7 +12,6 @@ headers_referers=[]
 request_counter=0
 flag=0
 safe=0
-print ("\033[92m",time.ctime(time.time()),"\033[0m
 
 def inc_counter():
 	global request_counter
@@ -364,6 +363,7 @@ class MonitorThread(threading.Thread):
 		previous=request_counter
 		while flag==0:
 			if (previous+100<request_counter) & (previous<>request_counter):
+				print ("\033[92m",time.ctime(time.time()),"\033[0m
 				print "[+] Sent Package %d " % (request_counter)
 				previous=request_counter
 		if flag==2:
