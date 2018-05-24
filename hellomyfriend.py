@@ -308,7 +308,7 @@ def buildblock(size):
 
 def usage():
 	print '---------------------------------------------------'
-	print 'USAGE : python hulk.py <url>'
+	print 'USAGE : python hellomyfriend.py <url>'
 	print 'To Stop The Attack CTRL-Z'
 	print '---------------------------------------------------'
 
@@ -377,7 +377,7 @@ else:
 		usage()
 		sys.exit()
 	else:
-		print "-- HULK Attack Started --"
+		print "-- HelloMyFriend Attack Started --"
 		if len(sys.argv)== 3:
 			if sys.argv[2]=="safe":
 				set_safe()
