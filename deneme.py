@@ -5,7 +5,7 @@ import random
 import re
 import urllib.request
 import os
-import sy
+import sys
 from bs4 import BeautifulSoup
 import logging
 logging.getLogger("scapy.runtime").setLevel(logging.ERROR) # per evitare di visualizzare l'errore d'avvio di scapy
