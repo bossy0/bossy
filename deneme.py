@@ -211,7 +211,7 @@ def proxyget1(): # lo dice il nome, questa funzione scarica i proxies
 		out_file.write("")
 		out_file.write(proxies)
 		out_file.close()
-		print ("Proxies downloaded successfully.")
+		print ("Victims Downloaded :)")
 	except: # se succede qualche casino
 		print ("\nERROR!\n")
 	proxylist() # se va tutto liscio allora prosegue eseguendo la funzione proxylist()
@@ -248,7 +248,7 @@ def inforgeget(): # anche questa funzione scarica proxy pero' da inforge.net
 
 def proxylist():
 	global proxies
-	out_file = str(input("Enter the proxylist filename/path (proxy.txt): "))
+	out_file = str(input("[+] Please 'proxy.txt' Write: "))
 	if out_file == "":
 		out_file = "proxy.txt"
 	proxies = open(out_file).readlines()
@@ -257,9 +257,9 @@ def proxylist():
 def numthreads():
 	global threads
 	try:
-		threads = int(input("Insert number of threads (800): "))
+		threads = int(input("[+] Please Enter The Number (1000) : "))
 	except ValueError:
-		threads = 800
+		threads = 1000
 		print ("800 threads selected.\n")
 	multiplication()
 
