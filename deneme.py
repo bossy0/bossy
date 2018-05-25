@@ -266,14 +266,14 @@ def numthreads():
 def multiplication():
 	global multiple
 	try:
-		multiple = int(input("Please '100' Write : "))
+		multiple = int(input("[+] Please '100' Write : "))
 	except ValueError:
 		print("You mistyped, try again.\n")
 		multiplication()
 	begin()
 
 def begin():
-	choice6 = input("Are You Sure You Want To Start The Attack ? 'Enter' : ")
+	choice6 = input("[+] Are You Sure You Want To Start The Attack ? 'Enter' : ")
 	if choice6 == "":
 		loop()
 	elif choice6 == "Enter": #lool
