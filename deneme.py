@@ -94,7 +94,7 @@ def starturl(): # in questa funzione setto l'url per renderlo usabile per il fut
 
 def floodmode():
 	global choice1
-	choice1 = input("[+] Please Press 0 : ")
+	choice1 = input("[+] Please Press '0' : ")
 	if choice1 == "0":
 		proxymode()
 	elif choice1 == "1":
@@ -136,7 +136,7 @@ def floodport():
 
 def proxymode():
 	global choice2
-	choice2 = input("Do you want proxy/socks mode? Answer 'y' to enable it: ")
+	choice2 = input("[+] Please Press 'y' : ")
 	if choice2 == "y":
 		choiceproxysocks()
 	else:
