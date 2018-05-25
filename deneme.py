@@ -16,6 +16,7 @@ if sys.platform.startswith("linux"): # se si è sotto linux
 	from scapy.all import * # importa scapy
 elif sys.platform.startswith("freebsd"): # o sotto freebsd
 	from scapy.all import * # importa scapy
+	else: # altrimenti
 
 print (" ")	
 print ("   ________         _     __      ")
