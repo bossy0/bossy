@@ -301,7 +301,7 @@ def loop():
 			if choice3 == "0": # e si sono scelti gli HTTP proxy
 				for x in range(threads):
 					tcpfloodproxed(x+1).start() # starta la classe apposita
-					print ("Thread " + str(x) + " ready!")
+					print ("Loading " + str(x) + " Ready ✓")
 				go.set() # questo fa avviare i threads appena sono tutti pronti
 			else: # altrimenti se si sono scelto è il tcp flood con socks
 				for x in range(threads):
