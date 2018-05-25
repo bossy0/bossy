@@ -17,14 +17,14 @@ if sys.platform.startswith("linux"): # se si è sotto linux
 elif sys.platform.startswith("freebsd"): # o sotto freebsd
 	from scapy.all import * # importa scapy
 else: # altrimenti
+	print (" ")
 
-print (" ")	
+	
 print ("   ________         _     __      ")
 print ("  / __/ __/__  ____(_)__ / /___ __")
 print (" / _/_\ \/ _ \/ __/ / -_) __/ // /")
 print ("/_/ /___/\___/\__/_/\__/\__/\_, / ")
 print ("                           /___/  ")
-print (" ")
 
 useragents=["Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36",
 			"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36",
