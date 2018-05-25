@@ -169,7 +169,7 @@ def choicedownsocks():
 
 def choicemirror1():
 	global urlproxy
-	choice5 = input ("[+] Please Press '0' :  ")
+	choice5 = input ("[+] Please Press '0' : ")
 	if choice5 == "0":
 		urlproxy = "http://free-proxy-list.net/"
 		proxyget1()
