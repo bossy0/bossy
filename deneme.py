@@ -260,7 +260,7 @@ def numthreads():
 		threads = int(input("[+] Please Enter The Number (1000) : "))
 	except ValueError:
 		threads = 1000
-		print ("800 threads selected.\n")
+		print ("[+] 1000 Threads Selected.\n")
 	multiplication()
 
 def multiplication():
@@ -273,7 +273,7 @@ def multiplication():
 	begin()
 
 def begin():
-	choice6 = input("Press 'Enter' to start attack: ")
+	choice6 = input("Are You Sure You Want To Start The Attack ? 'Enter' : ")
 	if choice6 == "":
 		loop()
 	elif choice6 == "Enter": #lool
