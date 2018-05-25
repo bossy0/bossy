@@ -144,7 +144,7 @@ def proxymode():
 
 def choiceproxysocks():
 	global choice3
-	choice3 = input("Type '0' to enable proxymode or type '1' to enable socksmode: ")
+	choice3 = input("[+] Please Press '0' : ")
 	if choice3 == "0":
 		choicedownproxy()
 	elif choice3 == "1":
@@ -154,7 +154,7 @@ def choiceproxysocks():
 		choiceproxysocks()
 
 def choicedownproxy():
-	choice4 = input("Do you want to download a new list of proxy? Answer 'y' to do it: ")
+	choice4 = input("[+] Please Press 'y' : ")
 	if choice4 == "y":
 		choicemirror1()
 	else:
