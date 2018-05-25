@@ -20,8 +20,6 @@ else: # altrimenti
 	print ("TCP/UDP FLOOD ARE NOT SUPPORTED UNDER THIS SYSTEM. YOU MUST USE HTTP FLOOD.") # printa questo
 
 print('''
-
-
    ________         _     __      
   / __/ __/__  ____(_)__ / /___ __
  / _/_\ \/ _ \/ __/ / -_) __/ // /
