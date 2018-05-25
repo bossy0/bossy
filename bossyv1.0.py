@@ -117,6 +117,13 @@ def bot_hammering(url):
 			print("\033[94m A8 3E 76 D7 99 51 5C 20 DC 1C A9 E3 FD 77 22 5F \033[0m")
 			print("\033[94m 5E F8 A5 65 EB 88 A7 AB AB 6F 56 A6 28 14 4F E2 \033[0m")
 			print("\033[94m 93 44 CA 90 0E 15 04 B5 49 E9 10 FB FF 2A 54 AF \033[0m")
+			print("\033[94m 8A D8 38 DD C7 05 39 9F 02 DE 96 0F 98 E1 C2 EF \033[0m")
+			print("\033[94m 01 D0 A8 C4 75 C9 4A C3 04 32 E8 21 53 9E D5 1A \033[0m")
+			print("\033[94m FC BB DD FE 34 37 AC 42 D6 15 06 70 0A 2A 6B B0 \033[0m")
+			print("\033[94m D6 1C 6A 5C 3B 1D EE 40 C8 20 10 D1 7C 0F 5B A2 \033[0m")
+			print("\033[94m 5A 92 8A 70 E6 36 2C DA 3E 36 6E CB AE F1 1B FC \033[0m")
+			print("\033[94m 78 C5 54 82 BA 84 3F DE 2D 7A BD A0 BD E0 40 AB \033[0m")
+			print("\033[94m 84 B2 3D 30 2D A0 87 D1 A3 2A AC 14 71 28 B5 82 \033[0m")
 			time.sleep(.1)
 	except:
 		time.sleep(.1)
