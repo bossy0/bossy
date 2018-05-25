@@ -211,7 +211,7 @@ def proxyget1(): # lo dice il nome, questa funzione scarica i proxies
 		out_file.write("")
 		out_file.write(proxies)
 		out_file.close()
-		print ("Victims Downloaded :)")
+		print ("[+] Victims Downloaded :)")
 	except: # se succede qualche casino
 		print ("\nERROR!\n")
 	proxylist() # se va tutto liscio allora prosegue eseguendo la funzione proxylist()
