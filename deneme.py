@@ -63,7 +63,7 @@ def starturl(): # in questa funzione setto l'url per renderlo usabile per il fut
 	global url2
 	global urlport
 
-	url = input("\nInsert URL/IP: ").strip()
+	url = input("\n[+] Target Or IP : ").strip()
 
 	if url == "":
 		print ("Please enter the url.")
@@ -94,7 +94,7 @@ def starturl(): # in questa funzione setto l'url per renderlo usabile per il fut
 
 def floodmode():
 	global choice1
-	choice1 = input("Please Press 0 ")
+	choice1 = input("[+] Please Press 0 : ")
 	if choice1 == "0":
 		proxymode()
 	elif choice1 == "1":
