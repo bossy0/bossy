@@ -248,7 +248,7 @@ def inforgeget(): # anche questa funzione scarica proxy pero' da inforge.net
 
 def proxylist():
 	global proxies
-	out_file = str(input("[+] Please 'proxy.txt' Write: "))
+	out_file = str(input("[+] Please 'proxy.txt' Write : "))
 	if out_file == "":
 		out_file = "proxy.txt"
 	proxies = open(out_file).readlines()
