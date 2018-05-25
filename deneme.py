@@ -301,17 +301,17 @@ def loop():
 			if choice3 == "0": # e si sono scelti gli HTTP proxy
 				for x in range(threads):
 					tcpfloodproxed(x+1).start() # starta la classe apposita
-					print ("Loading " + str(x) + " Ready ✓")
+					print ("[✓] Loading " + str(x) + " Ready")
 				go.set() # questo fa avviare i threads appena sono tutti pronti
 			else: # altrimenti se si sono scelto è il tcp flood con socks
 				for x in range(threads):
 					tcpfloodsocked(x+1).start() # starta la classe apposita
-					print ("Loading " + str(x) + " Ready ✓")
+					print ("[✓] Loading " + str(x) + " Ready")
 				go.set() # questo fa avviare i threads appena sono tutti pronti
 		else: # se non si sono stati scelti proxy o socks
 			for x in range(threads):
 				tcpflood(x+1).start() # starta la classe apposita
-				print ("Loading " + str(x) + " Ready ✓")
+				print ("[✓] Loading " + str(x) + " Ready")
 			go.set() # questo fa avviare i threads appena sono tutti pronti
 	else: # oppure:
 		if choice1 == "2": # se si e' scelto l'UDP flood
@@ -319,34 +319,34 @@ def loop():
 				if choice3 == "0": # e si sono scelti gli HTTP proxy
 					for x in range(threads):
 						udpfloodproxed(x+1).start() # starta la classe apposita
-						print ("Loading " + str(x) + " Ready ✓")
+						print ("[✓] Loading " + str(x) + " Ready")
 					go.set() # questo fa avviare i threads appena sono tutti pronti
 				else: # se si sono scelti i socks
 					for x in range(threads):
 						udpfloodsocked(x+1).start() # starta la classe apposita
-						print ("Loading " + str(x) + " Ready ✓")
+						print ("[✓] Loading " + str(x) + " Ready")
 					go.set() # questo fa avviare i threads appena sono tutti pronti
 			else: # se non si sono scelti proxy o socks per l'udp flood
 				for x in range(threads):
 					udpflood(x+1).start() # starta la classe apposita
-					print ("Loading " + str(x) + " Ready ✓")
+					print ("[✓] Loading " + str(x) + " Ready")
 				go.set() # questo fa avviare i threads appena sono tutti pronti
 		else: # se si è scelto l'http flood
 			if choice2 == "y": # se abbiamo scelto la modalita' proxying
 				if choice3 == "0": # e abbiamo scelto gli HTTP proxy
 					for x in range(threads):
 						requestproxy(x+1).start() # starta la classe apposita
-						print ("Loading " + str(x) + " Ready ✓")
+						print ("[✓] Loading " + str(x) + " Ready")
 					go.set() # questo fa avviare i threads appena sono tutti pronti
 				else: # se abbiamo scelto i socks
 					for x in range(threads):
 						requestsocks(x+1).start() # starta la classe apposita
-						print ("Loading " + str(x) + " Ready ✓")
+						print ("[✓] Loading " + str(x) + " Ready")
 					go.set() # questo fa avviare i threads appena sono tutti pronti
 			else: # altrimenti manda richieste normali non proxate.
 				for x in range(threads):
 					requestdefault(x+1).start() # starta la classe apposita
-					print ("Loading " + str(x) + " Ready ✓")
+					print ("[✓] Loading " + str(x) + " Ready")
 				go.set() # questo fa avviare i threads appena sono tutti pronti
 
 class tcpfloodproxed(threading.Thread): # la classe del multithreading
