@@ -94,7 +94,7 @@ def starturl(): # in questa funzione setto l'url per renderlo usabile per il fut
 
 def floodmode():
 	global choice1
-	choice1 = input("Do you want to perform HTTP flood '0'(best), TCP flood '1' or UDP flood '2' ? ")
+	choice1 = input("Please Press 0 ")
 	if choice1 == "0":
 		proxymode()
 	elif choice1 == "1":
