@@ -5,10 +5,8 @@ import random
 import re
 import urllib.request
 import os
-import sys
-
+import sy
 from bs4 import BeautifulSoup
-
 if sys.platform.startswith("linux"): # se si è sotto linux
 	from scapy.all import * # importa scapy
 elif sys.platform.startswith("freebsd"): # o sotto freebsd
