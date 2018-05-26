@@ -19,8 +19,7 @@ def init_socket(host, port):
     return s
 
 def parse_args():
-    parser = argparse.ArgumentParser(description='Socket DoS Attack ( python implementation )')
-    parser.add_argument('python bossyv0.7.py --host IP/Target --port 80 --max-sockets 30000')
+    parser = argparse.ArgumentParser(description='Socket DoS Attack ( python implementation )') 
     parser.add_argument('-i', '--host', type=str, required=True, help='target host')
     parser.add_argument('-p', '--port', type=int, required=True,
                         help='target port')
