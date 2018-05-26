@@ -19,7 +19,7 @@ def init_socket(host, port):
     return s
 
 def parse_args():
-    parser = argparse.ArgumentParser(description='Slowloris DoS attack (python implementation)')
+    parser = argparse.ArgumentParser(description='Socket DoS Attack ( python implementation )')
     parser.add_argument('-i', '--host', type=str, required=True, help='target host')
     parser.add_argument('-p', '--port', type=int, required=True,
                         help='target port')
