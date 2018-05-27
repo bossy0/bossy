@@ -1,4 +1,7 @@
 import socket
+import scapy
+import scapy.all
+from scapy import all
 import socks
 import threading
 import random
