@@ -252,7 +252,7 @@ if __name__ == '__main__':
 	my_bots()
 	time.sleep(5)
 	try:
-		s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+		s = socket.socket(socket.AF_INET, socket.SOCK_STREAM, socket.SOCK_DGRAM)
 		s.connect((host,int(port)))
 		s.settimeout(1)
 	except socket.error as e:
