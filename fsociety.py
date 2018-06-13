@@ -570,6 +570,11 @@ class requestproxy(threading.Thread): # la classe del multithreading
 				headers = open("headers.txt", "r")
 				data = headers.read()
 				headers.close()
+				##########
+				headers = open("proxy.txt", "r")
+				data = headers.read()
+				headers.close()
+				##########
 
 class requestsocks(threading.Thread): # la classe del multithreading
 
