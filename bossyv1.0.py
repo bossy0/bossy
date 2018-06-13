@@ -175,7 +175,7 @@ def get_parameters():
 	else:
 		usage()
 	if opts.port is None:
-		self.port = 80 if not self.ssl else 443
+		port = 80
 	else:
 		port = opts.port
 	if opts.turbo is None:
