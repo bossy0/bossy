@@ -52,6 +52,7 @@ def starturl(): # in questa funzione setto l'url per renderlo usabile per il fut
 	global url
 	global url2
 	global urlport
+	global urlport1
 
 	url = input("\n[+] Target Or IP : ").strip()
 
@@ -79,6 +80,11 @@ def starturl(): # in questa funzione setto l'url per renderlo usabile per il fut
 		urlport = url.replace("http://", "").replace("https://", "").split("/")[0].split(":")[1]
 	except:
 		urlport = "80"
+		
+	try:
+		urlport1 = url.replace("http://", "").replace("https://", "").split("/")[0].split(":")[1]
+	except:
+		urlport1 = "443"
 
 	floodmode()
 
