@@ -262,7 +262,7 @@ def numthreads():
 def multiplication():
 	global multiple
 	try:
-		multiple = int(input("[+] Please (1000) Write : "))
+		multiple = int(input("[+] Please (100) Write : "))
 	except ValueError:
 		print("You mistyped, try again.\n")
 		multiplication()
