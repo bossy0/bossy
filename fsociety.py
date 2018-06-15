@@ -566,10 +566,7 @@ class requestproxy(threading.Thread): # la classe del multithreading
 					s.close()
 			except:
 				s.close() # se qualcosa va storto, chiude il socket e il ciclo ricomincia
-				
-				headers = open("headers.txt", "r")
-				data = headers.read()
-				headers.close()
+
 
 class requestsocks(threading.Thread): # la classe del multithreading
 
