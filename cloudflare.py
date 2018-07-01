@@ -12,8 +12,9 @@ print (''' \033[91m  | \__/\| |___\ \_/ / |_| | |/ /| |   | |____| | | || |\ \| 
 print (''' \033[91m   \____/\_____/\___/ \___/|___/ \_|   \_____/\_| |_/\_| \_\____/  \033[0m''')
 print (" ")
 
-print (''' \033[93m [*] Sample Web Site : google.com  \033[0m''') 
+print (''' \033[93m[*] Sample Web Site : google.com  \033[0m''') 
 host = raw_input("\033[92m [*] Enter Website Address : \033[0m")
+print (" ")
 
 for sublist in subdomainlist:
     try:
