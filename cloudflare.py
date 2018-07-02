@@ -19,6 +19,7 @@ print (" \033[1;33m [*] Sample Website : google.com \033[1;m")
 print (" ")
 host    = raw_input("\033[1;36m  [*] Enter Website Address : \033[1;m")
 print (" ")
+print "\033[95m [*] Scanning Started At \033[0m" + strftime("\033[95m %H:%M:%S \033[0m") + "\033[95m ! \033[0m"
 
 for sublist in subdomainlist:
     try:
