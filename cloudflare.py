@@ -24,7 +24,7 @@ for sublist in subdomainlist:
     try:
        hosts = str(sublist) + "." + str(host)
        showip = socket.gethostbyname(str(hosts))
-       print "  [+] CloudFlare Bypass "+str(showip)+' | '+str(hosts)
+       print "  [+] CloudFlare Resolver "+str(showip)+' | '+str(hosts)
     except:
             pass
         
