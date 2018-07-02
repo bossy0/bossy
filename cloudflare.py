@@ -28,6 +28,7 @@ for sublist in subdomainlist:
        hosts = str(sublist) + "." + str(host)
        showip = socket.gethostbyname(str(hosts))
        print "  [+] CloudFlare Resolver "+str(showip)+' | '+str(hosts)
+       print (" \033[1;35m [*] Scanning Started At \033[1;m" + strftime("\033[1;35m %H:%M:%S \033[1;m") + "\033[1;35m ! \033[1;m")
     except:
             pass
         
