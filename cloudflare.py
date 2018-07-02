@@ -30,5 +30,7 @@ for sublist in subdomainlist:
        print "  [+] CloudFlare Resolver "+str(showip)+' | '+str(hosts)
     except:
             pass
-        
-print (" \033[1;35m [*] Scanning Started At \033[1;m" + strftime("\033[1;35m %H:%M:%S \033[1;m") + "\033[1;35m ! \033[1;m")
+print (" ")        
+print (" \033[1;35m [!] Scanning Finished At \033[1;m" + strftime("\033[1;35m %H:%M:%S \033[1;m") + "\033[1;35m ! \033[1;m")
+print (" ")
+print (" \033[1;35m [!] Scanning Completed \033[1;m ")
