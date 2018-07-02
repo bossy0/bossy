@@ -16,12 +16,12 @@ print (''' \033[91m '-----------------------------------------------------------
 print (''' \033[91m |      /facebook.com/bossy.078   /instagram.com/bossy.078       | \033[0m''')
 print (''' \033[91m '---------------------------------------------------------------' \033[0m''')
 print (" ")
+print "\033[1;35m [*] Scanning Started At \033[1;m" + strftime("\033[1;35m %H:%M:%S \033[1;m") + "\033[1;35m ! \033[1;m"
+print (" ")
 print (" \033[1;33m [*] Sample Website : google.com \033[1;m") 
 print (" ")
 host    = raw_input("\033[1;36m  [*] Enter Website Address : ")
 print (" ")
-###
-print "\033[1;35m [*] Scanning Started At \033[1;m" + strftime("\033[1;35m %H:%M:%S \033[1;m") + "\033[1;35m ! \033[1;m"
 
 for sublist in subdomainlist:
     try:
