@@ -1,7 +1,7 @@
 #!/usr/bin/python
 import socket
 
-subdomainlist = ["ftp", "cpanel", "webmail", "localhost", "local", "mysql", "forum", "driect-connect", "blog", "vb", "forums", "home", "direct", "forums", "mail", "access", "admin", "administrator", "email", "downloads", "ssh", "owa","bbs", "webmin", "paralel", "parallels", "www0", "www", "www1", "www2", "www3", "www4", "www5","shop", "api", "blogs", "test","mx1","cdn", "mysql", "mail1", "secure", "server", "ns1", "ns2", "smtp", "vpn", "m", "mail2", "postal", "support", "web", "dev"]
+subdomainlist = ["mail", "direct", "direct-connect", "direct-connect-mail", "cpanel", "ftp", "forum", "blog", "dev", "webmail", "record", "ssl", "dns", "help", "www", "admin", "pop", "imap", "beta", "portal", "m", "java", "server", "client", "ts3"]
 
 print (" ")
 print (''' \033[91m   _____  _     _____ _   _____________ _       ___  ______ _____  \033[0m''')
