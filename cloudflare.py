@@ -14,14 +14,14 @@ print (" ")
 
 print (''' \033[93m  [*] Sample Web Site : google.com  \033[0m''') 
 print (" ")
-host    = raw_input("\033[1;36m. [*] Enter Website Address : \033[1;m")
+host    = raw_input("\033[1;36m  [*] Enter Website Address : \033[1;m")
 print (" ")
 
 for sublist in subdomainlist:
     try:
        hosts = str(sublist) + "." + str(host)
        showip = socket.gethostbyname(str(hosts))
-       print "  [+] CloudFlare Bypass "+str(showip)+' | '+str(hosts)
+       print "   [+] CloudFlare Bypass "+str(showip)+' | '+str(hosts)
     except:
             pass
         
