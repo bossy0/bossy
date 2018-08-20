@@ -151,7 +151,7 @@ def usage():
 	-h : help
 	-u : server ip
 	-p : port default 80
-	-v : turbo default 200 \033[0m''')
+	-v : turbo default 3500 \033[0m''')
 	sys.exit()
 
 
@@ -179,7 +179,7 @@ def get_parameters():
 	else:
 		port = opts.port
 	if opts.turbo is None:
-		thr = 200
+		thr = 3500
 	else:
 		thr = opts.turbo
 
