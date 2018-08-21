@@ -507,7 +507,8 @@ def usage():
     print
     print GOLDENEYE_BANNER
     print 
-	print (''' \033[91mBossy Dos Script v.1 https://www.aspartim.org/
+    print
+	print ('''
   ____  _____ ____   ____  ____  ______  ____  ___ ___ 
  /    |/ ___/|    \ /    ||    \|      ||    ||   |   |
 |  o  (   \_ |  o  )  o  ||  D  )      | |  | | _   _ |
