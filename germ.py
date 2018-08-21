@@ -590,7 +590,7 @@ def main():
             except EnvironmentError:
                     error("cannot read file {0}".format(uas_file))
 
-        goldeneye = GoldenEye(url)
+        GERM = GERM(url)
         GERM.useragents = useragents
         GERM.nr_workers = workers
         GERM.method = method
