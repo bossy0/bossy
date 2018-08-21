@@ -32,7 +32,7 @@ JOIN_TIMEOUT=1.0
 DEFAULT_WORKERS=500
 DEFAULT_SOCKETS=1500
 
-GOLDENEYE_BANNER = 'GoldenEye v2.1 by Jan Seidl <jseidl@wroot.org>'
+GOLDENEYE_BANNER = 'Welcome To Germ Ddos Attack'
 
 USER_AGENT_PARTS = {
     'os': {
