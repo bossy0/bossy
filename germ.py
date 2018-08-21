@@ -123,8 +123,8 @@ class GoldenEye(object):
     def fire(self):
 
         self.printHeader()
-        print "DDoS attack started"
-	print "To stop the program CTRL + Z attack started"
+        print "DDoS Attack Started"
+	print "To Stop The Program CTRL + Z attack started"
 
         if DEBUG:
             print "Starting {0} concurrent workers".format(self.nr_workers)
