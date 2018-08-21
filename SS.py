@@ -502,13 +502,7 @@ class Striker(Process):
 ####
 
 def usage():
-    print
-    print '-----------------------------------------------------------------------------------------------------------'
-    print
-    print GOLDENEYE_BANNER
-    print 
-    print
-	print ('''
+	print (''' \033[91mBossy Dos Script v.1 https://www.aspartim.org/
   ____  _____ ____   ____  ____  ______  ____  ___ ___ 
  /    |/ ___/|    \ /    ||    \|      ||    ||   |   |
 |  o  (   \_ |  o  )  o  ||  D  )      | |  | | _   _ |
@@ -523,9 +517,9 @@ def usage():
 	-u : server ip
 	-p : port default 80
 	-v : turbo default 200 \033[0m''')
-    print '-----------------------------------------------------------------------------------------------------------'
-
+	sys.exit()
     
+
 def error(msg):
     # print help information and exit:
     sys.stderr.write(str(msg+"\n"))
