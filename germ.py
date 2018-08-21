@@ -590,11 +590,11 @@ def main():
             except EnvironmentError:
                     error("cannot read file {0}".format(uas_file))
 
-        germ = GERMClass(url)
-        germ.useragents = useragents
-        germ.nr_workers = workers
-        germ.method = method
-        germ.nr_sockets = socks
+        goldeneye = GoldenEye(url)
+        goldeneye.useragents = useragents
+        goldeneye.nr_workers = workers
+        goldeneye.method = method
+        goldeneye.nr_sockets = socks
 
         germ.fire()
 
