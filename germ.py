@@ -590,7 +590,7 @@ def main():
             except EnvironmentError:
                     error("cannot read file {0}".format(uas_file))
 
-        germ = Germ(url)
+        germ = germ(url)
         germ.useragents = useragents
         germ.nr_workers = workers
         germ.method = method
