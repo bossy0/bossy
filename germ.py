@@ -107,7 +107,7 @@ class GoldenEye(object):
 
     def exit(self):
         self.stats()
-        print "Shutting down GoldenEye"
+        print "Shutting Down Germ"
 
     def __del__(self):
         self.exit()
@@ -123,8 +123,7 @@ class GoldenEye(object):
     def fire(self):
 
         self.printHeader()
-        print "Webserver İn Mode '{0}' With {1} Workers Running {2} Connections Each
-	print "Hit CTRL+C to cancel.".format(self.method, self.nr_workers, self.nr_sockets)
+        print "Webserver İn Mode '{0}' With {1} Workers Running {2} Connections Each Hit CTRL+C to cancel.".format(self.method, self.nr_workers, self.nr_sockets)
 
         if DEBUG:
             print "Starting {0} concurrent workers".format(self.nr_workers)
