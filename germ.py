@@ -123,7 +123,8 @@ class GoldenEye(object):
     def fire(self):
 
         self.printHeader()
-        print "Webserver in mode '{0}' with {1} workers running {2} connections each hit CTRL+C to cancel.".format(self.method, self.nr_workers, self.nr_sockets)
+        print "DDoS attack started"
+	print "To stop the program CTRL + Z attack started"
 
         if DEBUG:
             print "Starting {0} concurrent workers".format(self.nr_workers)
