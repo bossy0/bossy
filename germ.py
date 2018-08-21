@@ -124,6 +124,7 @@ class GoldenEye(object):
 
         self.printHeader()
         print "DDoS Attack Started"
+	print 
 	print "To Stop The Program CTRL + Z attack started"
 
         if DEBUG:
