@@ -512,8 +512,7 @@ def usage():
 |__|__| \___||__|  |__|__||__|\_| |__|  |____||___|___|
                                                        
                                 \n
-	usage : python2
-	bossyv1.0.py [-w] [-s] [-m]
+	usage : python2 bossyv1.0.py [-w] [-s] [-m]
 	-h : help
 	-w : Default 500
 	-s : Default 1500
