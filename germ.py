@@ -596,7 +596,7 @@ def main():
         GERM.method = method
         GERM.nr_sockets = socks
 
-        goldeneye.fire()
+        GERM.fire()
 
     except getopt.GetoptError, err:
 
