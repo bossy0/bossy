@@ -107,7 +107,7 @@ class GoldenEye(object):
 
     def exit(self):
         self.stats()
-        print "Shutting Down Germ"
+        print "Shutting Down"
 
     def __del__(self):
         self.exit()
