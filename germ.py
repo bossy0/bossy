@@ -502,9 +502,6 @@ class Striker(Process):
 ####
 
 def usage():
-	print
-	print GOLDENEYE_BANNER
-	print
 	print (''' \033[91m          GERM Dos Script v.1
           ____________  __  ___  
          / ___/ __/ _ \/  |/  /  
