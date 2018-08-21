@@ -517,7 +517,8 @@ def usage():
 	-s : Default 1500
 	-m : Get-Post-Random \033[0m''')
 	sys.exit()
-    
+ 
+print
 
 def error(msg):
     # print help information and exit:
