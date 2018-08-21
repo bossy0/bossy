@@ -71,10 +71,10 @@ USER_AGENT_PARTS = {
 }
 
 ####
-# GoldenEye Class
+# BOSSY
 ####
 
-class GoldenEye(object):
+class BOSSY(object):
 
     # Counters
     counter = [0, 0]
@@ -116,7 +116,7 @@ class GoldenEye(object):
 
         # Taunt!
         print
-        print GOLDENEYE_BANNER
+        print 
         print
 
     # Do the fun!
