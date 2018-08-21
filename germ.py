@@ -590,13 +590,13 @@ def main():
             except EnvironmentError:
                     error("cannot read file {0}".format(uas_file))
 
-        GERM = GERM(url)
-        GERM.useragents = useragents
-        GERM.nr_workers = workers
-        GERM.method = method
-        GERM.nr_sockets = socks
+        germ = germ(url)
+        germ.useragents = useragents
+        germ.nr_workers = workers
+        germ.method = method
+        germ.nr_sockets = socks
 
-        GERM.fire()
+        germ.fire()
 
     except getopt.GetoptError, err:
 
