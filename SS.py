@@ -524,7 +524,7 @@ def usage():
 	-p : port default 80
 	-v : turbo default 200 \033[0m''')
     print '-----------------------------------------------------------------------------------------------------------'
-a
+
     
 def error(msg):
     # print help information and exit:
