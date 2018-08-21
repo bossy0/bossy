@@ -125,7 +125,8 @@ class GoldenEye(object):
         self.printHeader()
         print "DDoS Attack Started"
 	print 
-	print "To Stop The Program CTRL + Z attack started"
+	print "To Stop The Program CTRL + Z Attack Started"
+	print
 
         if DEBUG:
             print "Starting {0} concurrent workers".format(self.nr_workers)
