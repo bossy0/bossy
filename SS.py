@@ -512,11 +512,12 @@ def usage():
 |__|__| \___||__|  |__|__||__|\_| |__|  |____||___|___|
                                                        
                                 \n
-	usage : python3 bossyv1.0.py [-u] [-p] [-v]
+	usage : python2
+	bossyv1.0.py [-w] [-s] [-m]
 	-h : help
-	-u : server ip
-	-p : port default 80
-	-v : turbo default 200 \033[0m''')
+	-w : Default 500
+	-s : Default 1500
+	-m : Get-Post-Random \033[0m''')
 	sys.exit()
     
 
