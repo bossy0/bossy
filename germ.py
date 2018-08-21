@@ -502,7 +502,7 @@ class Striker(Process):
 ####
 
 def usage():
-	print (''' \033[91mGERM Dos Script v.1
+	print (''' \033[91m       GERM Dos Script v.1
           ____________  __  ___  
          / ___/ __/ _ \/  |/  /  
         / (_ / _// , _/ /|_/ /   
