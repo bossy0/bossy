@@ -507,6 +507,7 @@ def usage():
  / ___/ __/ _ \/  |/  /  
 / (_ / _// , _/ /|_/ /   
 \___/___/_/|_/_/  /_/ \n
+
 	usage : python2 germ.py [-w] [-s] [-m]
 	-h : help
 	-w : Default 500
