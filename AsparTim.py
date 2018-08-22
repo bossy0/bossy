@@ -32,7 +32,7 @@ JOIN_TIMEOUT=1.0
 DEFAULT_WORKERS=500
 DEFAULT_SOCKETS=1500
 
-GOLDENEYE_BANNER = 'Welcome To Germ Ddos Attack'
+GOLDENEYE_BANNER = 'Welcome To AsparTim Ddos Attack'
 
 USER_AGENT_PARTS = {
     'os': {
