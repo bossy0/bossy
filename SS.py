@@ -145,7 +145,7 @@ class SS(object):
                 pass
 
         if DEBUG:
-            print "Initiating monitor"
+            print (''' ''')
         self.monitor()
 
     def stats(self):
