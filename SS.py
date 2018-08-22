@@ -286,7 +286,7 @@ class Striker(Process):
     def run(self):
 
         if DEBUG:
-            print "Starting clound {0}".format(self.name)
+            print (''' ''')
 
         while self.runnable:
 
