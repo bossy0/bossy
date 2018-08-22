@@ -32,7 +32,7 @@ JOIN_TIMEOUT=1.0
 DEFAULT_WORKERS=500
 DEFAULT_SOCKETS=1500
 
-AsparTim_BANNER = 'Welcome To AsparTim Ddos Attack'
+ASPARTİM_BANNER = 'Welcome To AsparTim Ddos Attack'
 
 USER_AGENT_PARTS = {
     'os': {
@@ -116,7 +116,7 @@ class AsparTim(object):
 
         # Taunt!
         print
-        print AsparTim_BANNER
+        print ASPARTİM_BANNER
         print
 
     # Do the fun!
