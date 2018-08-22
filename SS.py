@@ -117,7 +117,7 @@ class SS(object):
 
         # Taunt!
         print
-        print SS_BANNER
+        print 
         print
 
     # Do the fun!
