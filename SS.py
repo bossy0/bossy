@@ -598,7 +598,7 @@ def main():
             except EnvironmentError:
                     error("cannot read file {0}".format(uas_file))
 
-        SS = (url)
+        SS = BlackHorizan(url)
         SS.useragents = useragents
         SS.nr_clounds = clounds
         SS.method = method
