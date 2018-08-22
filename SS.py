@@ -598,7 +598,7 @@ def main():
             except EnvironmentError:
                     error("cannot read file {0}".format(uas_file))
 
-        SS = SS(url)
+        SS = (url)
         SS.useragents = useragents
         SS.nr_clounds = clounds
         SS.method = method
