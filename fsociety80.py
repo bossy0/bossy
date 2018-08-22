@@ -26,7 +26,7 @@ print (" / _/_\ \/ _ \/ __/ / -_) __/ // /")
 print ("/_/ /___/\___/\__/_/\__/\__/\_, / ")
 print ("                           /___/  ")
 
-headers = open("proxyy.txt", "r")
+headers = open("proxy.txt", "r")
 data = headers.read()
 headers.close()
 
