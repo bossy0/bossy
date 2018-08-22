@@ -127,7 +127,7 @@ class SS(object):
         print (''' ''')
 
         if DEBUG:
-            print "Starting {0} concurrent clounds".format(self.nr_clounds)
+            print (''' ''')
 
         # Start clounds
         for i in range(int(self.nr_clounds)):
@@ -153,7 +153,7 @@ class SS(object):
         try:
             if self.counter[0] > 0 or self.counter[1] > 0:
 
-                print "#--------> Clounds Online: {0} attacking... (Offline: {1}) Conection's online: {2} <--------#".format(self.counter[0], self.counter[1])
+                print (''' ''')
 
                 if self.counter[0] > 0 and self.counter[1] > 0 and self.last_counter[0] == self.counter[0] and self.counter[1] > self.last_counter[1]:
                     print "\tClound's can't attack more check if the website is offline."
@@ -324,7 +324,7 @@ class Striker(Process):
                     pass # silently ignore
 
         if DEBUG:
-            print "clound {0} completed run. Sleeping...".format(self.name)
+            print (''' ''')
 
     def closeConnections(self):
         for conn in self.socks:
@@ -600,7 +600,7 @@ def main():
             except EnvironmentError:
                     error("cannot read file {0}".format(uas_file))
 
-        SS = BlackHorizon(url)
+        SS = SS(url)
         SS.useragents = useragents
         SS.nr_clounds = clounds
         SS.method = method
