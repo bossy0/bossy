@@ -505,13 +505,15 @@ class Striker(Process):
 ####
 
 def usage():
-	print (''' \033[91m          GERM Dos Script v.1
-          ____________  __  ___  
-         / ___/ __/ _ \/  |/  /  
-        / (_ / _// , _/ /|_/ /   
-        \___/___/_/|_/_/  /_/ \n
+	print (''' \033[91mAsparTim Dos Script v.1
+    ___                         _______         
+   /   |  _________  ____ _____/_  __(_)___ ___ 
+  / /| | / ___/ __ \/ __ `/ ___// / / / __ `__ \
+ / ___ |(__  ) /_/ / /_/ / /   / / / / / / / / /
+/_/  |_/____/ .___/\__,_/_/   /_/ /_/_/ /_/ /_/ 
+           /_/                                   \n
 
-	usage : python2 germ.py [-w] [-s] [-m]
+	usage : python2 AsparTim.py [-w] [-s] [-m]
 	-h : help
 	-w : Default 500
 	-s : Default 1500
