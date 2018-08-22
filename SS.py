@@ -176,11 +176,11 @@ class SS(object):
                 self.stats()
 
             except (KeyboardInterrupt, SystemExit):
-                print "Removing all SS Clound's"
+                print (''' ''')
                 for clound in self.cloundsQueue:
                     try:
                         if DEBUG:
-                            print "Killing clound {0}".format(clound.name)
+                            print (''' ''')
                         #clound.terminate()
                         clound.stop()
                     except Exception, ex:
