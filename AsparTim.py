@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 import smtplib,sys,time,os,random
 from threading import Thread
-color = random.choice(["\033[31m","\033[32m","\033[33m","\033[34m","\033[35m","\033[36m"])
-	print (''' \033[91mBossy Dos Script v.1 https://www.aspartim.org/
+
+print (''' \033[91mBossy Dos Script v.1 https://www.aspartim.org/
   ____  _____ ____   ____  ____  ______  ____  ___ ___ 
  /    |/ ___/|    \ /    ||    \|      ||    ||   |   |
 |  o  (   \_ |  o  )  o  ||  D  )      | |  | | _   _ |
@@ -17,7 +17,7 @@ color = random.choice(["\033[31m","\033[32m","\033[33m","\033[34m","\033[35m","\
 	-u : server ip
 	-p : port default 80
 	-v : turbo default 200 \033[0m''')
-print(color)
+
 time.sleep(2)
 try:
 	os.system("clear")
