@@ -505,7 +505,7 @@ class Striker(Process):
 ####
 
 def usage():
-	print (''' \033[91m      AsparTim Dos Script v.1
+	print (''' \033[91m            AsparTim Dos Script v.1
   ____  _____ ____   ____  ____  ______  ____  ___ ___ 
  /    |/ ___/|    \ /    ||    \|      ||    ||   |   |
 |  o  (   \_ |  o  )  o  ||  D  )      | |  | | _   _ |
