@@ -594,7 +594,7 @@ def main():
             except EnvironmentError:
                     error("cannot read file {0}".format(uas_file))
 
-        aspartım = AsparTim(url)
+        aspartım = ASPARTIM(url)
         aspartım.useragents = useragents
         aspartım.nr_workers = workers
         aspartım.method = method
