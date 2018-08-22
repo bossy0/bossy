@@ -19,7 +19,7 @@ print (''' \033[91mBossy Dos Script v.1 https://www.aspartim.org/
 	-v : turbo default 200 \033[0m''')
 
 
-
+time.sleep(5)
 try:
 	os.system("clear")
 except:
