@@ -106,7 +106,7 @@ class SS(object):
 
     def exit(self):
         self.stats()
-        print "Stopping BlackHorizon"
+        print "Stopping SS"
 
     def __del__(self):
         self.exit()
@@ -174,7 +174,7 @@ class SS(object):
                 self.stats()
 
             except (KeyboardInterrupt, SystemExit):
-                print "Removing all Horizon Clound's"
+                print "Removing all SS Clound's"
                 for clound in self.cloundsQueue:
                     try:
                         if DEBUG:
