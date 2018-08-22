@@ -17,6 +17,7 @@ print (''' \033[91mBossy Dos Script v.1 https://www.aspartim.org/
 	-u : server ip
 	-p : port default 80
 	-v : turbo default 200 \033[0m''')
+        sys.exit()
 
 time.sleep(2)
 try:
