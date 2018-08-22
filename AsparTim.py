@@ -594,13 +594,13 @@ def main():
             except EnvironmentError:
                     error("cannot read file {0}".format(uas_file))
 
-        AsparTim = AsparTim(url)
-        AsparTim.useragents = useragents
-        AsparTim.nr_workers = workers
-        AsparTim.method = method
-        AsparTim.nr_sockets = socks
+        aspartım = AsparTim(url)
+        aspartım.useragents = useragents
+        aspartım.nr_workers = workers
+        aspartım.method = method
+        aspartım.nr_sockets = socks
 
-        AsparTim.fire()
+        aspartım.fire()
 
     except getopt.GetoptError, err:
 
