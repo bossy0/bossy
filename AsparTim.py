@@ -107,7 +107,7 @@ class AsparTim(object):
 
     def exit(self):
         self.stats()
-        print "Shutting Down Germ"
+        print "Shutting Down AsparTim"
 
     def __del__(self):
         self.exit()
@@ -611,3 +611,24 @@ def main():
 
 if __name__ == "__main__":
     main()
+#################################################################################
+#                             aaaaaaaaaaaaaaaa               *                  #
+#                         aaaaaaaaaaaaaaaaaaaaaaaa                              #
+#                      aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa                           #
+#                    aaaaaaaaaaaaaaaaa           aaaaaa                         #
+#                  aaaaaaaaaaaaaaaa                  aaaa                       #
+#                 aaaaaaaaaaaaa aa                      aa                      #
+#*               aaaaaaaa      aa                         a                     #
+#                aaaaaaa aa aaaa                                                #
+#          *    aaaaaaaaa     aaa                                               #
+#               aaaaaaaaaaa aaaaaaa                               *             #
+#               aaaaaaa    aaaaaaaaaa                                           #
+#               aaaaaa a aaaaaa aaaaaa                                          #
+#                aaaaaaa  aaaaaaa                                               #
+#                aaaaaaaa                                 a                     #
+#                 aaaaaaaaaa                            aa                      #
+#                  aaaaaaaaaaaaaaaa                  aaaa                       #
+#                    aaaaaaaaaaaaaaaaa           aaaaaa        *                #
+#      *               aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa                           #
+#                         aaaaaaaaaaaaaaaaaaaaaaaa                              #
+#                      *      aaaaaaaaaaaaaaaa                                  #
