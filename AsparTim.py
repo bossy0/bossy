@@ -32,7 +32,7 @@ JOIN_TIMEOUT=1.0
 DEFAULT_WORKERS=500
 DEFAULT_SOCKETS=1500
 
-ASPARTİM_BANNER = 'Welcome To AsparTim Ddos Attack'
+ASPARTIM_BANNER = 'Welcome To AsparTim Ddos Attack'
 
 USER_AGENT_PARTS = {
     'os': {
@@ -71,10 +71,10 @@ USER_AGENT_PARTS = {
 }
 
 ####
-# AsparTim Class
+# AsparTım Class
 ####
 
-class AsparTim(object):
+class AsparTım(object):
 
     # Counters
     counter = [0, 0]
@@ -116,7 +116,7 @@ class AsparTim(object):
 
         # Taunt!
         print
-        print ASPARTİM_BANNER
+        print ASPARTIM_BANNER
         print
 
     # Do the fun!
@@ -594,11 +594,11 @@ def main():
             except EnvironmentError:
                     error("cannot read file {0}".format(uas_file))
 
-        goldeneye = GoldenEye(url)
-        goldeneye.useragents = useragents
-        goldeneye.nr_workers = workers
-        goldeneye.method = method
-        goldeneye.nr_sockets = socks
+        aspartım = AsparTim(url)
+        aspartım.useragents = useragents
+        aspartım.nr_workers = workers
+        aspartım.method = method
+        aspartım.nr_sockets = socks
 
         goldeneye.fire()
 
