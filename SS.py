@@ -106,7 +106,9 @@ class SS(object):
 
     def exit(self):
         self.stats()
+        print (" ")
         print "Stopping SS"
+        print (" ")
 
     def __del__(self):
         self.exit()
