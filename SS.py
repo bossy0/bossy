@@ -598,13 +598,13 @@ def main():
             except EnvironmentError:
                     error("cannot read file {0}".format(uas_file))
 
-        blackhorizon = BlackHorizon(url)
-        blackhorizon.useragents = useragents
-        blackhorizon.nr_clounds = clounds
-        blackhorizon.method = method
-        blackhorizon.nr_sockets = socks
+        SS = SS(url)
+        SS.useragents = useragents
+        SS.nr_clounds = clounds
+        SS.method = method
+        SS.nr_sockets = socks
 
-        blackhorizon.fire()
+        SS.fire()
 
     except getopt.GetoptError, err:
 
