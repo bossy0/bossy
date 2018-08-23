@@ -524,8 +524,11 @@ def usage():
     print "/_____/_/\__,_/\___/_/|_/_/ /_/\____/_/  /_/ /___/\____/_/ /_/  "
     print " "
     print ' USAGE : python2 BlackHorizon.py http://www.target.com/ '
+    print " "
     print ' -c, --clounds Number of concurrent clounds\t( Default : {0} )'.format(DEFAULT_CLOUNDS)
+    print " "
     print ' -s, --sockets Number of concurrent sockets\t( Default : {0} )'.format(DEFAULT_SOCKETS)
+    print " "
     print ' WHO AM I ? : https://www.facebook.com/WHOAMI/'
     print "\a"
 
