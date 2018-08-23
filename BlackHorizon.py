@@ -122,7 +122,7 @@ class BlackHorizon(object):
     def fire(self):
 
         self.printHeader()
-        print "Attacking Website with {1} clounds per attack and {2} connections per sockets.".format(self.method, self.nr_clounds, self.nr_sockets)
+        print "Attacking Website With {1} Clounds Per Attack And {2} Connections Per Sockets".format(self.method, self.nr_clounds, self.nr_sockets)
 
         if DEBUG:
             print "Starting {0} concurrent clounds".format(self.nr_clounds)
