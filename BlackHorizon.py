@@ -106,7 +106,7 @@ class BlackHorizon(object):
 
     def exit(self):
         self.stats()
-        print "\033[91m [!] No Connection ✓ Server Maybe Down \033[0m"
+        print "\033[91m [!] No Connection Server Maybe Down \033[0m"
 
     def __del__(self):
         self.exit()
