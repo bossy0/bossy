@@ -525,11 +525,11 @@ def usage():
     print " "
     print '\033[93m USAGE : python2 BlackHorizon.py http://www.target.com/ \033[0m'
     print " "
-    print ' -c, --clounds Number of concurrent clounds\t( Default : {0} )'.format(DEFAULT_CLOUNDS)
+    print '\033[95m -c, --clounds Number of concurrent clounds\t( Default : {0} ) \033[0m'.format(DEFAULT_CLOUNDS)
     print " "
-    print ' -s, --sockets Number of concurrent sockets\t( Default : {0} )'.format(DEFAULT_SOCKETS)
+    print '\033[95m -s, --sockets Number of concurrent sockets\t( Default : {0} ) \033[0m'.format(DEFAULT_SOCKETS)
     print " "
-    print ' WHO AM I ? : https://www.facebook.com/WHOAMI/'
+    print '\033[91m WHO AM I ? : https://www.facebook.com/WHOAMI/ \033[0m'
     print "\a"
 
 
