@@ -514,15 +514,17 @@ class Striker(Process):
 
 def usage():
     print BLACKHORIZON_BANNER
+    print " "
     print "    ____  __           __   __  __           _     "             
     print "   / __ )/ /___ ______/ /__/ / / /___  _____(_)___  ____  ____  "
     print "  / __  / / __ `/ ___/ //_/ /_/ / __ \/ ___/ /_  / / __ \/ __ \ "
     print " / /_/ / / /_/ / /__/ ,< / __  / /_/ / /  / / / /_/ /_/ / / / / "
     print "/_____/_/\__,_/\___/_/|_/_/ /_/\____/_/  /_/ /___/\____/_/ /_/  "
-    print ' USAGE: ./BlackHorizon.py http://www.target.com/ [OPTIONS]'
+    print " "
+    print ' USAGE: ./BlackHorizon.py http://www.target.com/ '
     print ' -c, --clounds Number of concurrent clounds\t(default: {0})'.format(DEFAULT_CLOUNDS)
     print ' -s, --sockets Number of concurrent sockets\t(default: {0})'.format(DEFAULT_SOCKETS)
-    print 'GhostSquadHackers page: https://www.facebook.com/GhostSquadHackers/'
+    print 'GhostSquadHackers page: https://www.facebook.com/WHOAMI/'
     print "\a"
 
 
