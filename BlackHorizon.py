@@ -122,9 +122,9 @@ class BlackHorizon(object):
     def fire(self):
 
         self.printHeader()
-        print "\033[94m Attacking Website With {1} Clounds Per Attack And {2} Connections Per Sockets \033[0m".format(self.method, self.nr_clounds, self.nr_sockets)
+        print "\033[94m [*] Attacking Website With {1} Clounds Per Attack And {2} Connections Per Sockets \033[0m".format(self.method, self.nr_clounds, self.nr_sockets)
         print " "
-        print "\033[91m To Stop The Attack Started CTRL + Z.\033[0m"
+        print "\033[91m [*] To Stop The Attack Started CTRL + Z.\033[0m"
 
         if DEBUG:
             print "Starting {0} concurrent clounds".format(self.nr_clounds)
@@ -523,11 +523,11 @@ def usage():
     print "\033[96m / /_/ / / /_/ / /__/ ,< / __  / /_/ / /  / / / /_/ /_/ / / / / \033[0m"
     print "\033[96m/_____/_/\__,_/\___/_/|_/_/ /_/\____/_/  /_/ /___/\____/_/ /_/  \033[0m"
     print " "
-    print '\033[93m USAGE : python2 BlackHorizon.py http://www.target.com/ \033[0m'
+    print '\033[93m [*] USAGE : python2 BlackHorizon.py http://www.target.com/ \033[0m'
     print " "
-    print '\033[95m -c , --clounds Number Of Concurrent Clounds\t( Default : {0} ) \033[0m'.format(DEFAULT_CLOUNDS)
+    print '\033[95m [+] -c , --clounds Number Of Concurrent Clounds\t( Default : {0} ) \033[0m'.format(DEFAULT_CLOUNDS)
     print " "
-    print '\033[95m -s , --sockets Number Of Concurrent Sockets\t( Default : {0} ) \033[0m'.format(DEFAULT_SOCKETS)
+    print '\033[95m [+] -s , --sockets Number Of Concurrent Sockets\t( Default : {0} ) \033[0m'.format(DEFAULT_SOCKETS)
     print " "
     print '\033[91m WHO AM I ? : https://www.facebook.com/WHOAMI/ \033[0m'
     print "\a"
