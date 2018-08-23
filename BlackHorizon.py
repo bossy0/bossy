@@ -123,6 +123,8 @@ class BlackHorizon(object):
 
         self.printHeader()
         print "Attacking Website With {1} Clounds Per Attack And {2} Connections Per Sockets".format(self.method, self.nr_clounds, self.nr_sockets)
+        print " "
+        print "To Stop The Attack Started CTRL + Z"
 
         if DEBUG:
             print "Starting {0} concurrent clounds".format(self.nr_clounds)
