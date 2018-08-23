@@ -31,7 +31,7 @@ JOIN_TIMEOUT=1.0
 DEFAULT_CLOUNDS=500
 DEFAULT_SOCKETS=1500
 
-BLACKHORIZON_BANNER = ' Welcome To BlackHorizon DDoS Attack'
+BLACKHORIZON_BANNER = '[ * ] Welcome To BlackHorizon DDoS Attack'
 
 USER_AGENT_PARTS = {
     'os': {
