@@ -106,7 +106,7 @@ class BlackHorizon(object):
 
     def exit(self):
         self.stats()
-        print "Stopping BlackHorizon"
+        print "\033[91m [!] Stopping BlackHorizon \033[0m"
 
     def __del__(self):
         self.exit()
