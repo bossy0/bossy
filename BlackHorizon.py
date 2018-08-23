@@ -524,7 +524,7 @@ def usage():
     print ' USAGE: ./BlackHorizon.py http://www.target.com/ '
     print ' -c, --clounds Number of concurrent clounds\t(default: {0})'.format(DEFAULT_CLOUNDS)
     print ' -s, --sockets Number of concurrent sockets\t(default: {0})'.format(DEFAULT_SOCKETS)
-    print 'GhostSquadHackers page: https://www.facebook.com/WHOAMI/'
+    print ' WHO AM I ? : https://www.facebook.com/WHOAMI/'
     print "\a"
 
 
