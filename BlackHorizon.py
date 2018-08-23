@@ -543,6 +543,18 @@ def error(msg):
 # Main
 ####
 
+# reading headers
+global data
+headers = open("proxy.txt", "r")
+data = headers.read()
+headers.close()
+headers = open("headers.txt", "r")
+data = headers.read()
+headers.close()
+
+####
+# Data
+####
 def main():
 
     try:
