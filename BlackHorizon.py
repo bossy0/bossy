@@ -523,7 +523,7 @@ def usage():
     print " / /_/ / / /_/ / /__/ ,< / __  / /_/ / /  / / / /_/ /_/ / / / / "
     print "/_____/_/\__,_/\___/_/|_/_/ /_/\____/_/  /_/ /___/\____/_/ /_/  "
     print " "
-    print ' USAGE: ./BlackHorizon.py http://www.target.com/ '
+    print ' USAGE : python2 BlackHorizon.py http://www.target.com/ '
     print ' -c, --clounds Number of concurrent clounds\t( Default : {0} )'.format(DEFAULT_CLOUNDS)
     print ' -s, --sockets Number of concurrent sockets\t( Default : {0} )'.format(DEFAULT_SOCKETS)
     print ' WHO AM I ? : https://www.facebook.com/WHOAMI/'
