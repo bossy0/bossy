@@ -31,7 +31,7 @@ JOIN_TIMEOUT=1.0
 DEFAULT_CLOUNDS=10
 DEFAULT_SOCKETS=10
 
-BLACKHORIZON_BANNER = 'BlackHorizon Clound Based DDoS Tool Created By Hax Stroke for GSH Members'
+BLACKHORIZON_BANNER = 'Welcome To BlackHorizon DDoS Attack'
 
 USER_AGENT_PARTS = {
     'os': {
