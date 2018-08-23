@@ -519,11 +519,11 @@ def usage():
     print ' -s, --sockets Number of concurrent sockets\t(default: {0})'.format(DEFAULT_SOCKETS)
     print 'GhostSquadHackers page: https://www.facebook.com/GhostSquadHackers/'
     print "\a"
-print "    ____  __           __   __  __           _     "             
-print "   / __ )/ /___ ______/ /__/ / / /___  _____(_)___  ____  ____  "
-print "  / __  / / __ `/ ___/ //_/ /_/ / __ \/ ___/ /_  / / __ \/ __ \ "
-print " / /_/ / / /_/ / /__/ ,< / __  / /_/ / /  / / / /_/ /_/ / / / / "
-print "/_____/_/\__,_/\___/_/|_/_/ /_/\____/_/  /_/ /___/\____/_/ /_/  "
+    print "    ____  __           __   __  __           _     "             
+    print "   / __ )/ /___ ______/ /__/ / / /___  _____(_)___  ____  ____  "
+    print "  / __  / / __ `/ ___/ //_/ /_/ / __ \/ ___/ /_  / / __ \/ __ \ "
+    print " / /_/ / / /_/ / /__/ ,< / __  / /_/ / /  / / / /_/ /_/ / / / / "
+    print "/_____/_/\__,_/\___/_/|_/_/ /_/\____/_/  /_/ /___/\____/_/ /_/  "
                                                                
 
 def error(msg):
