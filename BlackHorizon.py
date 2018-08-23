@@ -523,7 +523,7 @@ def usage():
     print "\033[96m / /_/ / / /_/ / /__/ ,< / __  / /_/ / /  / / / /_/ /_/ / / / / \033[0m"
     print "\033[96m/_____/_/\__,_/\___/_/|_/_/ /_/\____/_/  /_/ /___/\____/_/ /_/  \033[0m"
     print " "
-    print ' USAGE : python2 BlackHorizon.py http://www.target.com/ '
+    print '\033[93m USAGE : python2 BlackHorizon.py http://www.target.com/ \033[0m'
     print " "
     print ' -c, --clounds Number of concurrent clounds\t( Default : {0} )'.format(DEFAULT_CLOUNDS)
     print " "
