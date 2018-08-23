@@ -31,7 +31,7 @@ JOIN_TIMEOUT=1.0
 DEFAULT_CLOUNDS=10
 DEFAULT_SOCKETS=10
 
-BLACKHORIZON_BANNER = 'Welcome To BlackHorizon DDoS Attack'
+BLACKHORIZON_BANNER = ' Welcome To BlackHorizon DDoS Attack'
 
 USER_AGENT_PARTS = {
     'os': {
@@ -122,9 +122,9 @@ class BlackHorizon(object):
     def fire(self):
 
         self.printHeader()
-        print "Attacking Website With {1} Clounds Per Attack And {2} Connections Per Sockets".format(self.method, self.nr_clounds, self.nr_sockets)
+        print " Attacking Website With {1} Clounds Per Attack And {2} Connections Per Sockets".format(self.method, self.nr_clounds, self.nr_sockets)
         print " "
-        print "To Stop The Attack Started CTRL + Z"
+        print " To Stop The Attack Started CTRL + Z"
 
         if DEBUG:
             print "Starting {0} concurrent clounds".format(self.nr_clounds)
