@@ -520,15 +520,6 @@ def usage():
     print 'GhostSquadHackers page: https://www.facebook.com/GhostSquadHackers/'
     print "\a"
 print \
-"""
-    ____  __           __   __  __           _                 
-   / __ )/ /___ ______/ /__/ / / /___  _____(_)___  ____  ____ 
-  / __  / / __ `/ ___/ //_/ /_/ / __ \/ ___/ /_  / / __ \/ __ \
- / /_/ / / /_/ / /__/ ,< / __  / /_/ / /  / / / /_/ /_/ / / / /
-/_____/_/\__,_/\___/_/|_/_/ /_/\____/_/  /_/ /___/\____/_/ /_/ 
-                                                                 
-"""
-
 
 def error(msg):
     # print help information and exit:
