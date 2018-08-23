@@ -529,7 +529,7 @@ def usage():
     print " "
     print '\033[95m [+] -s , --sockets Number Of Concurrent Sockets\t( Default : {0} ) \033[0m'.format(DEFAULT_SOCKETS)
     print " "
-    print '\033[91m WHO AM I ? : https://www.facebook.com/WHOAMI/ \033[0m'
+    print '\033[91m [*] WHO AM I ? : https://www.facebook.com/WHOAMI/ \033[0m'
     print "\a"
 
 
