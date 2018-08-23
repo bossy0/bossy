@@ -1,35 +1,4 @@
-$ cat BlackHorizon.py
 #!/usr/bin/env python
-###############################################################################
-#                     /#\                                                     #
-#                    /###\     /\                                             #
-#                   /  ###\   /##\  /\                                        #
-#                  /      #\ /####\/##\                                       #
-#                 /  /      /   # /  ##\             _       /\               #
-#               // //  /\  /    _/  /  #\ _         /#\    _/##\    /\        #
-#              // /   /  \     /   /    #\ \      _/###\_ /   ##\__/ _\       #
-#             /  \   / .. \   / /   _   { \ \   _/       / //    /    \\      #
-#     /\     /    /\  ...  \_/   / / \   } \ | /  /\  \ /  _    /  /    \ /\  #
-#  _ /  \  /// / .\  ..%:.  /... /\ . \ {:  \\   /. \     / \  /   ___   /  \ #
-# /.\ .\.\// \/... \.::::..... _/..\ ..\:|:. .  / .. \\  /.. \    /...\ /  \ \#
-#/...\.../..:.\. ..:::::::..:..... . ...\{:... / %... \\/..%. \  /./:..\__   \#
-# .:..\:..:::....:::;;;;;;::::::::.:::::.\}.....::%.:. \ .:::. \/.%:::.:..\   #
-#::::...:::;;:::::;;;;;;;;;;;;;;:::::;;::{:::::::;;;:..  .:;:... ::;;::::..   #
-#;;;;:::;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;];;;;;;;;;;::::::;;;;:.::;;;;;;;;:..#
-#;;;;;;;;;;;;;;ii;;;;;;;;;;;;;;;;;;;;;;;;[;;;;;;;;;;;;;;;;;;;;;;:;;;;;;;;;;;;;#
-#;;;;;;;;;;;;;;;;;;;iiiiiiii;;;;;;;;;;;;;;};;ii;;iiii;;;;i;;;;;;;;;;;;;;;ii;;;#
-#iiii;;;iiiiiiiiiiIIIIIIIIIIIiiiiiIiiiiii{iiIIiiiiiiiiiiiiiiii;;;;;iiiilliiiii#
-#IIIiiIIllllllIIlllIIIIlllIIIlIiiIIIIIIIIIIIIlIIIIIllIIIIIIIIiiiiiiiillIIIllII#
-#IIIiiilIIIIIIIllTIIIIllIIlIlIIITTTTlIlIlIIIlIITTTTTTTIIIIlIIllIlIlllIIIIIIITT#
-#IIIIilIIIIITTTTTTTIIIIIIIIIIIIITTTTTIIIIIIIIITTTTTTTTTTIIIIIIIIIlIIIIIIIITTTT#
-#IIIIIIIIITTTTTTTTTTTTTIIIIIIIITTTTTTTTIIIIIITTTTTTTTTTTTTTIIIIIIIIIIIIIITTTTT#
-#Black Horizon iDDoS Tool Created for takedown some websites and give chaos   #
-################################Hax Stroke#####################################
-########################youtube.com/c/HaXStroKE################################
-###########################Twitter: @HaxStroke#################################
-###################################GSH#########################################
-##################https://www.facebook.com/GhostSquadHackers/##################
-
 
 from multiprocessing import Process, Manager, Pool
 import urlparse, ssl
