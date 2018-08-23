@@ -127,7 +127,7 @@ class BlackHorizon(object):
         print "\033[91m [*] To Stop The Attack Started CTRL + Z.\033[0m"
 
         if DEBUG:
-            print "Starting {0} concurrent clounds".format(self.nr_clounds)
+            print "\033[95m [*] Starting {0} Concurrent Clounds \033[0m".format(self.nr_clounds)
 
         # Start clounds
         for i in range(int(self.nr_clounds)):
@@ -286,7 +286,7 @@ class Striker(Process):
     def run(self):
 
         if DEBUG:
-            print "Starting clound {0}".format(self.name)
+            print "\033[95m Starting Clound {0} \033[0m".format(self.name)
 
         while self.runnable:
 
