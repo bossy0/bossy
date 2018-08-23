@@ -141,7 +141,7 @@ class BlackHorizon(object):
                 self.cloundsQueue.append(clound)
                 clound.start()
             except (Exception):
-                error("Failed to start clound {0}".format(i))
+                error("\033[91m [+] Failed To Start Clound {0} \033[0m".format(i))
                 pass
 
         if DEBUG:
