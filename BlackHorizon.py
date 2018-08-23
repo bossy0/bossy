@@ -81,10 +81,10 @@ class BlackHorizon(object):
 
     # Containers
     cloundsQueue = []                                                  ###############################
-    manager = None                                                     #~~~~Created By Hax Stroke~~~~#
+    manager = None                                                     #~~~~Created By WhoAmI~~~~#
     useragents = []                                                    #~~~~~~~~~~@FollowMe~~~~~~~~~~#
-                                                                       #~~~youtube.com/c/HaXStroKE~~~#
-    # Properties                                                       #~~~~~Twitter:@HaxStroKE~~~~~~#
+                                                                       #~~~youtube.com/c/WhoAmI~~~#
+    # Properties                                                       #~~~~~Twitter:@WhoAmI~~~~~~#
     url = None                                                         ###############################
 
     # Options
@@ -244,7 +244,7 @@ class Striker(Process):
             'http://www.yandex.com/',                                             #Botnets                   #
             'http://www.yahoo.com/',                                              #Infected's Websites       #
             'http://www.globo.com/',                                              #Best's Shells Only        #
-            'http://www.pastebin.com/',                                           #All uploaded by Hax Stroke#
+            'http://www.pastebin.com/',                                           #All uploaded by WHOAMI    #
             'https://www.nasa.gov/',                                              #From GhostSquadHackers    #
             'https://www.facebook.com/',                                          ############################
             'http://www.chris.com/',
@@ -521,27 +521,12 @@ def usage():
     print "\a"
 print \
 """
-           .          .           .     .                .       .
-  .      .      *           .       .          .                       .
-                 .       .   . *  "The horizon will be black one day...
-  .       ____     .      . .      the day don't will exist more will be night"
-         <WW>>>         .        .               .
- .   .  /WWWI; \  .       .    .  ____               .         .     .
-  *    /WWWWII; \=====;    .     /WI; \   *    .        /\_             .
-  .   /WWWWWII;..      \_  . ___/WI;:. \     .        _/M; \    .   .         .
-     /WWWWWIIIIi;..      \__/WWWIIII:.. \____ .   .  /MMI:  \   * .
- . _/WWWWWIIIi;;;:...:   ;\WWWWWWIIIII;.     \     /MMWII;   \    .  .     .
-  /WWWWWIWIiii;;;.:.. :   ;\WWWWWIII;;;::     \___/MMWIIII;   \              .
- /WWWWWIIIIiii;;::.... :   ;|WWWWWWII;;::.:      :;IMWIIIII;:   \___     *
-/WWWWWWWWWIIIIIWIIii;;::;..;\WWWWWWIII;;;:::...    ;IMIII;;     ::  \     .
-WWWWWWWWWIIIIIIIIIii;;::.;..;\WWWWWWWWIIIII;;..  :;IMIII;:::     :    \
-WWWWWWWWWWWWWIIIIIIii;;::..;..;\WWWWWWWWIIII;::; :::::::::.....::
-########################################################################XXXXXXX
-#####################################################################XXXXXXXXXX
-##################################################################XXXXXXXXXXXXX
-##############################################################XXXXXXXXXXXXXXXXX
-###########################################################XXXXXXXXXXXXXXXXXXXX
-#####################################################XXXXXXXXXXXXXXXXXXXXXXXXXX           
+    ____  __           __   __  __           _                 
+   / __ )/ /___ ______/ /__/ / / /___  _____(_)___  ____  ____ 
+  / __  / / __ `/ ___/ //_/ /_/ / __ \/ ___/ /_  / / __ \/ __ \
+ / /_/ / / /_/ / /__/ ,< / __  / /_/ / /  / / / /_/ /_/ / / / /
+/_____/_/\__,_/\___/_/|_/_/ /_/\____/_/  /_/ /___/\____/_/ /_/ 
+                                                                    
 """
 
 
