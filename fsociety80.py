@@ -548,7 +548,7 @@ class requestproxy(threading.Thread): # la classe del multithreading
 	def run(self): # la funzione che da' le istruzioni ai vari threads
 		useragent = "User-Agent: " + random.choice(useragents) + "\r\n" # scelta useragent a caso
 		accept = random.choice(acceptall) # scelta header accept a caso
-		randomip = str(random.randint(0,255)) + "." + str(random.randint(0,255)) + "." + str(random.randint(0,255)) + "." + str(random.randint(0,255))
+		 = str(random.randint(0,255)) + "." + str(random.randint(0,255)) + "." + str(random.randint(0,255)) + "." + str(random.randint(0,255))
 		forward = "X-Forwarded-For: " + randomip + "\r\n" # X-Forwarded-For, un header HTTP che permette di incrementare anonimato (vedi google per info)
 		request = get_host + useragent + accept + forward + connection + "\r\n" # ecco la final request
 		current = x # per dare l'id al thread
