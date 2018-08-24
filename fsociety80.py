@@ -555,7 +555,7 @@ class requestproxy(threading.Thread): # la classe del multithreading
 		if current < len(proxies): # se l'id del thread si puo' associare ad un proxy, usa quel proxy
 			proxy = proxies[current].strip().split(':')
 		else: # altrimenti lo prende a random
-			proxy = random.choice(proxies)
+			proxy = random.choice(proxies).strip().split(":")
 		go.wait() # aspetta che i threads siano pronti
 		while True: # ciclo infinito
 			try:
