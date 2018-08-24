@@ -552,7 +552,7 @@ class requestproxy(threading.Thread): # la classe del multithreading
 		forward = "X-Forwarded-For: " + randomip + "\r\n" # X-Forwarded-For, un header HTTP che permette di incrementare anonimato (vedi google per info)
 		request = get_host + useragent + accept + forward + connection + "\r\n" # ecco la final request
 		current = x # per dare l'id al thread
-		if current < len(proxies): # se l'id del thread si puo' associare ad un proxy, usa quel proxy
+		if current < len(): # se l'id del thread si puo' associare ad un proxy, usa quel proxy
 			proxy = proxies[current].strip().split(':')
 		else: # altrimenti lo prende a random
 			proxy = random.choice(proxies).strip().split(":")
