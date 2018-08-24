@@ -564,8 +564,8 @@ class requestproxy(threading.Thread): # la classe del multithreading
 				s.send(str.encode(request)) # encode in bytes della richiesta HTTP
 				print (" " + str(proxy[0]+":"+proxy[1]) + " ", self.counter) # print delle richieste
 				try: # invia altre richieste nello stesso thread
-					for y in range(multiplee): # fattore di moltiplicazione
-						s.send(str.encode(requesst)) # encode in bytes della richiesta HTTP
+					for y in range(multiple): # fattore di moltiplicazione
+						s.send(str.encode(request)) # encode in bytes della richiesta HTTP
 				except: # se qualcosa va storto, chiude il socket e il ciclo ricomincia
 					s.close()
 			except:
