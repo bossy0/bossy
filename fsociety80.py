@@ -560,7 +560,6 @@ class requestproxy(threading.Thread): # la classe del multithreading
 		while True: # ciclo infinito
 			try:
 				s = socket.socket(socket.AF_INET, socket.SOCK_STREAM) # ecco il nostro socket
-				s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM) # ecco il nostro socket
 				s.connect((str(proxy[0]), int(proxy[1]))) # connessione al proxy
 				s.send(str.encode(request)) # encode in bytes della richiesta HTTP
 				print (" " + str(proxy[0]+":"+proxy[1]) + " ", ) # print delle richieste
