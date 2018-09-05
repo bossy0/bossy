@@ -441,7 +441,7 @@ print "\033[96m   / __ \____ _      ______  / /___  ____ _____/ /  / __ \_______
 print "\033[96m  / / / / __ \ | /| / / __ \/ / __ \/ __ `/ __  /  / /_/ / ___/ __ \| |/_/ / / / \033[0m"
 print "\033[96m / /_/ / /_/ / |/ |/ / / / / / /_/ / /_/ / /_/ /  / ____/ /  / /_/ />  </ /_/ / \033[0m" 
 print "\033[96m/_____/\____/|__/|__/_/ /_/_/\____/\__,_/\__,_/  /_/   /_/   \____/_/|_|\__, / \033[0m"  
-print "\033[96m                                                                       /____/ \033[0m''')   
+print "\033[96m                                                                       /____/ \033[0m"
 # urls vari
 nurls = ["http://www.aliveproxy.com/high-anonymity-proxy-list/", "http://www.aliveproxy.com/anonymous-proxy-list/",
 		"http://www.aliveproxy.com/fastest-proxies/", "http://www.aliveproxy.com/us-proxy-list/", "http://www.aliveproxy.com/gb-proxy-list/",
