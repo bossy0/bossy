@@ -576,7 +576,7 @@ def main(): # funzione effettiva del programma.
 		proxyget2(url)
 		print("Current IPs İn Proxylist : %s" % (len(open("proxy.txt").readlines()))) # printa la lunghezza attuale del file, che sarebbe il numero di proxy
 
-		print ("\nDownloading from blogspot in progress...\n")
+		print ("\nDownloading From Blogspot İn Progress...\n")
 		url = "http://www.proxyserverlist24.top/"
 		word = "post-title entry-title"
 		word2 = "h3"
