@@ -628,4 +628,4 @@ if __name__ == '__main__':
 			proxycheckerinit()
 			break
 		else: # se scrivi male richiede l'input
-			print ("Please write correctly.")
+			print ("Please Write Correctly.")
