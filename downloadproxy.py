@@ -602,17 +602,17 @@ def main(): # funzione effettiva del programma.
 
 		print("\n")
 		while True:
-			choice = input("\nDo you want to check the proxies? [Y/n] > ") # scelta di quello che vuole l'utente
+			choice = input("\nDo You Want To Check The Proxies ? [ Y / n ] > ") # scelta di quello che vuole l'utente
 			if choice == 'Y' or choice == 'y' or choice == 'yes' or choice == 'Yes' or choice == '': # se si vuole checkare starta funzione del check
 				proxycheckerinit()
 				break
 			if choice == 'N' or choice == 'n' or choice == 'no' or choice == 'No': # altrimenti esce
 				exit(0)
 			else: # se scrivi male input
-				print ("Please write correctly.")
+				print ("Please Write Correctly .")
 
 	except: # se succede qualcosa di inaspettato
-		print ("\n\nAn error occurred.")
+		print ("\n\nAn Error Occurred .")
 
 
 
