@@ -513,7 +513,7 @@ def blogspotget(url, word, word2): # anche questa funzione scarica proxy pero' d
 							out_file.close()
 							break # il ciclo si ferma non appena ha finito
 	except:
-		print("An error occurred, skipping to the next website.\n")
+		print("An Error Occurred Skipping To The Next Website.\n")
 
 def proxylist(): # funzione per la creazione della proxylist
 	global proxies
