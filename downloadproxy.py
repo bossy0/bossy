@@ -517,7 +517,7 @@ def blogspotget(url, word, word2): # anche questa funzione scarica proxy pero' d
 
 def proxylist(): # funzione per la creazione della proxylist
 	global proxies
-	print ("\nChecking for duplicates...")
+	print ("\nChecking For Duplicates...")
 	proxies = open("proxy.txt").readlines() # la lista txt presenta doppioni, quindi:
 	proxiesp = []
 	for i in proxies:
