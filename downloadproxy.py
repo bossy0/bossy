@@ -436,11 +436,11 @@ useragents=["AdsBot-Google ( http://www.google.com/adsbot.html)",
 			"wii libnup/1.0",
 			]
 #####
-print "    ____  ____  ____ _  ____  __ "
-print "   / __ \/ __ \/ __ \ |/ /\ \/ / "
-print "  / /_/ / /_/ / / / /   /  \  / "
-print " / ____/ _, _/ /_/ /   |   / /  "
-print "/_/   /_/ |_|\____/_/|_|  /_/ "                            
+print (''' \033[92m    ____  ____  ____ _  ____  __ \033[0m''')
+print (''' \033[92m   / __ \/ __ \/ __ \ |/ /\ \/ / \033[0m''')
+print (''' \033[92m  / /_/ / /_/ / / / /   /  \  / \033[0m''')
+print (''' \033[92m / ____/ _, _/ /_/ /   |   / /  \033[0m''')
+print (''' \033[92m/_/   /_/ |_|\____/_/|_|  /_/ \033[0m''')                         
 #####
 # urls vari
 nurls = ["http://www.aliveproxy.com/high-anonymity-proxy-list/", "http://www.aliveproxy.com/anonymous-proxy-list/",
