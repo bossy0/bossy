@@ -495,7 +495,7 @@ def proxyget2(url): # lo dice il nome, questa funzione scarica i proxies
 		out_file.write(proxies)
 		out_file.close()
 	except: # se succede qualche casino
-		print("An error occurred, skipping to the next website.\n") # printa questo
+		print("An Error Occurred Skipping To The Next Website.\n") # printa questo
 
 def blogspotget(url, word, word2): # anche questa funzione scarica proxy pero' dai siti blogspot
 	try:
