@@ -620,7 +620,7 @@ def main(): # funzione effettiva del programma.
 if __name__ == '__main__':
 
 	while True:
-		choice = input("\nDo you want to download proxies? [Y/n] > ")
+		choice = input("\nDo You Want To Download Proxies ? [ Y / n ] > ")
 		if choice == 'Y' or choice == 'y' or choice == 'yes' or choice == 'Yes' or choice == '': # se si vuole scaricare i proxy va in main()
 			main()
 			break
