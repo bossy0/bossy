@@ -436,7 +436,6 @@ useragents=["AdsBot-Google ( http://www.google.com/adsbot.html)",
 			"wii libnup/1.0",
 			]
 def usage():
-    print " "
     print "\033[96m    ____                      __                __   ____  \033[0m"                      
     print "\033[96m   / __ \____ _      ______  / /___  ____ _____/ /  / __ \_________  _  ____  __ \033[0m"
     print "\033[96m  / / / / __ \ | /| / / __ \/ / __ \/ __ `/ __  /  / /_/ / ___/ __ \| |/_/ / / / \033[0m"
