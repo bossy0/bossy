@@ -473,7 +473,7 @@ def proxyget(url): # scarica proxy da altri siti
 							out_file.close()
 							break # appena finisce ferma il ciclo
 	except: # se c'è un errore
-		print("An error occurred, skipping to the next website.\n") # printa questo
+		print("An Error Occurred Skipping To The Next Website.\n") # printa questo
 
 def proxyget2(url): # lo dice il nome, questa funzione scarica i proxies
 	try:
