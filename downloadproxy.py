@@ -435,7 +435,14 @@ useragents=["AdsBot-Google ( http://www.google.com/adsbot.html)",
 			"Wget/1.9 cvs-stable (Red Hat modified)",
 			"wii libnup/1.0",
 			]
-
+def usage():
+	print (''' \033[92m
+    ____                      __                __   ____                       
+   / __ \____ _      ______  / /___  ____ _____/ /  / __ \_________  _  ____  __
+  / / / / __ \ | /| / / __ \/ / __ \/ __ `/ __  /  / /_/ / ___/ __ \| |/_/ / / /
+ / /_/ / /_/ / |/ |/ / / / / / /_/ / /_/ / /_/ /  / ____/ /  / /_/ />  </ /_/ / 
+/_____/\____/|__/|__/_/ /_/_/\____/\__,_/\__,_/  /_/   /_/   \____/_/|_|\__, /  
+                                                                       /____/ \033[0m''')   
 # urls vari
 nurls = ["http://www.aliveproxy.com/high-anonymity-proxy-list/", "http://www.aliveproxy.com/anonymous-proxy-list/",
 		"http://www.aliveproxy.com/fastest-proxies/", "http://www.aliveproxy.com/us-proxy-list/", "http://www.aliveproxy.com/gb-proxy-list/",
