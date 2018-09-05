@@ -585,18 +585,18 @@ def main(): # funzione effettiva del programma.
 		word = "post-body entry-content"
 		word2 = "div"
 		blogspotget(url,word,word2)
-		print("Current IPs in proxylist: %s" % (len(open("proxy.txt").readlines())))
+		print("Current IPs İn Proxylist : %s" % (len(open("proxy.txt").readlines())))
 
-		print ("\nDownloading from various mirrors in progress...")
+		print ("\nDownloading From Various Mirrors İn Progress...")
 		for position, url in enumerate(nurls):
 			proxyget(url)
-			print("Completed downloads: (%s/%s)\nCurrent IPs in proxylist: %s" % (position+1, len(nurls), len(open("proxy.txt").readlines())))
+			print("Completed Downloads : (%s/%s)\nCurrent IPs İn Proxylist : %s" % (position+1, len(nurls), len(open("proxy.txt").readlines())))
 
-		print ("\nDownloading from foxtools in progress...")
+		print ("\nDownloading From Foxtools İn Progress...")
 		foxtools = ['http://api.foxtools.ru/v2/Proxy.txt?page=%d' % n for n in range(1, 6)] # per prendere ip di tutte e 6 le pagine
 		for position, url in enumerate(foxtools): # per ogni url starta la funzione apposita
 			proxyget(url)
-		print("Current IPs in proxylist: %s" % (len(open("proxy.txt").readlines())))
+		print("Current IPs İn Proxylist : %s" % (len(open("proxy.txt").readlines())))
 
 		proxylist() # dopo esegue questa funzione che setta meglio la lista
 
