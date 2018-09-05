@@ -558,10 +558,10 @@ def proxychecker(i):
 	req.add_header("User-Agent", random.choice(useragents))			# aggiunge useragent random per fare sembrare più realistica la req
 	try:
 		urllib.request.urlopen(req, timeout=60)						# apre il sito
-		print ("%s works!\n\n" % proxy) # se funziona printa "it works"
+		print ("%s Works !\n\n" % proxy) # se funziona printa "it works"
 		out_file.write(i)				# e lo scrive nel file.
 	except:
-		print ("%s does not respond.\n\n" % proxy) # altrimenti dice che non risponde
+		print ("%s Does Not Respond .\n\n" % proxy) # altrimenti dice che non risponde
 
 
 def main(): # funzione effettiva del programma.
@@ -574,7 +574,7 @@ def main(): # funzione effettiva del programma.
 		proxyget2(url) # manda url alla funzione
 		url = "https://www.us-proxy.org/"
 		proxyget2(url)
-		print("Current IPs in proxylist: %s" % (len(open("proxy.txt").readlines()))) # printa la lunghezza attuale del file, che sarebbe il numero di proxy
+		print("Current IPs İn Proxylist : %s" % (len(open("proxy.txt").readlines()))) # printa la lunghezza attuale del file, che sarebbe il numero di proxy
 
 		print ("\nDownloading from blogspot in progress...\n")
 		url = "http://www.proxyserverlist24.top/"
