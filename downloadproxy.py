@@ -436,7 +436,6 @@ useragents=["AdsBot-Google ( http://www.google.com/adsbot.html)",
 			"wii libnup/1.0",
 			]
 def usage():
-    print Download Proxy
     print " "
     print "\033[96m    ____                      __                __   ____  \033[0m"                      
     print "\033[96m   / __ \____ _      ______  / /___  ____ _____/ /  / __ \_________  _  ____  __ \033[0m"
