@@ -435,13 +435,16 @@ useragents=["AdsBot-Google ( http://www.google.com/adsbot.html)",
 			"Wget/1.9 cvs-stable (Red Hat modified)",
 			"wii libnup/1.0",
 			]
-print " "
-print "\033[96m    ____                      __                __   ____  \033[0m"                      
-print "\033[96m   / __ \____ _      ______  / /___  ____ _____/ /  / __ \_________  _  ____  __ \033[0m"
-print "\033[96m  / / / / __ \ | /| / / __ \/ / __ \/ __ `/ __  /  / /_/ / ___/ __ \| |/_/ / / / \033[0m"
-print "\033[96m / /_/ / /_/ / |/ |/ / / / / / /_/ / /_/ / /_/ /  / ____/ /  / /_/ />  </ /_/ / \033[0m" 
-print "\033[96m/_____/\____/|__/|__/_/ /_/_/\____/\__,_/\__,_/  /_/   /_/   \____/_/|_|\__, / \033[0m"  
-print "\033[96m                                                                       /____/ \033[0m"
+def usage():
+    print Download Proxy
+    print " "
+    print "\033[96m    ____                      __                __   ____  \033[0m"                      
+    print "\033[96m   / __ \____ _      ______  / /___  ____ _____/ /  / __ \_________  _  ____  __ \033[0m"
+    print "\033[96m  / / / / __ \ | /| / / __ \/ / __ \/ __ `/ __  /  / /_/ / ___/ __ \| |/_/ / / / \033[0m"
+    print "\033[96m / /_/ / /_/ / |/ |/ / / / / / /_/ / /_/ / /_/ /  / ____/ /  / /_/ />  </ /_/ / \033[0m" 
+    print "\033[96m/_____/\____/|__/|__/_/ /_/_/\____/\__,_/\__,_/  /_/   /_/   \____/_/|_|\__, / \033[0m"  
+    print "\033[96m                                                                       /____/ \033[0m"	
+    print "\a"
 # urls vari
 nurls = ["http://www.aliveproxy.com/high-anonymity-proxy-list/", "http://www.aliveproxy.com/anonymous-proxy-list/",
 		"http://www.aliveproxy.com/fastest-proxies/", "http://www.aliveproxy.com/us-proxy-list/", "http://www.aliveproxy.com/gb-proxy-list/",
