@@ -1,8 +1,6 @@
 import time,sys,socket,logging,urllib
 import random
-import time
-import sy
-import request
+import urllib.request
 import re
 import random
 from bs4 import BeautifulSoup
