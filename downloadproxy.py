@@ -528,7 +528,7 @@ def proxylist(): # funzione per la creazione della proxylist
 	filepr = open("proxy.txt", "a") # dopo lo apre in modalità a per non sovrascrivere i proxy
 	for i in proxiesp:
 		filepr.write(i)             # e scrive
-	print (''' \033[93m [+] Current IPs in proxylist: %s" % (len(open("proxy.txt").readlines()))) # per vedere quante lines (e quindi quanti proxy) ci sono nel file
+	print ("Current IPs in proxylist: %s" % (len(open("proxy.txt").readlines()))) # per vedere quante lines (e quindi quanti proxy) ci sono nel file
 	print ("\nProxylist Updated!\n")
 
 def proxycheckerinit():
