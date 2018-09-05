@@ -569,7 +569,7 @@ def main(): # funzione effettiva del programma.
 		out_file = open("proxy.txt","w") # prima di tutto cancella il contenuto di proxy.txt
 		out_file.close()
 
-		print (''' \033[93m Downloading From Free-Proxy-List İn Progress . . .\033[0m''')
+		print("Downloading from free-proxy-list in progress..."
 		url = "http://free-proxy-list.net/"
 		proxyget2(url) # manda url alla funzione
 		url = "https://www.us-proxy.org/"
