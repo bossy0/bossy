@@ -1,5 +1,3 @@
-import time,sys,socket,logging,urllib
-import random
 import urllib.request
 import re
 import random
