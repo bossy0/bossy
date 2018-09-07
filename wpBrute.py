@@ -144,7 +144,7 @@ class WordPress_priv8Bf(object):
            \ \/  \/ / |  ___/|  _ <| '__| | | | __/ _ |
             \  /\  /  | |    | |_) | |  | |_| | ||  __/
              \/  \/   |_|    |____/|_|   \__,_|\__\___|
-               IRAN-Cyber.Net           github.com/04x  
+                     github.com/bossy0  
 
              Note! : We don't Accept any responsibility for any illegal usage.        
     """
