@@ -43,12 +43,12 @@ class Ghost_Lab:
  **   **       **   ****
  **  **       *   **   **
   **  *      *  **  ***  **
-   **  *    *  **     **  *       [+] DDOS internal Network
+   **  *    *  **     **  *       [+] DDOS İnternal Network
     ** **  ** **        **
     **   **  **               *********************************
    *           *              *      Laboratorio Fantasma     *
   *             *             *********************************
- *    0     0    *            *      Coded By: Luth1er        *
+ *    0     0    *            *      Coded By : BOSSY         *
  *   /   @   \   *            *    Telegram : @bossy.078      * 
  *   \__/ \__/   *            *                               *
    *     W     *              *********************************
