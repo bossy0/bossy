@@ -84,7 +84,7 @@ class attack(threading.Thread):
         print(colors.R+ "[!] Exiting...")
 try:
   print('')
-  Targets = raw_input("Do you see possibles targets ? n/Y > ")
+  Targets = raw_input("Do You See Possibles Targets ? n / Y > ")
   if Targets == 'Y' or Targets == 'y':
       print('')
       Animation(' Starting NMAP to SCAM...')
