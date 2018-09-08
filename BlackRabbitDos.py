@@ -92,7 +92,7 @@ try:
   else:
       pass
   print('')    
-  ip = raw_input(colors.cyanClaro + "[*] Ip internal Network >> ")
+  ip = raw_input(colors.cyanClaro + "[*] Ip Internal Network >> ")
   print('')
   pckt = raw_input(colors.amarelo + "[*] Packets Size >> ")
   print('')
