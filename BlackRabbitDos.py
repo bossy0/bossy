@@ -64,7 +64,7 @@ class Ghost_Lab:
     End_Status = """+========================+"""
 
 print(colors.azul+Ghost_Lab.Banner)
-fastprint(colors.O+'\t\t\t\t Telegram:'+colors.P+' @bossy.078')
+fastprint(colors.O+'\t\t\t\t Instagram :'+colors.P+' @bossy.078')
 print(colors.GR + Ghost_Lab.Fast_Ban)
 class attack(threading.Thread):
     def __init__(self, ip, port, size):
