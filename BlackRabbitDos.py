@@ -49,7 +49,7 @@ class Ghost_Lab:
    *           *              *      Laboratorio Fantasma     *
   *             *             *********************************
  *    0     0    *            *      Coded By: Luth1er        *
- *   /   @   \   *            * Telegram: @DreadPirateRobertt * 
+ *   /   @   \   *            *    Telegram : @bossy.078      * 
  *   \__/ \__/   *            *                               *
    *     W     *              *********************************
      **     **                *      Laboratorio Fantasma     *
