@@ -5,6 +5,7 @@ import threading
 import random
 import time
 import datetime
+# -*- coding: ascii -*-
 class colors:
   W  = '\033[0m'  # white (default)
   R  = '\033[31m' # red
