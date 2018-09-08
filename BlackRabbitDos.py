@@ -43,7 +43,7 @@ class Ghost_Lab:
  **   **       **   ****
  **  **       *   **   **
   **  *      *  **  ***  **
-   **  *    *  **     **  *       [+] DDOS İnternal Network
+   **  *    *  **     **  *       [+] DDOS Internal Network
     ** **  ** **        **
     **   **  **               *********************************
    *           *              *      Laboratorio Fantasma     *
