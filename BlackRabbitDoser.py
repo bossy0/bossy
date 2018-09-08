@@ -79,6 +79,7 @@ class attack(threading.Thread):
         while True:
             s.sendto(bytes,(self.ip, self.port))
             print colors.vermelho + " [*] Pckt send:" + ":"+colors.verde + self.ip
+            print('')
       except KeyboardInterrupt:
         print('')
         print(colors.R+ "[!] Exiting...")
