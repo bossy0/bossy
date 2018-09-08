@@ -96,7 +96,7 @@ try:
   print('')
   pckt = raw_input(colors.amarelo + "[*] Packets Size >> ")
   print('')
-  port = 443
+  port = 80
   Animation(' Starting Atack Dooser IP Packets...')
   print('')
   print(Ghost_Lab.Status_Banner)
