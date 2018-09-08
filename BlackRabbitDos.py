@@ -46,13 +46,13 @@ class Ghost_Lab:
    **  *    *  **     **  *       [+] DDOS Internal Network
     ** **  ** **        **
     **   **  **               *********************************
-   *           *              *      Laboratorio Fantasma     *
+   *           *              *        fb.com/bossy.078       *
   *             *             *********************************
  *    0     0    *            *      Coded By : BOSSY         *
  *   /   @   \   *            *    Telegram : @bossy.078      * 
  *   \__/ \__/   *            *                               *
    *     W     *              *********************************
-     **     **                *      Laboratorio Fantasma     *
+     **     **                *      github.com/bossy0        *
        *****                  *********************************"""
     Fast_Ban = """**************************************
 * Denial of Internal Network Service * 
