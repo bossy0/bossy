@@ -138,7 +138,7 @@ usage : python3 bossyv1.0.py [-u] [-p] [-v]
 -s : Server İp
 -p : Port Default 80
 -t : Turbo Default 200 \033[0m''')
-	sys.exit()
+sys.exit()
 
 				
 class Ghost_Lab:
