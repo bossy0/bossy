@@ -131,6 +131,7 @@ def dos2():
 		w.task_done()
 		
 def usage():
+	print(" ")
 print (''' \033[92m	Hello My Friend \n
 usage : python3 bossyv1.0.py [-u] [-p] [-v]
 -h : Help
