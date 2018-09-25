@@ -15,6 +15,7 @@ import time
 import sys
 
 print(" ")
+print(" Program Opened ")
 with tqdm(total = 100) as progressbar:
 	for i in range(10):
 		sleep(0.1)
