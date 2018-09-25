@@ -77,38 +77,6 @@ print(colors.GR + Ghost_Lab.Fast_Ban)
 print(Ghost_Lab.End_Status)
 time.sleep(2)
 
-print (" ")
-print (''' \033[91m [*] Loading , Please Wait . . . \033[0m''')
-print (" ")
-time.sleep(5)
-def load():
-  print (''' \033[92m [*] Loading : [                    ] 0% \033[0m''')
-  time.sleep(2)
-  print (''' \033[94m [*] Loading : [...                 ] 15% \033[0m''')
-  time.sleep(2)
-  print (''' \033[96m [*] Loading : [......              ] 30% \033[0m''')
-  time.sleep(2)
-  print (''' \033[97m [*] Loading : [.........           ] 45% \033[0m''')
-  time.sleep(2)
-  print (''' \033[93m [*] Loading : [............        ] 60% \033[0m''')
-  time.sleep(2)
-  print (''' \033[95m [*] Loading : [...............     ] 75% \033[0m''')
-  time.sleep(2)
-  print (''' \033[90m [*] Loading : [..................  ] 90% \033[0m''')
-  time.sleep(2)
-  print (''' \033[99m [*] Loading : [....................] 100% \033[0m''')
-  time.sleep(2)
-
-
-
-load()
-print (" ")
-print (''' \033[91m [*] Starting . . . \033[0m''')
-print (" ")
-time.sleep(5)
-sent = 0
-
-
 def user_agent():
 	global uagent
 	uagent=[]
