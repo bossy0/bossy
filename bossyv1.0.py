@@ -194,6 +194,9 @@ print(Ghost_Lab.End_Status)
 time.sleep(2)
 
 def usage():
+		print (''' \033[92m	Hammer Dos Script v.1 http://www.canyalcin.com/
+	It is the end user's responsibility to obey all applicable laws.
+	It is just for server testing script. Your ip is visible. \n
 	usage : python3 bossyv1.0.py [-s] [-p] [-t]
 	-h : help
 	-s : server ip
