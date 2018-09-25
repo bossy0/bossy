@@ -168,12 +168,12 @@ print(colors.GR + Ghost_Lab.Fast_Ban)
 
 def usage():
 	print(Ghost_Lab.End_Status)
-	print (''' \033[92m	Hello My Friend's \n
+	print (''' 	Hello My Friend's \n
 	usage : python3 bossyv1.0.py [-u] [-p] [-v]
 	-h : Help
 	-s : Server İp
 	-p : Port Default 80
-	-t : Turbo Default 200 \033[0m''')
+	-t : Turbo Default 200 ''')
 	sys.exit()
 
 def get_parameters():
