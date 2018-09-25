@@ -192,7 +192,7 @@ print(colors.GR + Ghost_Lab.Fast_Ban)
 print(Ghost_Lab.End_Status)
 time.sleep(2)
 
-print(" usage : python3 bossyv1.0.py [-u] [-p] [-v] ")
+print(" python3 bossyv1.0.py [-u] [-p] [-v] ")
 print("	-h : help ")
 print("	-u : server ip ")
 print("	-p : port default 80 ")
