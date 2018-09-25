@@ -193,12 +193,14 @@ print(colors.GR + Ghost_Lab.Fast_Ban)
 print(Ghost_Lab.End_Status)
 time.sleep(2)
 
-print(" python3 bossyv1.0.py [-u] [-p] [-v] ")
-print("	-h : help ")
-print("	-u : server ip ")
-print("	-p : port default 80 ")
-print("	-v : turbo default 200 ")	
-
+def usage():
+	usage : python3 bossyv1.0.py [-s] [-p] [-t]
+	-h : help
+	-s : server ip
+	-p : port default 80
+	-t : turbo default 135 \033[0m''')
+	sys.exit()
+	
 def get_parameters():
 	global host
 	global port
