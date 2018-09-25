@@ -65,41 +65,6 @@ def fastprint(s):
         sys.stdout.flush() # defeat buffering
         time.sleep(1./50)
 
-class Ghost_Lab:
-    Banner = """
-   ***
-  ** **
- **   **
- **   **         ****
- **   **       **   ****
- **  **       *   **   **
-  **  *      *  **  ***  **
-   **  *    *  **     **  *       [+] DDOS Internal Network
-    ** **  ** **        **
-    **   **  **               *********************************
-   *           *              *        fb.com/bossy.078       *
-  *             *             *********************************
- *    0     0    *            *      Coded By : BOSSY         *
- *   /   @   \   *            *    Telegram : @bossy.078      * 
- *   \__/ \__/   *            *                               *
-   *     W     *              *********************************
-     **     **                *      github.com/bossy0        *
-       *****                  *********************************"""
-    Fast_Ban = """**************************************
-* Denial of Internal Network Service * 
-**************************************"""
-    Status_Banner = """
-+========================+
-|         Status         |
-+========================+"""
-    End_Status = """+========================+"""
-
-print(colors.azul+Ghost_Lab.Banner)
-fastprint(colors.O+'\t\t\t\t Instagram :'+colors.P+' @bossy.078')
-print(colors.GR + Ghost_Lab.Fast_Ban)
-
-print(Ghost_Lab.End_Status)
-time.sleep(2)
 
 def user_agent():
 	global uagent
@@ -192,17 +157,42 @@ def dos2():
 		
 
 def usage():
-	print(Ghost_Lab.End_Status)
-	print (''' \033[91mBossy Dos Script v.1 https://www.aspartim.org/
-  ____  _____ ____   ____  ____  ______  ____  ___ ___ 
- /    |/ ___/|    \ /    ||    \|      ||    ||   |   |
-|  o  (   \_ |  o  )  o  ||  D  )      | |  | | _   _ |
-|     |\__  ||   _/|     ||    /|_|  |_| |  | |  \_/  |
-|  _  |/  \ ||  |  |  _  ||    \  |  |   |  | |   |   |
-|  |  |\    ||  |  |  |  ||  .  \ |  |   |  | |   |   |
-|__|__| \___||__|  |__|__||__|\_| |__|  |____||___|___|
-                                                       
-                                \n
+	class Ghost_Lab:
+    Banner = """
+   ***
+  ** **
+ **   **
+ **   **         ****
+ **   **       **   ****
+ **  **       *   **   **
+  **  *      *  **  ***  **
+   **  *    *  **     **  *       [+] DDOS Internal Network
+    ** **  ** **        **
+    **   **  **               *********************************
+   *           *              *        fb.com/bossy.078       *
+  *             *             *********************************
+ *    0     0    *            *      Coded By : BOSSY         *
+ *   /   @   \   *            *    Telegram : @bossy.078      * 
+ *   \__/ \__/   *            *                               *
+   *     W     *              *********************************
+     **     **                *      github.com/bossy0        *
+       *****                  *********************************"""
+    Fast_Ban = """**************************************
+* Denial of Internal Network Service * 
+**************************************"""
+    Status_Banner = """
++========================+
+|         Status         |
++========================+"""
+    End_Status = """+========================+"""
+
+print(colors.azul+Ghost_Lab.Banner)
+fastprint(colors.O+'\t\t\t\t Instagram :'+colors.P+' @bossy.078')
+print(colors.GR + Ghost_Lab.Fast_Ban)
+
+print(Ghost_Lab.End_Status)
+time.sleep(2)
+
 	usage : python3 bossyv1.0.py [-u] [-p] [-v]
 	-h : help
 	-u : server ip
