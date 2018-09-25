@@ -13,7 +13,70 @@ import random
 import time
 import sys
 
-	
+class colors:
+  W  = '\033[0m'  # white (default)
+  R  = '\033[31m' # red
+  G  = '\033[1;32m' # green bold
+  O  = '\033[33m' # orange
+  B  = '\033[34m' # blue
+  P  = '\033[35m' # purple
+  C  = '\033[36m' # cyan
+  GR = '\033[37m' # gray
+  cyanClaro="\033[1;36m"
+  vermelho = '\033[31;1m'
+  verde = '\033[32;1m'
+  azul = '\033[34;1m'
+  amarelo= '\033[1;33m'
+
+def Animation(String):
+    animation = "|/-\\"
+    for i in range(15):
+        time.sleep(0.1)
+        sys.stdout.write("\r" + "[" + animation[i % len(animation)] + "]" + colors.G + String)
+        sys.stdout.flush()
+    print('')
+def fastprint(s):
+    for c in s + '\n':
+        sys.stdout.write(c)
+        sys.stdout.flush() # defeat buffering
+        time.sleep(1./50)
+
+class Ghost_Lab:
+    Banner = """
+   ***
+  ** **
+ **   **
+ **   **         ****
+ **   **       **   ****
+ **  **       *   **   **
+  **  *      *  **  ***  **
+   **  *    *  **     **  *       [+] DDOS Internal Network
+    ** **  ** **        **
+    **   **  **               *********************************
+   *           *              *        fb.com/bossy.078       *
+  *             *             *********************************
+ *    0     0    *            *      Coded By : BOSSY         *
+ *   /   @   \   *            *    Telegram : @bossy.078      * 
+ *   \__/ \__/   *            *                               *
+   *     W     *              *********************************
+     **     **                *      github.com/bossy0        *
+       *****                  *********************************"""
+    Fast_Ban = """**************************************
+* Denial of Internal Network Service * 
+**************************************"""
+    Status_Banner = """
++========================+
+|         Status         |
++========================+"""
+    End_Status = """+========================+"""
+
+print(colors.azul+Ghost_Lab.Banner)
+fastprint(colors.O+'\t\t\t\t Instagram :'+colors.P+' @bossy.078')
+print(colors.GR + Ghost_Lab.Fast_Ban)
+
+print(Ghost_Lab.End_Status)
+time.sleep(2)
+
 print (" ")
 print (''' \033[91m [*] Loading , Please Wait . . . \033[0m''')
 print (" ")
@@ -233,63 +296,4 @@ if __name__ == '__main__':
 		q.join()
 		w.join()
 
-class colors:
-  W  = '\033[0m'  # white (default)
-  R  = '\033[31m' # red
-  G  = '\033[1;32m' # green bold
-  O  = '\033[33m' # orange
-  B  = '\033[34m' # blue
-  P  = '\033[35m' # purple
-  C  = '\033[36m' # cyan
-  GR = '\033[37m' # gray
-  cyanClaro="\033[1;36m"
-  vermelho = '\033[31;1m'
-  verde = '\033[32;1m'
-  azul = '\033[34;1m'
-  amarelo= '\033[1;33m'
-
-def Animation(String):
-    animation = "|/-\\"
-    for i in range(15):
-        time.sleep(0.1)
-        sys.stdout.write("\r" + "[" + animation[i % len(animation)] + "]" + colors.G + String)
-        sys.stdout.flush()
-    print('')
-def fastprint(s):
-    for c in s + '\n':
-        sys.stdout.write(c)
-        sys.stdout.flush() # defeat buffering
-        time.sleep(1./50)
-
-class Ghost_Lab:
-    Banner = """
-   ***
-  ** **
- **   **
- **   **         ****
- **   **       **   ****
- **  **       *   **   **
-  **  *      *  **  ***  **
-   **  *    *  **     **  *       [+] DDOS Internal Network
-    ** **  ** **        **
-    **   **  **               *********************************
-   *           *              *        fb.com/bossy.078       *
-  *             *             *********************************
- *    0     0    *            *      Coded By : BOSSY         *
- *   /   @   \   *            *    Telegram : @bossy.078      * 
- *   \__/ \__/   *            *                               *
-   *     W     *              *********************************
-     **     **                *      github.com/bossy0        *
-       *****                  *********************************"""
-    Fast_Ban = """**************************************
-* Denial of Internal Network Service * 
-**************************************"""
-    Status_Banner = """
-+========================+
-|         Status         |
-+========================+"""
-    End_Status = """+========================+"""
-
-print(colors.azul+Ghost_Lab.Banner)
-fastprint(colors.O+'\t\t\t\t Instagram :'+colors.P+' @bossy.078')
-print(colors.GR + Ghost_Lab.Fast_Ban)
+  
