@@ -168,14 +168,12 @@ print(colors.GR + Ghost_Lab.Fast_Ban)
 
 def usage():
 	print(Ghost_Lab.End_Status)
-	print (''' \033[92m	Hammer Dos Script v.1 http://www.canyalcin.com/
-	It is the end user's responsibility to obey all applicable laws.
-	It is just for server testing script. Your ip is visible. \n
-	usage : python3 hammer.py [-s] [-p] [-t]
-	-h : help
-	-s : server ip
-	-p : port default 80
-	-t : turbo default 135 \033[0m''')
+	print (''' \033[92m	Hello My Friend's \n
+	usage : python3 bossyv1.0.py [-u] [-p] [-v]
+	-h : Help
+	-s : Server İp
+	-p : Port Default 80
+	-t : Turbo Default 200 \033[0m''')
 	sys.exit()
 
 def get_parameters():
