@@ -158,7 +158,7 @@ def dos2():
 		
 def usage():
 	print (''' \033[92m	Hello My Friend \n
-	usage : python3 bossyv1.0.py [-s] [-p] [-t]
+	usage : python3 bossyv1.0.py [-u] [-p] [-v]
 	-h : help
 	-s : server ip
 	-p : port default 80
