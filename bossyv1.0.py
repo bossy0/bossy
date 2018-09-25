@@ -166,8 +166,6 @@ print(colors.GR + Ghost_Lab.Fast_Ban)
 print(Ghost_Lab.End_Status)
 time.sleep(2)
 
-def usage():
-
 def get_parameters():
 	global host
 	global port
