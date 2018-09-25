@@ -130,14 +130,6 @@ def dos2():
 		bot_hammering(random.choice(bots)+"http://"+host)
 		w.task_done()
 		
-def usage():
-print (''' \033[92m	Hello My Friend \n
-usage : python3 bossyv1.0.py [-u] [-p] [-v]
--h : Help
--s : Server İp
--p : Port Default 80
--t : Turbo Default 200 \033[0m''')
-				
 class Ghost_Lab:
     Banner = """
    ***
