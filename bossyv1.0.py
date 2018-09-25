@@ -5,38 +5,12 @@
 # by Bossy
 # only for legal purpose
 
-from tqdm import tqdm, trange
-from time import sleep
 from queue import Queue
 from optparse import OptionParser
 import time,sys,socket,threading,logging,urllib.request,random
 import random
 import time
 import sys
-
-print(" ")
-print("Program Opened")
-with tqdm(total = 100) as progressbar:
-	for i in range(10):
-		sleep(0.1)
-		progressbar.update(10)
-
-
-progressbar = tqdm([2,4,6,8,10,12,14,16])
-
-for item in progressbar:
-	sleep(0.1)
-	progressbar.set_description('Please Wait : {}'.format(item))
-
-
-for i in trange(20):
-	sleep(0.1)
-	pass
-
-
-for i in tqdm(range(20)):
-	sleep(0.5)
-	pass
 
 class colors:
   W  = '\033[0m'  # white (default)
