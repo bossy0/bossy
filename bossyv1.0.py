@@ -14,6 +14,7 @@ import random
 import time
 import sys
 
+print(" ")
 with tqdm(total = 100) as progressbar:
 	for i in range(10):
 		sleep(0.1)
@@ -24,7 +25,7 @@ progressbar = tqdm([2,4,6,8,10,12,14,16])
 
 for item in progressbar:
 	sleep(0.1)
-	progressbar.set_description('Processing element: {}'.format(item))
+	progressbar.set_description('Please Wait : {}'.format(item))
 
 
 for i in trange(20):
