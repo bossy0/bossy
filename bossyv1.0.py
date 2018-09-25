@@ -156,8 +156,7 @@ def dos2():
 		w.task_done()
 		
 
-def usage():
-	class Ghost_Lab:
+class Ghost_Lab:
     Banner = """
    ***
   ** **
@@ -197,7 +196,7 @@ time.sleep(2)
 	-h : help
 	-u : server ip
 	-p : port default 80
-	-v : turbo default 200 \033[0m''')
+	-v : turbo default 200
 	sys.exit()
 
 
