@@ -163,8 +163,20 @@ print(colors.azul+Ghost_Lab.Banner)
 fastprint(colors.O+'\t\t\t\t Instagram :'+colors.P+' @bossy.078')
 print(colors.GR + Ghost_Lab.Fast_Ban)
 
-print(Ghost_Lab.End_Status)
-time.sleep(2)
+
+
+
+def usage():
+	print(Ghost_Lab.End_Status)
+	print (''' \033[92m	Hammer Dos Script v.1 http://www.canyalcin.com/
+	It is the end user's responsibility to obey all applicable laws.
+	It is just for server testing script. Your ip is visible. \n
+	usage : python3 hammer.py [-s] [-p] [-t]
+	-h : help
+	-s : server ip
+	-p : port default 80
+	-t : turbo default 135 \033[0m''')
+	sys.exit()
 
 def get_parameters():
 	global host
