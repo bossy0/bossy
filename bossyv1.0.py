@@ -231,3 +231,37 @@ if __name__ == '__main__':
 			w.put(item)
 		q.join()
 		w.join()
+
+		class Ghost_Lab:
+    Banner = """
+
+   ***
+  ** **
+ **   **
+ **   **         ****
+ **   **       **   ****
+ **  **       *   **   **
+  **  *      *  **  ***  **
+   **  *    *  **     **  *       [+] DDOS Internal Network
+    ** **  ** **        **
+    **   **  **               *********************************
+   *           *              *        fb.com/bossy.078       *
+  *             *             *********************************
+ *    0     0    *            *      Coded By : BOSSY         *
+ *   /   @   \   *            *    Telegram : @bossy.078      * 
+ *   \__/ \__/   *            *                               *
+   *     W     *              *********************************
+     **     **                *      github.com/bossy0        *
+       *****                  *********************************"""
+    Fast_Ban = """**************************************
+* Denial of Internal Network Service * 
+**************************************"""
+    Status_Banner = """
++========================+
+|         Status         |
++========================+"""
+    End_Status = """+========================+"""
+
+print(colors.azul+Ghost_Lab.Banner)
+fastprint(colors.O+'\t\t\t\t Instagram :'+colors.P+' @bossy.078')
+print(colors.GR + Ghost_Lab.Fast_Ban)
