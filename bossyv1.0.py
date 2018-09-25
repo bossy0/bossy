@@ -219,6 +219,7 @@ if __name__ == '__main__':
 	if len(sys.argv) < 2:
 		usage()
 	get_parameters()
+	print(" ")
 	print("\033[92m",host," Port : ",str(port)," Turbo : ",str(thr),"\033[0m")
 	print("\033[94m [*] Please Wait . . .\033[0m")
 	user_agent()
