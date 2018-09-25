@@ -137,6 +137,7 @@ def dos2():
 		
 
 def usage():
+	print(Ghost_Lab.End_Status)
 	print (''' \033[91mBossy Dos Script v.1 https://www.aspartim.org/
   ____  _____ ____   ____  ____  ______  ____  ___ ___ 
  /    |/ ___/|    \ /    ||    \|      ||    ||   |   |
