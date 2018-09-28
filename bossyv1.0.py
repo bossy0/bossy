@@ -171,9 +171,9 @@ def usage():
 	print (''' 	Hello My Friend's \n
 	usage : python3 bossyv1.0.py [-u] [-p] [-v]
 	-h : Help
-	-s : Server İp
+	-u : Server İp
 	-p : Port Default 80
-	-t : Turbo Default 200 ''')
+	-v : Turbo Default 200 ''')
 	sys.exit()
 
 def get_parameters():
