@@ -3,10 +3,11 @@ import socket
 import random
 import time
 
+print (" ")
 ip = raw_input("IP : ")
 port = input("Port : ")
-thread_num = input("Threads ( Default 1500 ) : ")
-thread_num = 1500
+thread_num = input("Threads : ")
+print (" ")
 print "Please Wait While Packages Are Preparing Thread :",thread_num
 time.sleep(5)
 
