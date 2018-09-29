@@ -4,7 +4,7 @@ import random
 import time
 
 print (" ")
-ip = raw_input("\033[93m [+] IP : \033[0m")
+ip = raw_input("\033[93m [+] IP : \033[1m")
 port = input("\033[94m [+] Port : \033[0m")
 thread_num = input("\033[95m [+] Threads : \033[0m")
 print (" ")
