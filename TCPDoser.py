@@ -21,7 +21,7 @@ def run():
 			print "Package Sent !"
 		except:
 			s.close()
-			print "Error , Socket Closed"
+			print "\033[91m [!] Error , Socket Closed \033[0m"
 			
 for i in range(thread_num):
     th = threading.Thread(target = run)
