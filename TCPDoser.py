@@ -3,6 +3,7 @@ import socket
 import random
 import time
 
+print (
 ip = raw_input("IP : ")
 port = input("Port : ")
 thread_num = input("Threads ( Default 1500 ) : ")
