@@ -4,7 +4,7 @@ import requests
 import threading
 
 print (" ")
-host = raw_input("İp : ")
+host = raw_input("IP : ")
 thread_num = input("Threads : ")
 print (" ")
 
