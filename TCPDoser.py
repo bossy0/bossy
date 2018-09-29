@@ -4,7 +4,7 @@ import random
 import time
 
 print (" ")
-ip = raw_input("IP : ")
+IP = raw_input("IP : ")
 port = input("Port : ")
 thread_num = input("Threads ( Default 1500 ) : ")
 thread_num = 1500
