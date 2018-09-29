@@ -6,7 +6,7 @@ import time
 ip = raw_input("IP : ")
 port = input("Port : ")
 thread_num = input("Threads : ")
-print (" ")
+print " "
 print "Please Wait While Packages Are Preparing Thread :",thread_num
 time.sleep(5)
 
