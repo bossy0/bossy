@@ -8,10 +8,10 @@ print (" ╔╦╗╔═╗╔═╗  ╔╦╗╔═╗╔═╗╔═╗╦═
 print ("  ║ ║  ╠═╝───║║║ ║╚═╗║╣ ╠╦╝ ")
 print ("  ╩ ╚═╝╩    ═╩╝╚═╝╚═╝╚═╝╩╚═ ")
 time.sleep(0.5)
-ip = raw_input("Url/ip:")
-port = input("Port:")
-thread_num = input("Threads:")
-print "Attacking !!! Thread:",thread_num
+ip = raw_input("IP : ")
+port = input("Port : ")
+thread_num = input("Threads : ")
+print ("Attacking !!! Thread:"),thread_num
 
 def run():
 	bytes = random._urandom(1024)
