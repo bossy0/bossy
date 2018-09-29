@@ -18,7 +18,7 @@ def run():
 			s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 			s.connect((str(ip),int(port))) 
 			s.send(bytes)
-			print "Package Sent !"
+			print "\033[92m [+] Package Sent ! \033[0m"
 		except:
 			s.close()
 			print "\033[91m [!] Error , Socket Closed \033[0m"
