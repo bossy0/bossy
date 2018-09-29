@@ -8,7 +8,7 @@ ip = raw_input("IP : ")
 port = input("Port : ")
 thread_num = input("Threads : ")
 print (" ")
-print "Please Wait While Packages Are Preparing Thread :",thread_num
+print "\033[91m [!] Please Wait While Packages Are Preparing Thread : \033[0m",thread_num
 time.sleep(5)
 
 def run():
