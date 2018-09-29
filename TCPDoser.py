@@ -4,11 +4,11 @@ import random
 import time
 
 print (" ")
-ip = raw_input("\033[93m [+] IP : \033[2m")
-port = input("\033[94m [+] Port : \033[0m")
-thread_num = input("\033[95m [+] Threads : \033[0m")
+ip = raw_input("\033[93m [+] IP : \033[1m")
+port = input("\033[94m [+] Port : \033[1m")
+thread_num = input("\033[95m [+] Threads : \033[1m")
 print (" ")
-print "\033[91m [!] Please Wait While Packages Are Preparing Thread : \033[0m",thread_num
+print "\033[91m [!] Please Wait While Packages Are Preparing Thread : \033[1m",thread_num
 time.sleep(5)
 
 def run():
