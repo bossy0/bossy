@@ -2,6 +2,7 @@ import threading
 import random
 import sys
 import socket
+import time
 
 print ("\033[31m   ____         __       __  ___  ___       ____ \033[0m")
 print ("\033[31m  / __/__  ____/ /_____ / /_/ _ \/ _ \___  / __/ \033[0m")
