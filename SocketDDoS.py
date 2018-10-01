@@ -18,10 +18,6 @@ print (" ")
 print "\033[91m [!] Please Wait While Packages Are Preparing Thread : \033[1m",thread_num
 time.sleep(5)
 
-url = sys.argv[1]
-port = (80)
-thread_num = int(sys.argv[2])
-
 url2 = '/'
 
 useragents=["Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36",
