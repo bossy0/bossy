@@ -55,11 +55,11 @@ def run():
 				print "\033[94m",time.ctime(time.time()),"\033[0m \033[92m [+] Package Sent ! \033[0m"
 			except:
 				s.close()
-				print "\033[91m [!] Error , Socket Closed \033[0m"
+				print "\033[94m",time.ctime(time.time()),"\033[0m \033[91m [!] Error , Socket Closed \033[0m"
 
 
 	else:
-		print "\033[91m [!] It Only Work On Http Server ! \033[0m"
+		print "\033[94m",time.ctime(time.time()),"\033[0m \033[91m [!] It Only Work On Http Server ! \033[0m"
 
 for i in range(thread_num):
     th = threading.Thread(target = run)
