@@ -52,7 +52,7 @@ def run():
 				s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 				s.connect((str(url), int(port)))
 				s.send (str.encode(request))
-				print "\033[92m [+] Package Sent ! \033[0m" "Request send!"
+				print "\033[92m [+] Package Sent ! \033[0m"
 			except:
 				s.close()
 				print "\033[91m [!] Error , Socket Closed \033[0m"
