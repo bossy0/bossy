@@ -52,14 +52,14 @@ def run():
 				s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 				s.connect((str(url), int(port)))
 				s.send (str.encode(request))
-				print "Request send!"
+				print "\033[92m [+] Package Sent ! \033[0m" "Request send!"
 			except:
 				s.close()
-				print "Error"
+				print "\033[91m [!] Error , Socket Closed \033[0m"
 
 
 	else:
-		print "It only work on HTTP server!!!"
+		print "\033[91m [!] It Only Work On Http Server ! \033[0m"
 
 for i in range(thread_num):
     th = threading.Thread(target = run)
