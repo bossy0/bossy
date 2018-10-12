@@ -132,13 +132,13 @@ print ("/___/\___/\__/_/\_\/___/____/\___/___/\__/_/      ")
 print ("                     Instagram : @bossy.078       ") 
 print (" ")
 
-ip = raw_input("> Hedef / IP : ")
-port = input("> Port : ")
-thread_num = input("> Threads : ")
+ip = raw_input("[+] Hedef / IP : ")
+port = input("[+] Port : ")
+thread_num = input("[+] Threads : ")
 url2 = '/'
-out_file = raw_input("> Proxy : ")
-print ("<Number of Proxies: %s>" % (len(open(out_file).readlines())))
-multiple = int(input("> Adet : "))
+out_file = raw_input("[+] Proxy : ")
+print ("[+] Toplam Proxy : %s" % (len(open(out_file).readlines())))
+multiple = int(input("[+] Adet : "))
 
 acceptall = [
 		"Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate\r\n",
